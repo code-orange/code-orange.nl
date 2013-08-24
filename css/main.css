@@ -1,0 +1,65 @@
+
+
+/* ==========================================================================
+	Author's custom styles
+   ========================================================================== */
+
+.container-fluid {
+	padding: 0;
+}
+   
+#home{
+	background-image: url(/img/cover.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	padding-top: 115px;
+}
+	#home > nav{
+		background-color: white;
+		opacity: 0.95;
+		width: 100%;
+		height: 115px;
+		position: fixed;
+		top: 0;
+	}
+
+	#home > nav.scrolled{
+		height: 40px;
+	}
+   
+	#home > header{
+		height: 960px;
+		color: white;
+		background-color: transparent;
+	}
+
+	#home > section{
+		height: 690px;
+		background-color: white;
+	}
+	
+		#home > section#services{
+			background-color: #fafafa;
+		}
+		
+		#home >section#cases{
+			background-color: #f0f0f0;
+		}
+		
+		#home >section#clients{
+			background-color: #464646;
+		}
+		
+		#home >section#about{
+			background-color: #fafafa;
+		}
+		
+		#home >section#contact{
+			background-color: transparent;
+		}
+
+	#home > footer{
+		height: 100px;
+		background-color: #fafafa;
+	}
