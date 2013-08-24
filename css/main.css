@@ -7,12 +7,17 @@
 .container-fluid {
 	padding: 0;
 }
+
+p{
+	font-size: 120%;
+	line-height: 130%;
+}
    
 #home{
 	background-image: url(/img/cover.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: 100%;
+	background-size: cover;
 	padding-top: 185px;
 }
 	#home > nav{
@@ -25,8 +30,10 @@
 		
 		padding-top: 30px;
 		padding-bottom: 30px;
-		padding-left: 30em;
-		padding-right: 30em;
+		padding-left: 20%;
+		padding-right: 20%;
+		
+		z-index: 1;
 	}
 	
 	#home > nav > #logo{
@@ -88,10 +95,10 @@
 	#home > section{
 		background-color: white;
 		
-		padding-right: 30em;
-		padding-left: 30em;
-		padding-top: 3em;
-		padding-bottom: 3em;
+		padding-right: 20%;
+		padding-left: 20%;
+		padding-top: 3%;
+		padding-bottom: 3%;
 	}
 	
 		#home > section > header > h1{
@@ -107,12 +114,104 @@
 	
 		#home > section#services{
 			background-color: #fafafa;
+			color: #a3a3a3;
 		}
+		
+			#home > section#services #hexagons{
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+		
+			#home > section#services .hexagon:before {
+				content: " ";
+				width: 0;
+				height: 0;
+				border-bottom: 50px solid #13bdef;
+				border-left: 85px solid transparent;
+				border-right: 85px solid transparent;
+				position: absolute;
+				top: -50px;
+			}
+			
+			#home > section#services .hexagon{
+				margin-top: 50px;
+				width: 170px;
+				height: 60px;
+				background-color: #13bdef;
+				position: relative;
+				
+				opacity: 0.4;
+				
+				margin-right: auto;
+				margin-left: auto;
+				
+				padding-top: 35px;
+			}
+			
+			#home > section#services .hexagon:hover{
+				opacity: 1;
+			}
+			
+				#home > section#services .hexagon p{
+					color: white;
+					text-align: center;
+				}
+
+			#home > section#services .hexagon:after {
+				content: "";
+				width: 0;
+				position: absolute;
+				bottom: -50px;
+				border-top: 50px solid #13bdef;
+				border-left: 85px solid transparent;
+				border-right: 85px solid transparent;
+			}
+
 		
 		#home > section#cases{
 			background-color: #f0f0f0;
+			color: #bdbdbd;
 		}
 		
+		#home > section#cases #case-zoom{
+			height: 350px;
+		}
+		
+			#home > section#cases #case-zoom #case-media{
+				height: 100%;
+			}
+		
+			#home > section#cases #case-zoom #case-description{
+				background-color: white;
+				height: 100%;
+				padding: 1em;
+			}
+			
+				#home > section#cases #case-zoom #case-description header > h1{
+					color: #1cdfff;
+					font-size: 200%;
+					font-weight: 500;
+					margin-bottom: 0;
+				}
+				
+				#home > section#cases #case-zoom #case-description header > hr{
+					margin-top: 0;
+					width: 1.5em;
+					border-top-color: #c4f5ff;
+					border-bottom-color: #35e1ff;
+				}
+				
+		#home > section#cases #cases-thumbs{
+			margin-top: 20px;
+			height: 215px;
+		}
+		
+			#home > section#cases #cases-thumbs .cases-thumb{
+				height: 100%;
+				background-color: #00dcff;
+				cursor: pointer;
+			}
+
 		#home > section#clients{
 			background-color: #464646;
 		}
