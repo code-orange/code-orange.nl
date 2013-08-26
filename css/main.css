@@ -253,6 +253,51 @@ p{
 			background-color: #fafafa;
 		}
 		
+			#home > section#about > #team-members{
+				overflow: auto;
+			}
+		
+			#home > section#about .hexagon{
+				-webkit-clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+				-moz-clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+				-ms-clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+				clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+				
+				width: 190px;
+				height: 140px;
+				padding-top: 80px;
+				
+				margin-right: 80px;
+				margin-left: 80px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				
+				background-size: cover;
+				
+				float: left;
+			}
+			
+				#home > section#about .hexagon p{
+					display: none;
+					color: white;
+					text-align: center;
+					font-size: 100%;
+					margin: 0;
+				}
+				
+					#home > section#about .hexagon p.name{
+						font-weight: bold;
+					}
+			
+			#home > section#about .hexagon:hover{
+				background-image: none !important;
+				background-color: #13bdef;
+			}
+				
+				#home > section#about .hexagon:hover p{
+					display: block;
+				}
+		
 		#home > section#blog{
 			background-color: #464646;
 		}
@@ -265,6 +310,48 @@ p{
 				border-top-color: #545454;
 				border-bottom-color: #888888;
 			}
+			
+			#home > section#blog > article{
+				background-color: white;
+				overflow: auto;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				border: 1px solid #bbbbbb;
+				outline: 1px solid #393939;
+				padding: 20px;
+			}
+			
+				#home > section#blog > article img.cover{
+					float: left;
+					width: 490px;
+					
+					margin-right: 20px;
+					margin-left: 0;
+				}
+				
+					#home > section#blog > article:nth-child(odd) img.cover{
+						float: right;
+						
+						margin-right: 0;
+						margin-left: 20px;
+					}
+				
+				#home > section#blog > article h2{
+					color: #838383;
+					font-size: 1.5em;
+					margin: 0;
+					padding: 0;
+				}
+				
+				#home > section#blog > article p{
+					color: #bababa;
+				}
+				
+				#home > section#blog > article p:first-of-type{
+					color: #a9a9a9;
+					font-weight: bold;
+				}
+				
 		
 		#home > section#contact{
 			background-color: white;
@@ -282,6 +369,28 @@ p{
 			}
 
 	#home > footer{
-		height: 100px;
+		overflow: auto;
 		background-color: #fafafa;
+		
+		padding-left: 20%;
+		padding-right: 20%;
 	}
+	
+		#home > footer > aside{
+			float: left;
+			width: 23%;
+			border-top: 1px solid #f0efef;
+			
+			margin-top: 15px;
+			
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+		
+			#home > footer > aside > h1{
+				font-size: 150%;
+			}
+			
+			#home > footer > aside > p{
+				font-size: 100%;
+			}
