@@ -1,22 +1,27 @@
 function setNavbarHeight(){
 	var nav_baseheight = 0.19 * $(window).height();
 	
-	var scrollTop = $(window).scrollTop();
-
 	//Navbar size
-	var navheight, padsize;
+	var navheight, padsize, actual_height;
 	
-	navheight = Math.max(nav_baseheight - scrollTop, 65);
+	navheight = Math.max(nav_baseheight - $(window).scrollTop(), 65);
 	padsize = navheight * 0.15;
+	actual_height = navheight - 2*padsize;
 
 	$("#home > nav").css({
-		height: navheight - 2*padsize,
+		height: actual_height,
 		paddingTop: padsize,
 		paddingBottom: padsize
+	});
+	
+	$("#home > nav > ul").css({
+		marginTop: (actual_height-$("#home > nav > ul").height())/2
 	});
 }
 
 function navbarSync(){
+	var scrollTop = $(window).scrollTop();
+
 	//Content activate
 	var services_top, cases_top, about_top, contact_top;
 	services_top = $("#services").offset().top - 1;
@@ -58,5 +63,22 @@ $(function(){
 	
 	$("#home > section#about .hexagon").each(function(){
 		$(this).css('background-image', 'url(/img/team/' + $(this).data('name') + '.jpg)');
+	});
+	
+	$.getJSON("/res/quotes.json", function(quotes){
+		var i = 0;
+		
+		function setQuote(){
+			var quote = quotes[i];
+			
+			$("#home > section#about #quote img").attr("src", "/img/team/" + quote.photo + ".jpg");
+			$("#home > section#about #quote blockquote").html("&ldquo;" + quote.text + "&rdquo;");
+			$("#home > section#about #quote figcaption").text(quote.name);
+			
+			i = (i+1)%quotes.length;
+			setTimeout(setQuote, 10000);
+		}
+		
+		setQuote();
 	});
 });
