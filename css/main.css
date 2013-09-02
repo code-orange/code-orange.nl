@@ -14,8 +14,8 @@
 }
 
 p{
-	font-size: 120%;
-	line-height: 130%;
+	font-size: 0.929em;
+	line-height: 1em;
 	
 	font-weight: 400;
 	font-style: normal;
@@ -69,6 +69,7 @@ p{
 			#home > nav li a{
 				font-weight: 700;
 				font-style: normal;
+				font-size: 0.927em;
 				color: inherit;
 			}
 			
@@ -91,14 +92,18 @@ p{
 	
 		#home > header > h1{
 			letter-spacing: 2px;
-			font-size: 4em;
+			font-size: 3.393em;
+			line-height: 3.393em;
 			
-			font-weight: 800;
+			font-weight: 700;
 		}
 		
 		#home > header > h2{
-			font-weight: 400;
 			width: 15em;
+			line-height: 3.393em;
+			font-size: 2.250em;
+			
+			font-weight: 400;
 		}
 
 	#home > section{
@@ -112,6 +117,11 @@ p{
 	
 		#home > section > header > h1{
 			color: #bababa;
+			margin: 0;
+			
+			font-weight: 700;
+			font-size: 1.357em;
+			line-height: 1.357em;
 		}
 		
 		#home > section > header > hr{
@@ -125,6 +135,12 @@ p{
 			background-color: #fafafa;
 			color: #a3a3a3;
 		}
+		
+			#home > section#services p{
+				font-weight: 500;
+				font-size: 1em;
+				line-height: 1.357em;
+			}
 		
 			#home > section#services #hexagons{
 				margin-top: 30px;
@@ -165,6 +181,10 @@ p{
 				#home > section#services .hexagon p{
 					color: white;
 					text-align: center;
+					
+					font-weight: 700;
+					font-size: 1.357em;
+					line-height: 1.357em;
 				}
 
 			#home > section#services .hexagon:after {
@@ -199,9 +219,11 @@ p{
 			
 				#home > section#cases #case-zoom #case-description header > h1{
 					color: #1cdfff;
-					font-size: 200%;
-					font-weight: 500;
 					margin-bottom: 0;
+					
+					font-weight: 500;
+					font-size: 1.357em;
+					line-height: 1em;
 				}
 				
 				#home > section#cases #case-zoom #case-description header > hr{
@@ -209,6 +231,12 @@ p{
 					width: 1.5em;
 					border-top-color: #c4f5ff;
 					border-bottom-color: #35e1ff;
+				}
+				
+				#home > section#cases #case-zoom #case-description p{
+					font-weight: 400;
+					font-size: 0.929em;
+					line-height: 1.250em;
 				}
 				
 		#home > section#cases #cases-thumbs{
@@ -237,6 +265,11 @@ p{
 		
 			#home > section#clients  header > h1{
 				color: #c3c3c3;
+				margin: 0;
+				
+				font-weight: 700;
+				font-size: 1.357em;
+				line-height: 1.357em;
 			}
 			
 			#home > section#clients  header > hr{
@@ -252,8 +285,7 @@ p{
 				width: 15%;
 				float: left;
 				
-				margin-right: 1%;
-				margin-left: 1%;
+				margin-right: 2%;
 				margin-top: 8px;
 				margin-bottom: 8px;
 			}
@@ -285,10 +317,10 @@ p{
 					border: none;
 					padding: 0;
 					color: #b8b8b8;
-					font-size: 2em;
-					line-height: 1.2em;
 					
-					font-weight: 800;
+					font-size: 1.357em;
+					line-height: 1.714em;
+					font-weight: 700;
 				}
 		
 				#home > section#about #quote figcaption{
@@ -385,18 +417,28 @@ p{
 				
 				#home > section#blog > article h2{
 					color: #838383;
-					font-size: 1.5em;
 					margin: 0;
 					padding: 0;
+					
+					font-weight: 700;
+					font-size: 1.036em;
+					line-height: 1.214em;
 				}
 				
 				#home > section#blog > article p{
 					color: #bababa;
+					
+					font-weight: 400;
+					font-size: 0.929em;
+					line-height: 1.25em;
 				}
 				
 				#home > section#blog > article p:first-of-type{
 					color: #a9a9a9;
-					font-weight: bold;
+					
+					font-weight: 500;
+					font-size: 0.929em;
+					line-height: 1.714em;
 				}
 				
 		
@@ -413,6 +455,21 @@ p{
 				height: 100%;
 				
 				border: 0;
+			}
+			
+			#home > section#contact > #contactform{
+				-webkit-clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+				-moz-clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+				-ms-clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+				clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+				
+				background-color: #13bdef;
+				margin-top: 130px;
+				position: absolute;
+				left: 36%;
+				width: 20%;
+				height: 20%;
+				margin-left: 20%;
 			}
 
 	#home > footer{
@@ -435,9 +492,13 @@ p{
 		}
 		
 			#home > footer > aside > h1{
-				font-size: 150%;
+				font-weight: 700;
+				font-size: 0.929em;
+				line-height: 1.25em;
 			}
 			
 			#home > footer > aside > p{
-				font-size: 100%;
+				font-weight: 400;
+				font-size: 0.929em;
+				line-height: 1.143em;
 			}

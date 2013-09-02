@@ -1,10 +1,12 @@
 function setNavbarHeight(){
+	var scrollTop = $(window).scrollTop();
+
 	var nav_baseheight = 0.19 * $(window).height();
 	
 	//Navbar size
 	var navheight, padsize, actual_height;
 	
-	navheight = Math.max(nav_baseheight - $(window).scrollTop(), 65);
+	navheight = Math.max(nav_baseheight - scrollTop, 65);
 	padsize = navheight * 0.15;
 	actual_height = navheight - 2*padsize;
 
@@ -17,6 +19,10 @@ function setNavbarHeight(){
 	$("#home > nav > ul").css({
 		marginTop: (actual_height-$("#home > nav > ul").height())/2
 	});
+	
+	$("#home").css({
+		backgroundPosition: "0 " + -scrollTop/2 + "px"
+	});
 }
 
 function navbarSync(){
@@ -27,6 +33,7 @@ function navbarSync(){
 	services_top = $("#services").offset().top - 1;
 	cases_top = $("#cases").offset().top - 1;
 	about_top = $("#about").offset().top - 1;
+	blog_top = $("#blog").offset().top - 1;
 	contact_top = $("#contact").offset().top - 1;
 	
 	$("#home > nav li").removeClass("active");
@@ -35,8 +42,10 @@ function navbarSync(){
 		$("#home > nav li#nav_services").addClass("active");
 	}else if(scrollTop >= cases_top && scrollTop < about_top){
 		$("#home > nav li#nav_cases").addClass("active");
-	}else if(scrollTop >= about_top && scrollTop < contact_top){
+	}else if(scrollTop >= about_top && scrollTop < blog_top){
 		$("#home > nav li#nav_about").addClass("active");
+	}else if(scrollTop >= blog_top && scrollTop < contact_top){
+		$("#home > nav li#nav_blog").addClass("active");
 	}else if(scrollTop >= contact_top){
 		$("#home > nav li#nav_contact").addClass("active");
 	}
@@ -44,6 +53,8 @@ function navbarSync(){
 
 $(function(){
 	$("#home > header").height($(window).height());
+	
+	$("#home > section#contact > #contactform").height($("#home > section#contact > #contactform").width());
 	
 	setNavbarHeight();
 	
