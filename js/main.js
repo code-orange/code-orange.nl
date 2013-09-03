@@ -51,12 +51,23 @@ function navbarSync(){
 	}
 }
 
-$(function(){
+function setupSizes(){
+	$("#home > nav > ul > li").css("margin-left", ($("#home > nav").width() - $("#home > nav > img").width() - $("#home > nav > ul").width())/$("#home > nav > ul > li").size());
+	$("#home > nav > ul > li:first-child").css("margin-left", 0);
+
 	$("#home > header").height($(window).height());
 	
 	$("#home > section#contact > #contactform").height($("#home > section#contact > #contactform").width());
 	
 	setNavbarHeight();
+}
+
+$(function(){
+	setupSizes();
+	
+	$(window).resize(function(){
+		setupSizes();
+	});
 	
 	$(window).scroll(function(){
 		setNavbarHeight();

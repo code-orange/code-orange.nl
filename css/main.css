@@ -57,8 +57,7 @@ p{
 		#home > nav li{
 			float: left;
 			color: #c2c2c2;
-			margin-right: 5em;
-			margin-left: 5em;
+			
 			list-style: none;
 		}
 		
@@ -93,14 +92,12 @@ p{
 		#home > header > h1{
 			letter-spacing: 2px;
 			font-size: 3.393em;
-			line-height: 3.393em;
 			
 			font-weight: 700;
 		}
 		
 		#home > header > h2{
 			width: 15em;
-			line-height: 3.393em;
 			font-size: 2.250em;
 			
 			font-weight: 400;
