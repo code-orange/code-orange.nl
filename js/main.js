@@ -62,6 +62,68 @@ function setupSizes(){
 	setNavbarHeight();
 }
 
+//expands hexagon and content
+function hexagonExpand(hexagon) {
+	var hexagon_mid = hexagon.find(".hexagon-mid");
+	var hexagon_upper = hexagon.find(".hexagon-upper");
+	var hexagon_lower = hexagon.find(".hexagon-lower");
+	
+	var services_pos = $("#services").offset();
+	var current_pos = hexagon.parent().offset();
+	
+	console.log(services_pos);
+	console.log(current_pos);
+	
+	var height = $("#services > #hexagons").height()
+	var width = $("#services > #hexagons").width()
+	
+	hexagon.css("z-index", 20);
+	
+	hexagon.animate({
+		marginTop: services_pos.top - current_pos.top - 5/6*height + "px",
+		marginLeft: "0px"
+	},{ duration: 200, queue: false });
+	
+	hexagon_mid.animate({
+		height:"500px",
+		width:width
+	},{ duration: 200, queue: false });
+	
+	hexagon_upper.animate({
+		borderBottomWidth: 5/6 * height,
+		borderLeftWidth: 1/2 * width,
+		borderRightWidth: 1/2 * width
+	},{ duration: 200, queue: false });
+	
+	hexagon_lower.animate({
+		borderTopWidth: 5/6 * height,
+		borderLeftWidth: 1/2 * width,
+		borderRightWidth: 1/2 * width
+	},{ duration: 200, queue: true });
+	
+	var overlay = $("<div class='services-overlay'></div>");
+	overlay.css({
+		position: "absolute",
+		background: "#ffffff",
+		zIndex: 21,
+		height: "0px",
+		width: "200%",
+		marginTop: $("#services").height()*1.5,
+		marginLeft: "-250px",
+		width: Math.sqrt(height*height+width*width) + 500 + "px"
+	});
+	overlay.prependTo($("#services"));
+	$("#overlay-content").html(hexagon.find(".hexagon-content").text());
+	
+	overlay.animate({
+		marginTop: $("#services").height()*0.3*-1 + "px",
+		height: "150%"
+	}, 500, function() {
+			$("#overlay-content").fadeIn({ duration: 200, queue: true });
+		}
+	);
+}
+
 $(function(){
 	setupSizes();
 	
@@ -85,6 +147,11 @@ $(function(){
 	
 	$("#home > section#about .hexagon").each(function(){
 		$(this).css('background-image', 'url(/img/team/' + $(this).data('name') + '.jpg)');
+	});
+	
+	//services hexagon expand on click
+	$("#hex-social").click(function(){
+		hexagonExpand($(this));
 	});
 	
 	$.getJSON("/res/quotes.json", function(quotes){

@@ -115,6 +115,7 @@ p{
 		#home > section > header > h1{
 			color: #bababa;
 			margin: 0;
+			padding-top:115px;
 			
 			font-weight: 700;
 			font-size: 1.357em;
@@ -129,8 +130,12 @@ p{
 		}
 	
 		#home > section#services{
+			position:relative;
+			padding-top:0px;
+			margin-top:3%;
 			background-color: #fafafa;
 			color: #a3a3a3;
+			overflow:hidden;
 		}
 		
 			#home > section#services p{
@@ -138,11 +143,79 @@ p{
 				font-size: 1em;
 				line-height: 1.357em;
 			}
+			
+			#home > section#services .services-overlay {
+				-moz-transform: rotate(-33deg); /* FF3.5+ */
+				-o-transform: rotate(-33deg); /* Opera 10.5 */
+				-webkit-transform: rotate(-33deg); /* Saf3.1+, Chrome */
+				-ms-transform: rotate(-33deg); /* IE9 */
+				transform: rotate(-33deg);
+				filter: progid : DXImageTransform.Microsoft.Matrix ( sizingMethod ='auto expand', /* IE6-IE9 */ 
+						 M11 = 0.838670567945424, M12 = 0.5446390350150271, M21 =-0.5446390350150271, M22 = 0.838670567945424 );
+				zoom: 1;
+			}
 		
 			#home > section#services #hexagons{
 				margin-top: 30px;
 				margin-bottom: 30px;
 			}
+			
+			#home > section#services .hexagon-holder {
+				position:relative;
+			}
+			
+			#home > section#services #hex-social {
+				position:absolute;
+				margin-left:0px;
+				margin-top:0px;
+			}
+			
+			#home > section#services > #overlay-content {
+				position:absolute;
+				display:none;
+				margin-left:280px;
+				margin-top:100px;
+				z-index:30;
+			}
+			
+			#home > section#services #hexagons .hexagon-content {
+				display:none;
+			}
+			
+			#home > section#services #hexagons .hexagon-upper{
+				width: 0;
+				border-bottom: 50px solid #9de2f6;
+				border-left: 85px solid transparent;
+				border-right: 85px solid transparent;
+				position: relative;
+			}
+			
+			#home > section#services #hexagons .hexagon-mid{
+				position:relative;
+				width: 170px;
+				height: 60px;
+				background-color: #9de2f6;
+				cursor: pointer;
+				padding-top: 35px;
+			}
+			
+			#home > section#services #hexagons .hexagon-mid > p {
+				color: white;
+				text-align: center;
+				font-weight: 700;
+				font-size: 1.357em;
+				line-height: 1.357em;
+			}
+			
+			#home > section#services #hexagons .hexagon-lower{
+				position:relative;
+				width: 0;
+				border-top: 50px solid #9de2f6;
+				border-left: 85px solid transparent;
+				border-right: 85px solid transparent;
+			}
+			
+			
 		
 			#home > section#services .hexagon:before {
 				content: " ";
