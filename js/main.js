@@ -1,6 +1,6 @@
 function setNavbarHeight(){
 	var scrollTop = $(window).scrollTop();
-
+	
 	var nav_baseheight = 0.19 * $(window).height();
 	
 	//Navbar size
@@ -58,6 +58,16 @@ function setupSizes(){
 	$("#home > nav > ul > li:first-child").css("margin-left", 0);
 
 	$("#home > header").height($(window).height());
+	
+	/* Hexagons: 
+	 * Ratio height/width: 1.158
+	 * 0.6 of height is height, 0.4 is padding-top
+	 */
+	var hex_height = $("#home > section#about .hexagon").width() * 1.158;
+	$("#home > section#about .hexagon").css({
+		height: hex_height * 0.6,
+		paddingTop: hex_height * 0.4
+	})
 	
 	$("#home > section#contact > #contactform").height($("#home > section#contact > #contactform").width());
 	
@@ -148,11 +158,13 @@ $(function(){
 	});
 	
 	$("#home > section#about .hexagon").each(function(){
+		
 		if($(this).data('photo')){
 			$(this).css('background-image', 'url(/img/team/' + $(this).data('name') + '.jpg)');
 		}else{
 			$(this).addClass('nophoto');
 		}
+		
 	});
 	
 	//services hexagon expand on click
