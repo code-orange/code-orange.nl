@@ -63,19 +63,26 @@ function setupSizes(){
 
 	$("#home > header").height($(window).height());
 	
-	/* Hexagons: 
-	 * Ratio height/width: 1.158
-	 * 0.6 of height is height, 0.4 is padding-top
-	 */
-	var hex_height = $("#home > section#about .hexagon").width() * 1.158;
-	$("#home > section#about .hexagon").css({
-		height: hex_height * 0.6,
-		paddingTop: hex_height * 0.4
-	})
+	setupTeamHexagons();
 	
 	$("#home > section#contact > #contactform").height($("#home > section#contact > #contactform").width());
 	
 	setNavbarHeight();
+}
+
+function setupTeamHexagons(){
+	/* Hexagons: 
+	 * Ratio height/width: 1.158
+	 * 0.6 of height is height, 0.4 is padding-top
+	 */
+	$("#home > section#about .hexagon").each(function(){
+		var hex_height = $(this).width() * 1.158;
+		console.log(hex_height);
+		$(this).css({
+			height: hex_height * 0.6,
+			paddingTop: hex_height * 0.4
+		});
+	});
 }
 
 //expands hexagon and content
@@ -162,14 +169,13 @@ $(function(){
 	});
 	
 	$("#home > section#about .hexagon").each(function(){
-		
 		if($(this).data('photo')){
 			$(this).css('background-image', 'url(/img/team/' + $(this).data('name') + '.jpg)');
 		}else{
 			$(this).addClass('nophoto');
 		}
-		
 	});
+	setupTeamHexagons();
 	
 	//services hexagon expand on click
 	$("#hex-social").click(function(){

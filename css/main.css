@@ -453,6 +453,13 @@ a{
 				
 			#home > section#about .hexagon.nophoto{
 				background-color: #13bdef;
+				
+				width: 10%;
+				height: 130px;
+				padding-top: 90px;
+				
+				margin-right: 5%;
+				margin-left: 5%;
 			}
 			
 				#home > section#about .hexagon.nophoto p{
