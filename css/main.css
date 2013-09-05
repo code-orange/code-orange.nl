@@ -20,6 +20,10 @@ p{
 	font-weight: 400;
 	font-style: normal;
 }
+
+a{
+	color: #00dcff;
+}
    
 #home{
 	background-image: url(/img/cover.jpg);
@@ -100,7 +104,7 @@ p{
 			width: 15em;
 			font-size: 2.250em;
 			
-			font-weight: 400;
+			font-weight: 300;
 		}
 
 	#home > section{
@@ -115,7 +119,6 @@ p{
 		#home > section > header > h1{
 			color: #bababa;
 			margin: 0;
-			padding-top:115px;
 			
 			font-weight: 700;
 			font-size: 1.357em;
@@ -123,7 +126,7 @@ p{
 		}
 		
 		#home > section > header > hr{
-			margin-top: 0;
+			margin-top: 0.5em;
 			width: 1.5em;
 			border-top-color: #eaeaea;
 			border-bottom-color: #dedede;
@@ -131,7 +134,6 @@ p{
 	
 		#home > section#services{
 			position:relative;
-			padding-top:0px;
 			margin-top:3%;
 			background-color: #fafafa;
 			color: #a3a3a3;
@@ -139,7 +141,7 @@ p{
 		}
 		
 			#home > section#services p{
-				font-weight: 500;
+				font-weight: 400;
 				font-size: 1em;
 				line-height: 1.357em;
 			}
@@ -380,27 +382,28 @@ p{
 					clip-path: polygon(56.55172413793104% 1.7241379310344827%, 94.13793103448276% 23.448275862068964%, 94.13793103448276% 37.58620689655172%, 81.72413793103448% 45.17241379310345%, 81.72413793103448% 74.13793103448276%, 56.55172413793104% 88.62068965517241%, 31.379310344827587% 74.13793103448276%, 31.379310344827587% 45.17241379310345%, 44.13793103448276% 37.93103448275862%, 31.379310344827587% 30.344827586206897%, 31.379310344827587% 16.206896551724135%, 14.827586206896552% 36.206896551724135%, 27.241379310344826% 43.44827586206896%, 27.241379310344826% 57.58620689655173%, 14.827586206896552% 64.82758620689654%, 2.0689655172413794% 57.58620689655173%, 2.0689655172413794% 43.44827586206896%, 14.827586206896552% 36.206896551724135%, 31.379310344827587% 16.206896551724135%);
 				}
 				
-				#home > section#about #quote blockquote{
-					float: left;
+				#home > section#about #quote #quote-text{
+					overflow: auto;
 					width: 50%;
-					margin-left: 10%;
-					border: none;
-					padding: 0;
-					color: #b8b8b8;
-					
-					font-size: 1.357em;
-					line-height: 1.714em;
+					padding-left: 10%;
 					font-weight: 700;
 				}
-		
-				#home > section#about #quote figcaption{
-					float: left;
-					width: 50%;
-					margin-left: 10%;
-					color: #7b7b7b;
-					
-					font-weight: 700;
-				}
+				
+					#home > section#about #quote blockquote{
+						float: left;
+						border: none;
+						padding: 0;
+						color: #b8b8b8;
+						
+						font-size: 1.357em;
+						line-height: 1.357em;
+						line-height: 1.357em;
+					}
+			
+					#home > section#about #quote figcaption{
+						float: left;
+						color: #7b7b7b;
+					}
 		
 			#home > section#about > #team-members{
 				overflow: auto;
@@ -413,8 +416,8 @@ p{
 				clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
 				
 				width: 190px;
-				height: 140px;
-				padding-top: 80px;
+				height: 130px;
+				padding-top: 90px;
 				
 				margin-right: 80px;
 				margin-left: 80px;
@@ -488,6 +491,7 @@ p{
 				#home > section#blog > article h2{
 					color: #838383;
 					margin: 0;
+					margin-bottom: 5px;
 					padding: 0;
 					
 					font-weight: 700;
@@ -500,7 +504,7 @@ p{
 					
 					font-weight: 400;
 					font-size: 0.929em;
-					line-height: 1.25em;
+					line-height: 1.357em;
 				}
 				
 				#home > section#blog > article p:first-of-type{
@@ -508,7 +512,7 @@ p{
 					
 					font-weight: 500;
 					font-size: 0.929em;
-					line-height: 1.714em;
+					line-height: 1.357em;
 				}
 				
 		
@@ -564,11 +568,11 @@ p{
 			#home > footer > aside > h1{
 				font-weight: 700;
 				font-size: 0.929em;
-				line-height: 1.25em;
+				line-height: 1.4em;
 			}
 			
 			#home > footer > aside p{
 				font-weight: 400;
 				font-size: 0.929em;
-				line-height: 1.143em;
+				border-bottom: 0.3em;
 			}
