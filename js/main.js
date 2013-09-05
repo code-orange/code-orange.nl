@@ -4,17 +4,21 @@ function setNavbarHeight(){
 	var nav_baseheight = 0.19 * $(window).height();
 	
 	//Navbar size
-	var navheight, padsize, actual_height;
+	var navheight, padsize, actual_height, image_height;
 	
 	navheight = Math.max(nav_baseheight - scrollTop, 65);
 	padsize = navheight * 0.15;
 	actual_height = navheight - 2*padsize;
+	//2.3 for only logo, 1.36 for logo + NUBIS
+	image_height = Math.min(actual_height + scrollTop, actual_height * 2.3);
 
 	$("#home > nav").css({
 		height: actual_height,
 		paddingTop: padsize,
 		paddingBottom: padsize
 	});
+	
+	$("#home > nav > img").css("height", image_height);
 	
 	$("#home > nav > ul").css({
 		marginTop: (actual_height-$("#home > nav > ul").height())/2
