@@ -148,7 +148,11 @@ $(function(){
 	});
 	
 	$("#home > section#about .hexagon").each(function(){
-		$(this).css('background-image', 'url(/img/team/' + $(this).data('name') + '.jpg)');
+		if($(this).data('photo')){
+			$(this).css('background-image', 'url(/img/team/' + $(this).data('name') + '.jpg)');
+		}else{
+			$(this).addClass('nophoto');
+		}
 	});
 	
 	//services hexagon expand on click

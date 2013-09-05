@@ -449,6 +449,14 @@ a{
 				#home > section#about .hexagon:hover p{
 					display: block;
 				}
+				
+			#home > section#about .hexagon.nophoto{
+				background-color: #13bdef;
+			}
+			
+				#home > section#about .hexagon.nophoto p{
+					display: block;
+				}
 		
 		#home > section#blog{
 			background-color: #464646;
