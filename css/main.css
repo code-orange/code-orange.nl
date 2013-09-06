@@ -607,9 +607,13 @@ a{
 				height: 130px;
 				padding-top: 90px;
 				
-				margin-right: 5%;
-				margin-left: 5%;
+				margin-right: 4.05%;
+				margin-left: 4.05%;
 			}
+			
+				#home > section#about .hexagon.nophoto:nth-child(5n+2){
+					margin-left: 8.3%;
+				}
 			
 				#home > section#about .hexagon.nophoto p{
 					display: block;

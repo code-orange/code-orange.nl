@@ -82,6 +82,11 @@ function setupTeamHexagons(){
 			height: hex_height * 0.6,
 			paddingTop: hex_height * 0.4
 		});
+		
+		var desired_space = (hex_height - ($(this).find(".name").height() + $(this).find(".title").height()))/2;
+		var correction = desired_space - (hex_height * 0.4);
+		
+		$(this).find(".name").css("margin-top", correction);
 	});
 }
 
