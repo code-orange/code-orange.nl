@@ -1,3 +1,5 @@
+var map;
+
 function setNavbarHeight(){
 	var scrollTop = $(window).scrollTop();
 	
@@ -64,6 +66,7 @@ function setupSizes(){
 	setupTeamHexagons();
 	
 	$("#home > section#contact > #contactform").height($("#home > section#contact > #contactform").width());
+	$("#home > section#contact > #contactform").css("margin-top", ($("#home > section#contact > #map").height() - $("#home > section#contact > #contactform").height())/2);
 	
 	setNavbarHeight();
 }
@@ -158,6 +161,32 @@ function slideBackground(){
 	setTimeout(slideBackground, 10000);
 }
 
+function initMap(){
+	google.maps.visualRefresh = true;
+
+	var center = new google.maps.LatLng(52.372246, 4.933977);
+	
+	var styles = [
+		{
+			"stylers": [
+				{ "saturation": -100 }
+			]
+		}
+	]
+
+	var mapOptions = {
+		zoom: 13,
+		center: center,
+		styles: styles,
+		scrollwheel: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	
+	map = new google.maps.Map($("#home > section#contact #map")[0], mapOptions);
+	var georssLayer = new google.maps.KmlLayer('http://nibusonline.com/res/map.kml?v6', { preserveViewport: true });
+	georssLayer.setMap(map);
+}
+
 $(function(){
 	setupSizes();
 	
@@ -246,6 +275,8 @@ $(function(){
 			i++;
 		});
 	});
+	
+	initMap();
 	
 	setTimeout(slideBackground, 10000);
 });

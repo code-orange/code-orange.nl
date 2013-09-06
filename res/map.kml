@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Document>
+		<Style id="highlightPlacemark">
+			<IconStyle>
+				<Icon>
+					<href>http://nibusonline.com/img/pointer.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id="normalPlacemark">
+			<IconStyle>
+				<Icon>
+					<href>http://nibusonline.com/img/pointer.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<StyleMap id="exampleStyleMap">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#normalPlacemark</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#highlightPlacemark</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Placemark>
+			<name>Nubis</name>
+			<description>Hoofdkantoor aan de gracht</description>
+			<styleUrl>#exampleStyleMap</styleUrl>
+			<Point>
+				<coordinates>4.888933,52.376283,0</coordinates>
+			</Point>
+		</Placemark>
+	</Document>
+</kml>
