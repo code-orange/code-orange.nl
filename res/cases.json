@@ -2,35 +2,35 @@
     {
         "name": "grensverleggers",
         "type": "facebook applicatie",
-        "cover": "grensverleggers/GV-2.png",
+        "cover": "grensverleggers/GV_cover.png",
         "description": "<strong>De opdracht</strong>: Ontwikkel een Facebookapplicatie voor het televisieprogramma Grensverleggers, gemaakt door Endemol en MVO Nederland. De applicatie moet een blijvend platform zijn voor grensverleggende ondernemers.<br><strong>De oplossing</strong>: Nubis ontwierp een applicatie voor Facebook die ook op websites kan draaien. Op de applicatie kunnen ondernemers zich als Grensverlegger op de wereldkaart zetten, andere Grensverleggers beoordelen en ervaringen uitwisselen.<br><strong>Het resultaat</strong>: 50 Ondernemers hebben zich al aangemeld en we blijven verder bouwen aan deze duurzaam ondernemende community.<br>Link: <a href='https://www.facebook.com/grensverleggers'>fb.com/grensverleggers</a>",
         "images": [
-            "grensverleggers/GV-1.png",
-            "grensverleggers/GV-2.png",
-            "grensverleggers/GV-3.png",
-            "grensverleggers/GV-4.png",
-            "grensverleggers/GV-5.png"
+            "grensverleggers/GV1.png",
+            "grensverleggers/GV2.png",
+            "grensverleggers/GV3.png",
+            "grensverleggers/GV4.png",
+            "grensverleggers/GV5.png"
         ]
     },
 	{
         "name": "wijzer in geldzaken",
         "type": "facebook applicatie",
-        "cover": "wijzer/mifi-3.png",
+        "cover": "wijzer/Mifi_cover.png",
         "description": "<strong>De opdracht</strong>: Wijzer in Geldzaken, een initiatief van het ministerie van Financiën om mensen bewuster te laten omgaan met geld, wil een Facebookapplicatie waarin zakgeld centraal staat, met als doelgroep de ouders en onderwijzers in het basisonderwijs.<br><strong>De oplossing</strong>: Nubis ontwikkelde in samenwerking met partner Limelights de applicatie Zakgeldheld. Na het beantwoorden van enkele quizvragen kunnen gebruikers hun eigen foto op de voorpagina van een fictieve krant zetten. De applicatie deelt die afbeelding met alle Facebookvrienden, begeleid door de tekst 'Eindelijk op de voorpagina!'<br><strong>Het resultaat</strong>: Meer dan 2.000 gebruikers van de applicatie. Door het op Facebook delen van de fictieve krantenpagina zorgde elk van hen voor gemiddeld drie nieuwe gebruikers. Zo ontstond veel interactie rondom het bewuster omgaan met geld. Een geslaagde virale campagne.<br>Link: <a href='https://www.facebook.com/Wijzeringeld'>fb.com/wijzeringeld</a>",
         "images": [
-            "wijzer/mifi-1.png",
-            "wijzer/mifi-2.png",
-            "wijzer/mifi-3.png"
+            "wijzer/Mifi1.png",
+            "wijzer/Mifi2.png",
+            "wijzer/Mifi3.png"
         ]
     },
 	{
         "name": "houthoff buruma",
         "type": "content",
-        "cover": "houthoff/HB-2.png",
+        "cover": "houthoff/HB_cover.png",
         "description": "<strong>De opdracht</strong>: Zet Facebook in als medium zodat advocatenkantoor Houthoff Buruma talentvolle studenten – potentiële toekomstige werknemers – beter bereikt. Zorg ervoor dat de komst van ten minste één nieuwe werknemer is toe te wijzen aan de Facebookactiviteiten.<br><strong>De oplossing</strong>: Nubis heeft onder meer advertentiecampagnes opgezet, diverse wervingsapplicaties gerealiseerd en de historische 'timeline' van Houthoff Buruma ingevuld. Dat gebeurde in nauwe samenwerking met de recruiters van het kantoor. Zo raakten zij ook steeds meer bedreven in het beheer van de Facebookpagina en tilden we de Houthoff Buruma-fanpage gezamenlijk naar een hoger niveau.<br><strong>Het resultaat</strong>: Het aantal Facebookfans van Houthoff Buruma is in acht maanden gegroeid van 140 naar meer dan 800. De interactie naar aanleiding van posts is vervijfvoudigd. En Houthoff Buruma heeft ten minste één advocaat-stagair aangenomen die door de Facebookactiviteiten met het kantoor in contact kwam.<br>Link: <a href='https://www.facebook.com/houthoff'>fb.com/houthoff</a>",
         "images": [
-            "houthoff/HB-1.png",
-            "houthoff/HB-2.png"
+            "houthoff/HB1.png",
+            "houthoff/HB2.png"
         ]
     }
 ]
