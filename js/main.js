@@ -174,7 +174,7 @@ $(function(){
 	setupTeamHexagons();
 	
 	//services hexagon expand on click
-	$("#hex-social").click(function(){
+	$(".service-hex").click(function(){
 		hexagonExpand($(this));
 	});
 	
@@ -195,5 +195,40 @@ $(function(){
 		}
 		
 		setQuote();
+	});
+	
+	$.getJSON("/res/cases.json", function(cases){
+		var i = 0;
+		
+		$("#home > section#cases #cases-thumbs .cases-thumb").each(function(){
+			var _case = cases[i];
+			
+			$(this).css("background-image", "url(/img/cases/" + _case.cover + ")");
+			$(this).find(".description h2").text(_case.name);
+			$(this).find(".description p").text(_case.type);
+			$(this).click(function(){
+				$("#home > section#cases #case-zoom #case-media").empty();
+				$("#home > section#cases #case-zoom #case-media").append(jQuery("<ul>"));
+				
+				for(var j = 0; j < _case.images.length; j++){
+					$("#home > section#cases #case-zoom #case-media ul").append(jQuery("<li>").css("background-image", "url(/img/cases/" + _case.images[j] + ")"));
+				}
+				
+				$("#home > section#cases #case-zoom #case-media").unslider({
+					fluid: false,
+					dots: true,
+					speed: 500
+				});
+			
+				$("#home > section#cases #case-zoom #case-description h1").text(_case.name);
+				$("#home > section#cases #case-zoom #case-description p").html(_case.description);
+			});
+			
+			for(var j = 0; j < _case.images.length; j++){
+				$("#preload").append(jQuery("<img>").attr("src", "/img/cases/" + _case.images[j]));
+			}
+			
+			i++;
+		});
 	});
 });

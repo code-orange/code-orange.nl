@@ -277,17 +277,64 @@ a{
 		}
 		
 		#home > section#cases #case-zoom{
-			height: 350px;
+			height: 450px;
 		}
 		
 			#home > section#cases #case-zoom #case-media{
-				height: 100%;
+				height: 100% !important;
+				background-color: black;
+				position: relative;
 			}
+				
+				#home > section#cases #case-zoom #case-media ul{
+					margin: 0;
+				}
+				
+				#home > section#cases #case-zoom #case-media ul li{
+					list-style: none;
+					float: left;
+					display: block;
+					min-height: 450px;
+					background-size: 100%;
+					background-repeat: no-repeat;
+				}
+				
+				#home > section#cases #case-zoom #case-media .dots{
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: 20px;
+				}
+				
+					#home > section#cases #case-zoom #case-media .dots li{
+						display: inline-block;
+						width: 10px;
+						height: 10px;
+						margin: 0 4px;
+
+						text-indent: -999em;
+
+						border: 2px solid #000;
+						border-radius: 6px;
+
+						cursor: pointer;
+						opacity: .4;
+
+						-webkit-transition: background .5s, opacity .5s;
+						-moz-transition: background .5s, opacity .5s;
+						transition: background .5s, opacity .5s;
+					}
+					
+					#home > section#cases #case-zoom #case-media .dots li.active{
+						background: #000;
+						opacity: 1;
+					}
 		
 			#home > section#cases #case-zoom #case-description{
 				background-color: white;
 				height: 100%;
 				padding: 1em;
+				overflow: hidden;
 			}
 			
 				#home > section#cases #case-zoom #case-description header > h1{
@@ -296,11 +343,14 @@ a{
 					
 					font-weight: 500;
 					font-size: 1.357em;
-					line-height: 1em;
+					line-height: 1.357em;
+					
+					text-transform: capitalize;
 				}
 				
 				#home > section#cases #case-zoom #case-description header > hr{
 					margin-top: 0;
+					margin-bottom: 0.5em;
 					width: 1.5em;
 					border-top-color: #c4f5ff;
 					border-bottom-color: #35e1ff;
@@ -321,7 +371,43 @@ a{
 				height: 100%;
 				background-color: #00dcff;
 				cursor: pointer;
+				background-size: 100%;
 			}
+			
+				#home > section#cases #cases-thumbs .cases-thumb .description{
+					display: none;
+					color: white;
+					text-align: center;
+					margin-top: 15%;
+				}
+				
+					#home > section#cases #cases-thumbs .cases-thumb:hover{
+						background-image: none !important;
+					}
+				
+					#home > section#cases #cases-thumbs .cases-thumb:hover .description{
+						display: block;
+					}
+						
+					#home > section#cases #cases-thumbs .cases-thumb .description h2{
+						font-size: 1.3em;
+						margin: 0;
+						line-height: 1.3em;
+						margin-bottom: 0.5em;
+					}
+					
+					#home > section#cases #cases-thumbs .cases-thumb .description p{
+						margin: 0;
+					}
+						
+					#home > section#cases #cases-thumbs .cases-thumb .description hr{
+						width: 1.5em;
+						border-top-color: white;
+						border-bottom-color: white;
+						margin-left: auto;
+						margin-right: auto;
+						margin-top: 1em;
+					}
 
 		#home > section#clients{
 			background-color: #464646;
@@ -591,3 +677,7 @@ a{
 				font-size: 0.929em;
 				border-bottom: 0.3em;
 			}
+			
+#preload{
+	display: none;
+}
