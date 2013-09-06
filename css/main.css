@@ -357,7 +357,7 @@ a{
 				width: 15%;
 				float: left;
 				
-				margin-right: 2%;
+				margin-right: 1.6%;
 				margin-top: 8px;
 				margin-bottom: 8px;
 			}
@@ -415,7 +415,7 @@ a{
 				-ms-clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
 				clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
 				
-				width: 16.6%;
+				width: 16.5%;
 				height: 130px;
 				padding-top: 90px;
 				
