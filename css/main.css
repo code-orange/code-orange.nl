@@ -451,6 +451,70 @@ a{
 		#home > section#about{
 			background-color: #fafafa;
 		}
+			#home > section#about #about-text{
+				overflow: auto;
+			}
+		
+				#home > section#about #about-text > header{
+					width: 92%;
+					background-image: url(/img/about-nubis.png);
+					background-size: 100%;
+					background-repeat: no-repeat;
+					padding: 4%;
+				}
+			
+					#home > section#about #about-text > header > h2{
+						font-weight: 800;
+						color: #bebebe;
+						text-transform: uppercase;
+						font-size: 6em;
+						line-height: 1em;
+					}
+					
+					#home > section#about #about-text > header > hr{
+						margin-top: 0;
+						width: 1.5em;
+						border-top-color: #5de5fd;
+						border-bottom-color: #91ebfc;
+					}
+					
+					#home > section#about #about-text > header > p{
+						color: #00dcff;
+						text-transform: uppercase;
+						font-size: 1.357em;
+						font-weight: 500;
+					}
+			
+				#home > section#about #about-text h3{
+					color: #909090;
+					font-weight: 500;
+					font-size: 1.357em;
+					line-height: 1.714em;
+				}
+			
+				#home > section#about #about-text #intro-text{
+					color: #c0c0c0;
+					column-count:3;
+					-moz-column-count:3; /* Firefox */
+					-webkit-column-count:3; /* Safari and Chrome */
+				}
+				
+					#home > section#about #about-text #intro-text p{
+						font-weight: 400;
+						font-size: 0.929em;
+						line-height: 1.25em
+					}
+					
+				#home > section#about #about-text > hr{
+					width: 30.3%;
+					margin: 10px 1.5%;
+					
+					border-top-color: #f4f4f4;
+					border-bottom-color: #f1f1f1;
+					
+					float: left;
+				}
+				
 		
 			#home > section#about #quote{
 				overflow: auto;
