@@ -20,8 +20,10 @@ function setNavbarHeight(){
 		marginTop: (actual_height-$("#home > nav > ul").height())/2
 	});
 	
+	$("#home").data('posy', -scrollTop/2);
+	
 	$("#home").css({
-		backgroundPosition: "0 " + -scrollTop/2 + "px"
+		backgroundPosition: $("#home").data('posx') + " " + $("#home").data('posy') + "px"
 	});
 }
 
@@ -73,7 +75,6 @@ function setupTeamHexagons(){
 	 */
 	$("#home > section#about .hexagon").each(function(){
 		var hex_height = $(this).width() * 1.158;
-		console.log(hex_height);
 		$(this).css({
 			height: hex_height * 0.6,
 			paddingTop: hex_height * 0.4
@@ -141,6 +142,20 @@ function hexagonExpand(hexagon) {
 			$("#overlay-content").fadeIn({ duration: 200, queue: true });
 		}
 	);
+}
+
+function slideBackground(){
+	if($("#home").data('posx') == "100%"){
+		$("#home").data('posx', "0%");
+	}else{
+		$("#home").data('posx', "100%");
+	}
+	
+	$("#home").animate({
+		'background-position-x': $("#home").data('posx')
+	}, 'slow');
+	
+	setTimeout(slideBackground, 10000);
 }
 
 $(function(){
@@ -231,4 +246,6 @@ $(function(){
 			i++;
 		});
 	});
+	
+	setTimeout(slideBackground, 10000);
 });
