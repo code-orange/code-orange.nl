@@ -165,6 +165,7 @@ a{
 			
 			#home > section#services .hexagon-holder {
 				position:relative;
+				height: 195px;
 			}
 			
 			#home > section#services #hex-social {
