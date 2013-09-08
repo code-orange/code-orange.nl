@@ -334,7 +334,7 @@ a{
 				background-color: white;
 				height: 100%;
 				padding: 1em;
-				overflow: hidden;
+				overflow: auto;
 			}
 			
 				#home > section#cases #case-zoom #case-description header > h1{
