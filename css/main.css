@@ -133,12 +133,18 @@ a{
 		}
 	
 		#home > section#services{
+			padding:0px;
 			position:relative;
 			margin-top:3%;
 			background-color: #fafafa;
 			color: #a3a3a3;
 			overflow:hidden;
 		}
+		
+			#home > section#services .services-content{
+				padding-left:20%;
+				padding-right:20%;
+			}
 		
 			#home > section#services p{
 				font-weight: 400;

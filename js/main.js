@@ -138,17 +138,17 @@ function hexagonExpand(hexagon) {
 		background: "#ffffff",
 		zIndex: 21,
 		height: "0px",
-		width: "200%",
+		width: "160%",
 		marginTop: $("#services").height()*1.5,
-		marginLeft: "-250px",
-		width: Math.sqrt(height*height+width*width) + 500 + "px"
+		marginLeft: "-770px"
+		//width: Math.sqrt(height*height+width*width) + 200 + "px"
 	});
 	overlay.prependTo($("#services"));
 	$("#overlay-content").html(hexagon.find(".hexagon-content").text());
 	
 	overlay.animate({
 		marginTop: $("#services").height()*0.3*-1 + "px",
-		height: "150%"
+		height: "270%"
 	}, 500, function() {
 			$("#overlay-content").fadeIn({ duration: 200, queue: true });
 		}
