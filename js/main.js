@@ -69,6 +69,8 @@ function setupSizes(){
 	$("#home > section#contact > #contactform").css("margin-top", ($("#home > section#contact > #map").height() - $("#home > section#contact > #contactform").height())/2);
 	
 	setNavbarHeight();
+	
+	$("#home > section#about > section#about-text > header").height(0.369 * $("#home > section#about > section#about-text > header").width());
 }
 
 function setupTeamHexagons(){

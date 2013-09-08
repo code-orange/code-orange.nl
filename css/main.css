@@ -421,6 +421,10 @@ a{
 			#home > section#clients #partners{
 				overflow: auto;
 			}
+			
+				#home > section#clients #partners header{
+					margin-top: 20px;
+				}
 		
 			#home > section#clients  header > h1{
 				color: #c3c3c3;
