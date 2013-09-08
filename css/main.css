@@ -372,6 +372,8 @@ a{
 				background-color: #00dcff;
 				cursor: pointer;
 				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
 			}
 			
 				#home > section#cases #cases-thumbs .cases-thumb .description{
@@ -722,6 +724,9 @@ a{
 				
 				color: white;
 				text-align: center;
+				
+				min-height: 350px;
+				min-width: 350px;
 			}
 			
 				#home > section#contact > #contactform h1{
@@ -729,6 +734,10 @@ a{
 					width: 60%;
 					margin-left: auto;
 					margin-right: auto;
+				}
+				
+				#home > section#contact > #contactform form{
+					margin: 0;
 				}
 			
 				#home > section#contact > #contactform input, #home > section#contact > #contactform textarea{
