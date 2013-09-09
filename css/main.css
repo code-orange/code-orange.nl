@@ -45,7 +45,7 @@ a{
 		padding-left: 20%;
 		padding-right: 20%;
 		
-		z-index: 9;
+		z-index: 99;
 	}
 	
 	#home > nav > #logo{
@@ -133,12 +133,21 @@ a{
 		}
 	
 		#home > section#services{
+			padding:0px;
 			position:relative;
-			margin-top:3%;
 			background-color: #fafafa;
 			color: #a3a3a3;
 			overflow:hidden;
 		}
+			
+			#home > section#services > header > hr{
+				margin-left: 20%;
+			}
+		
+			#home > section#services .services-content{
+				padding-left:20%;
+				padding-right:20%;
+			}
 		
 			#home > section#services p{
 				font-weight: 400;
@@ -156,16 +165,23 @@ a{
 						 M11 = 0.838670567945424, M12 = 0.5446390350150271, M21 =-0.5446390350150271, M22 = 0.838670567945424 );
 				zoom: 1;
 			}
-		
+
 			#home > section#services #hexagons{
 				margin-top: 30px;
 				margin-bottom: 30px;
 			}
 			
-			#home > section#services .hexagon-holder {
-				position:relative;
+			#home > section#services .hexagon-holder{
 				height: 195px;
 			}
+			
+			#home > section#services .hexagon-holder .service-hex{
+				opacity: 0.3;
+			}
+			
+				#home > section#services .hexagon-holder .service-hex:hover{
+					opacity: 1;
+				}
 			
 			#home > section#services #hex-social {
 				position:absolute;
@@ -176,10 +192,46 @@ a{
 			#home > section#services > #overlay-content {
 				position:absolute;
 				display:none;
-				margin-left:280px;
-				margin-top:100px;
-				z-index: 2;
+				margin-top: 100px;
+				z-index: 23;
+				padding-right: 20%;
+				padding-left: 20%;
 			}
+			
+				#home > section#services #overlay-content h1{
+					font-weight: 700;
+					font-size: 1.357em;
+					line-height: 1em;
+					color: #bebebe;
+				}
+				
+				#home > section#services #overlay-content hr{
+					margin-top: 0;
+					margin-bottom: 0.5em;
+					width: 0.9em;
+					border-top-color: #ededed;
+					border-bottom-color: #cfcfcf;
+				}
+				
+				#home > section#services #overlay-content p.intro{
+					font-weight: 500;
+					font-size: 1.357em;
+					line-height: 1.571em;
+					color: #8c8c8c;
+				}
+				
+				#home > section#services #overlay-content .text{
+					column-count:3;
+					-moz-column-count:3; /* Firefox */
+					-webkit-column-count:3; /* Safari and Chrome */
+				}
+				
+				#home > section#services #overlay-content p{
+					font-weight: 400;
+					font-size: 0.928em;
+					line-height: 1.25em;
+					color: #bdbdbd;
+				}
 			
 			#home > section#services #hexagons .hexagon-content {
 				display:none;
@@ -187,7 +239,7 @@ a{
 			
 			#home > section#services #hexagons .hexagon-upper{
 				width: 0;
-				border-bottom: 50px solid #9de2f6;
+				border-bottom: 50px solid #18bcef;
 				border-left: 85px solid transparent;
 				border-right: 85px solid transparent;
 				position: relative;
@@ -197,7 +249,7 @@ a{
 				position:relative;
 				width: 170px;
 				height: 60px;
-				background-color: #9de2f6;
+				background-color: #18bcef;
 				cursor: pointer;
 				padding-top: 35px;
 			}
@@ -213,7 +265,7 @@ a{
 			#home > section#services #hexagons .hexagon-lower{
 				position:relative;
 				width: 0;
-				border-top: 50px solid #9de2f6;
+				border-top: 50px solid #18bcef;
 				border-left: 85px solid transparent;
 				border-right: 85px solid transparent;
 			}

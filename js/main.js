@@ -95,6 +95,8 @@ function setupTeamHexagons(){
 
 //expands hexagon and content
 function hexagonExpand(hexagon) {
+	hexagon.css("opacity", 1);
+
 	var hexagon_mid = hexagon.find(".hexagon-mid");
 	var hexagon_upper = hexagon.find(".hexagon-upper");
 	var hexagon_lower = hexagon.find(".hexagon-lower");
@@ -138,17 +140,17 @@ function hexagonExpand(hexagon) {
 		background: "#ffffff",
 		zIndex: 21,
 		height: "0px",
-		width: "200%",
+		width: "160%",
 		marginTop: $("#services").height()*1.5,
-		marginLeft: "-250px",
-		width: Math.sqrt(height*height+width*width) + 500 + "px"
+		marginLeft: "-770px"
+		//width: Math.sqrt(height*height+width*width) + 200 + "px"
 	});
 	overlay.prependTo($("#services"));
-	$("#overlay-content").html(hexagon.find(".hexagon-content").text());
+	$("#overlay-content").html(hexagon.find(".hexagon-content").html());
 	
 	overlay.animate({
 		marginTop: $("#services").height()*0.3*-1 + "px",
-		height: "150%"
+		height: "270%"
 	}, 500, function() {
 			$("#overlay-content").fadeIn({ duration: 200, queue: true });
 		}
@@ -227,7 +229,13 @@ $(function(){
 	
 	//services hexagon expand on click
 	$(".service-hex").click(function(){
-		hexagonExpand($(this));
+		if($(this).data("expanded")){
+			//TODO: unexpand
+			$(this).data("expanded", false);
+		}else{
+			hexagonExpand($(this));
+			$(this).data("expanded", true);
+		}
 	});
 	
 	$.getJSON("/res/quotes.json", function(quotes){
