@@ -109,7 +109,8 @@ function hexagonContract(hexagon) {
 	
 	hexagon.animate({
 		marginTop: "0px",
-		marginLeft: "0px"
+		marginLeft: "0px",
+		opacity: 0.3
 	},{ duration: 200, queue: false });
 	
 	hexagon_mid.animate({
@@ -169,7 +170,8 @@ function hexagonExpand(hexagon) {
 	
 	hexagon.animate({
 		marginTop: services_pos.top - current_pos.top - 5/6*height + "px",
-		marginLeft: "0px"
+		marginLeft: "0px",
+		opacity:1.0
 	},{ duration: 200, queue: false });
 	
 	hexagon_mid.animate({

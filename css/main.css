@@ -183,7 +183,11 @@ a{
 			}
 			
 			#home > section#services .hexagon-holder .service-hex{
-				
+				opacity:0.3;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+				  filter: alpha(opacity=30);
+				  -moz-opacity: 0.3;
+				  -khtml-opacity: 0.3;
 			}
 			
 				#home > section#services .hexagon-holder .service-hex:hover{
