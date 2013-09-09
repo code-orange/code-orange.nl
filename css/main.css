@@ -164,19 +164,26 @@ a{
 				filter: progid : DXImageTransform.Microsoft.Matrix ( sizingMethod ='auto expand', /* IE6-IE9 */ 
 						 M11 = 0.838670567945424, M12 = 0.5446390350150271, M21 =-0.5446390350150271, M22 = 0.838670567945424 );
 				zoom: 1;
+				
+				-moz-transform-origin: 50% 50%;
+				-o-transform-origin: 50% 50%;
+				-webkit-transform-origin: 50% 50%;
 			}
 
 			#home > section#services #hexagons{
+				z-index:5;
 				margin-top: 30px;
 				margin-bottom: 30px;
+				height:200px;
 			}
 			
 			#home > section#services .hexagon-holder{
+				position:absolute;
 				height: 195px;
 			}
 			
 			#home > section#services .hexagon-holder .service-hex{
-				opacity: 0.3;
+				
 			}
 			
 				#home > section#services .hexagon-holder .service-hex:hover{

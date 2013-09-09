@@ -93,16 +93,71 @@ function setupTeamHexagons(){
 	});
 }
 
-//expands hexagon and content
-function hexagonExpand(hexagon) {
-	hexagon.css("opacity", 1);
-
+function hexagonContract(hexagon) {
 	var hexagon_mid = hexagon.find(".hexagon-mid");
 	var hexagon_upper = hexagon.find(".hexagon-upper");
 	var hexagon_lower = hexagon.find(".hexagon-lower");
 	
 	var services_pos = $("#services").offset();
-	var current_pos = hexagon.parent().offset();
+	var parent_dom = hexagon.parent();
+	var current_pos = parent_dom.offset();
+	
+	parent_dom.css("z-index", 4);
+	
+	$("#overlay-content").fadeOut();
+	$(".services-overlay").fadeOut();
+	
+	hexagon.animate({
+		marginTop: "0px",
+		marginLeft: "0px"
+	},{ duration: 200, queue: false });
+	
+	hexagon_mid.animate({
+		width: "170px",
+		height: "60px"
+	},{ duration: 200, queue: false });
+	
+	hexagon_upper.animate({	
+		borderBottomWidth: "50px",
+		borderLeftWidth: "85px",
+		borderRightWidth: "85px"
+	},{ duration: 200, queue: false });
+	
+	hexagon_lower.css({
+		borderTopWidth: "50px",
+		borderLeftWidth: "85px",
+		borderRightWidth: "85px"
+	},{ duration: 200, queue: false });
+	
+	var left = "0";
+	var marginLeft = "0px";
+	if(parent_dom.hasClass("hexagon-first")) {
+		left = "20%";
+	}
+	if(parent_dom.hasClass("hexagon-second")) {
+		left = "50%";
+		marginLeft = "-85px";
+	}
+	if(parent_dom.hasClass("hexagon-third")) {
+		left = "80%";
+		marginLeft = "-170px";
+	}
+	
+	parent_dom.animate({
+		left:left,
+		marginLeft:marginLeft
+	},{ duration: 200, queue: true });
+}
+
+//expands hexagon and content
+function hexagonExpand(hexagon) {
+	var hexagon_mid = hexagon.find(".hexagon-mid");
+	var hexagon_upper = hexagon.find(".hexagon-upper");
+	var hexagon_lower = hexagon.find(".hexagon-lower");
+	
+	var services_pos = $("#services").offset();
+	var parent_dom = hexagon.parent();
+	var current_pos = parent_dom.offset();
 	
 	console.log(services_pos);
 	console.log(current_pos);
@@ -110,7 +165,7 @@ function hexagonExpand(hexagon) {
 	var height = $("#services > #hexagons").height()
 	var width = $("#services > #hexagons").width()
 	
-	hexagon.css("z-index", 20);
+	parent_dom.css("z-index", 6);
 	
 	hexagon.animate({
 		marginTop: services_pos.top - current_pos.top - 5/6*height + "px",
@@ -128,29 +183,36 @@ function hexagonExpand(hexagon) {
 		borderRightWidth: 1/2 * width
 	},{ duration: 200, queue: false });
 	
-	hexagon_lower.animate({
+	hexagon_lower.css({
 		borderTopWidth: 5/6 * height,
 		borderLeftWidth: 1/2 * width,
 		borderRightWidth: 1/2 * width
+	},{ duration: 200, queue: false });
+	
+	parent_dom.animate({
+		left:"0px",
+		marginLeft:"0px"
 	},{ duration: 200, queue: true });
 	
 	var overlay = $("<div class='services-overlay'></div>");
+	var sh = $("#services").height();
+	var sw = $("#services").width();
 	overlay.css({
 		position: "absolute",
 		background: "#ffffff",
 		zIndex: 21,
 		height: "0px",
-		width: "160%",
-		marginTop: $("#services").height()*1.5,
-		marginLeft: "-770px"
+		width: "300%",
+		//marginTop: $("#services").height()*1.5,
+		marginLeft: -1*sw - 300 + "px"
 		//width: Math.sqrt(height*height+width*width) + 200 + "px"
 	});
 	overlay.prependTo($("#services"));
 	$("#overlay-content").html(hexagon.find(".hexagon-content").html());
 	
 	overlay.animate({
-		marginTop: $("#services").height()*0.3*-1 + "px",
-		height: "270%"
+		//marginTop: $("#services").height()*0.3*-1 + "px",
+		height: "700px"
 	}, 500, function() {
 			$("#overlay-content").fadeIn({ duration: 200, queue: true });
 		}
@@ -230,7 +292,7 @@ $(function(){
 	//services hexagon expand on click
 	$(".service-hex").click(function(){
 		if($(this).data("expanded")){
-			//TODO: unexpand
+			hexagonContract($(this));
 			$(this).data("expanded", false);
 		}else{
 			hexagonExpand($(this));
