@@ -359,6 +359,16 @@ $(function(){
 		});
 	});
 	
+	$(".company").click(function(){
+		var url;
+		if($(this).data("url") != undefined){
+			url = $(this).data("url");
+		}else{
+			url = "http://" + $(this).attr('src').split("/").pop().split(".")[0] + ".nl";
+		}
+		window.open(url);
+	});
+	
 	initMap();
 	
 	setTimeout(slideBackground, 10000);

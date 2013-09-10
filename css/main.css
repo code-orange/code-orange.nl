@@ -519,6 +519,8 @@ a{
 				margin-right: 1.6%;
 				margin-top: 8px;
 				margin-bottom: 8px;
+				
+				cursor: pointer;
 			}
 		
 		#home > section#about{
