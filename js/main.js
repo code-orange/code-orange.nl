@@ -65,9 +65,12 @@ function setupSizes(){
 	
 	setupTeamHexagons();
 	
-	$("#home > section#contact > #contactform").height($("#home > section#contact > #contactform").width());
+	$("#home > section#contact > #contactform").height($("#home > section#contact > #contactform").width() * 1.1429);
 	$("#home > section#contact > #contactform").css("margin-top", ($("#home > section#contact > #map").height() - $("#home > section#contact > #contactform").height())/2);
-	$("#home > section#contact > #contactform > form").css("margin-bottom", $("#home > section#contact > #contactform").height() - ($("#home > section#contact > #contactform > hr").eq(0).outerHeight(true) + $("#home > section#contact > #contactform > h1").outerHeight(true) + $("#home > section#contact > #contactform > form").outerHeight(true) + $("#home > section#contact > #contactform > hr").eq(1).outerHeight(true)));
+	var hext_leftover = ($("#home > section#contact > #contactform").height() - ($("#home > section#contact > #contactform > hr").eq(0).outerHeight(true) + $("#home > section#contact > #contactform > h1").outerHeight(true) + $("#home > section#contact > #contactform > form").outerHeight(true) + $("#home > section#contact > #contactform > hr").eq(1).outerHeight(true)));
+	$("#home > section#contact > #contactform > form").css({
+		marginBottom: hext_leftover
+	});
 	
 	setNavbarHeight();
 	
