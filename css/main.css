@@ -810,6 +810,11 @@ a{
 					margin-top: 20px;
 				}
 			
+				#home > section#contact > #contactform img{
+					cursor: pointer;
+					margin-top: 15px;
+				}
+			
 				#home > section#contact > #contactform input, #home > section#contact > #contactform textarea{
 					border-radius: 0;
 					width: 70%;
