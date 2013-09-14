@@ -352,6 +352,11 @@ a{
 				background-color: black;
 				position: relative;
 			}
+			
+				#home > section#cases #case-zoom #case-media iframe{
+					width: 100%;
+					height: 100%;
+				}
 				
 				#home > section#cases #case-zoom #case-media ul{
 					margin: 0;
