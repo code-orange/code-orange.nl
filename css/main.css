@@ -768,7 +768,7 @@ a{
 		#home > section#contact{
 			background-color: white;
 			
-			height: 500px;
+			min-height: 500px;
 			
 			padding: 0;
 		}
