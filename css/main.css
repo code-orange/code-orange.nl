@@ -880,6 +880,10 @@ a{
 				border-bottom: 0.3em;
 			}
 			
+		#home > footer > aside > #___page_0{
+			margin-top: 50px !important;
+		}
+			
 #preload{
 	display: none;
 }

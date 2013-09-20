@@ -65,7 +65,7 @@ function setupSizes(){
 	
 	setupTeamHexagons();
 	
-	$("#home > section#contact #map").height($(window).height() - $("#footer").outerHeight(true) + 1);
+	$("#home > section#contact #map").height(Math.max(500, $(window).height() - $("#footer").outerHeight(true) + 1));
 	
 	$("#home > section#contact > #contactform").height($("#home > section#contact > #contactform").width() * 1.1429);
 	$("#home > section#contact > #contactform").css("margin-top", ($("#home > section#contact > #map").height() - $("#home > section#contact > #contactform").height())/2);
@@ -258,11 +258,17 @@ function initMap(){
 		center: center,
 		styles: styles,
 		scrollwheel: false,
-		mapTypeId: google.maps.MapTypeId.ROADMAP
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+		panControl: false,
+		zoomControl: false,
+		mapTypeControl: false,
+		scaleControl: false,
+		streetViewControl: false,
+		overviewMapControl: false
 	};
 	
 	map = new google.maps.Map($("#home > section#contact #map")[0], mapOptions);
-	var georssLayer = new google.maps.KmlLayer('http://nibusonline.com/res/map.kml?v6', { preserveViewport: true });
+	var georssLayer = new google.maps.KmlLayer('http://nub.is/res/map.kml', { preserveViewport: true });
 	georssLayer.setMap(map);
 }
 
@@ -398,4 +404,8 @@ $(function(){
 	});
 	
 	setTimeout(slideBackground, 10000);
+	
+	//TODO: re-render every time the page resizes?
+	$(".g-page").attr("data-width", $("footer > aside").width()).css("margin-bottom", "50px");
+	gapi.page.go();
 });
