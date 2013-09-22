@@ -1,0 +1,4 @@
+asset_bundler:
+  compress:
+    js: yui
+    css: yui

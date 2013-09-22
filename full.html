@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <!--[if lt IE 7]>	  <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>		 <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -10,7 +12,7 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
 
-		<link rel="stylesheet" type="text/css" href="/css/style_normal.css">
+		{% bundle %} [/_css/bootstrap.min.css ,/_css/bootstrap-responsive.min.css ,/_css/main.css] {% endbundle %}
 		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7847452/672622/css/fonts.css">
 		
 		<link rel="icon" type="image/x-icon" href="favicon.ico?v3">
@@ -68,7 +70,7 @@
 								<hr>
 								<p class="intro">Creatie is waar social en development samen komen.</p>
 								<div class="text">
-									<p>Wij zetten strategieën uit, bedenken concepten, maken designs en schrijven copy.  Dit doen we door zelf te creëren, maar ook met bestaand materiaal kunnen we goed aan de slag. Zo realiseren wij succesvolle creaties,  zonder daarbij de specifieke kenmerken van social media uit het oog te verliezen: interactief, uitdagend en doelgericht.</p>
+									<p>Wij zetten strategie&euml;n uit, bedenken concepten, maken designs en schrijven copy.  Dit doen we door zelf te cre&euml;ren, maar ook met bestaand materiaal kunnen we goed aan de slag. Zo realiseren wij succesvolle creaties,  zonder daarbij de specifieke kenmerken van social media uit het oog te verliezen: interactief, uitdagend en doelgericht.</p>
 								</div>
 							</div>
 						</div>
@@ -83,7 +85,7 @@
 								<hr>
 								<p class="intro">Wij werken met jonge, talentvolle programmeurs die de technische mogelijkheden van social media volkomen doorgronden.</p>
 								<div class="text">
-									<p>We kunnen daardoor alle soorten apps bouwen. Ook de digitale platforms waarmee social media steeds vaker worden geïntegreerd, hebben voor ons vrijwel geen geheimen meer: we bouwen net zo makkelijk websites als mobiele applicaties of onlineadvertenties (banners). Wat we adviseren, kunnen we dus ook maken. Wel zo gemakkelijk.</p>
+									<p>We kunnen daardoor alle soorten apps bouwen. Ook de digitale platforms waarmee social media steeds vaker worden ge&iuml;ntegreerd, hebben voor ons vrijwel geen geheimen meer: we bouwen net zo makkelijk websites als mobiele applicaties of onlineadvertenties (banners). Wat we adviseren, kunnen we dus ook maken. Wel zo gemakkelijk.</p>
 								</div>
 							</div>
 						</div>
@@ -382,17 +384,12 @@
 			ga('send', 'pageview');
 		</script>
 		
-		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		{% bundle %} [/_js/vendor/modernizr-2.6.2-respond-1.1.0.min.js] {% endbundle %}
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-		<script src="js/vendor/bootstrap.min.js"></script>
-		
-		<script src="js/vendor/jquery.scrollTo.min.js"></script>
-		<script src="js/vendor/jquery.localScroll.min.js"></script>
-		
-		<script src="js/vendor/unslider.min.js"></script>
+		{% bundle %} [/_js/vendor/bootstrap.min.js, /_js/vendor/jquery.scrollTo.min.js, /_js/vendor/jquery.localScroll.min.js, /_js/vendor/unslider.min.js] {% endbundle %}
 		
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 		
@@ -400,7 +397,7 @@
 			{parsetags: 'explicit'}
 		</script>
 		
-		<script src="js/main.js"></script>
+		{% bundle %} [/_js/main.js] {% endbundle %}
 		
 		<div id="preload"></div>
 	</body>
