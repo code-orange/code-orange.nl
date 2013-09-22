@@ -4,3 +4,15 @@ RewriteRule (.*) http://nub.is/$1 [R=301,L]
 
 Redirect 301 /twitter https://twitter.com/nubisonline
 Redirect 301 /facebook https://facebook.com/nubisonline
+
+RewriteRule ^$ index.php
+
+RewriteRule ^new$ shortener/new.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^preview/(.*)$ shortener/preview.php?code=$1
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ shortener/redirect.php?code=$1
