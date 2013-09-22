@@ -1,3 +1,5 @@
+ErrorDocument 404 /404.html
+
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.nub.is
 RewriteRule (.*) http://nub.is/$1 [R=301,L]
