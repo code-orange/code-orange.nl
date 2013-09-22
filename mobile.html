@@ -8,8 +8,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Nubis</title>
-		<meta name="description" content="">
+		<title>{{ site.content.info.name }}</title>
 		<meta name="viewport" content="width=device-width, user-scalable=false, initial-scale=1.0;">
 
 		{% bundle %} [/_source-assets/css/bootstrap.min.css ,/_source-assets/css/bootstrap-responsive.min.css ,/_source-assets/css/mobile.css] {% endbundle %}
@@ -30,8 +29,8 @@
 				</ul>
 			</nav>
 			<header id="cover">
-				<h1>Wij zijn Nubis</h1>
-				<h2>Digital Agency gericht op social media, creatie en development</h2>
+				<h1>{{ site.content.info.intro }}</h1>
+				<h2>{{ site.content.info.tagline }}</h2>
 			</header>
 			<section id="services">
 				<div id="overlay-content">
@@ -156,9 +155,9 @@
 				
 				<section id="about-text">
 					<header>
-						<h2>Wij zijn Nubis</h2>
+						<h2>{{ site.content.info.intro }}</h2>
 						<hr>
-						<p>Digital Agency gericht op social media, creatie en development</p>
+						<p>{{ site.content.info.tagline }}</p>
 					</header>
 					<h3>Social media zijn altijd en overal, en bij Nubis kennen we de mogelijkheden als geen ander.</h2>
 					<div id="intro-text">
@@ -235,22 +234,22 @@
 				<aside>
 					<h1>Location</h1>
 					<address>
-						<p>Herengracht 104</p>
-						<p>1015 BS Amsterdam</p>
+						<p>{{ site.content.info.address.street }} {{ site.content.info.address.number }}</p>
+						<p>{{ site.content.info.address.zip }} {{ site.content.info.address.city }}</p>
 					</address>
 				</aside>
 				<aside>
 					<h1>Contact</h1>
 					<address>
-						<p>T 020-8932941</p>
-						<p>info@nub.is</p>
+						<p>T {{ site.content.info.contact.phone }}</p>
+						<p>{{ site.content.info.contact.email }}</p>
 					</address>
 				</aside>
 				<aside>
 					<h1>Follow us</h1>
-					<a href="https://plus.google.com/118082699456363103031" rel="publisher"><img src="/assets/img/social-gplus.png"></img></a>
-					<a href="/twitter" target="_new"><img src="/assets/img/social-twitter.png"></img></a>
-					<a href="/facebook" target="_new"><img src="/assets/img/social-fb.png"></img></a>
+					<a href="https://plus.google.com/{{ site.content.info.social.gplus }}" rel="publisher"><img src="/assets/img/social-gplus.png"></img></a>
+					<a href="https://twitter.com/{{ site.content.info.social.twitter }}" target="_new"><img src="/assets/img/social-twitter.png"></img></a>
+					<a href="https://facebook.com/{{ site.content.info.social.facebook }}" target="_new"><img src="/assets/img/social-fb.png"></img></a>
 				</aside>
 			</footer>
 		</div> <!-- /container -->
