@@ -196,144 +196,28 @@
 					<hr>
 				</header>
 				<section id="team-members">
-					<!-- generated -->
-					<div class="row-fluid team-row">
+{% for employee in site.content.team.team_photos %}{% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
+{% if modulo == '0' or forloop.first %}					<div class="row-fluid team-row">{% endif %}
 						<div class="span4">
 							<div class="team-member row-fluid">
-								<img class="span6" src="/assets/img/team/jelle.jpg">
+								<img class="span6" src="/assets/img/team/{{ employee[0] }}.jpg">
 								<div class="span6">
-									<p class="name">Jelle Oskam</p>
-									<p class="title">managing director</p>
+									<p class="name">{{ employee[1].name }}</p>
+									<p class="title">{{ employee[1].title }}</p>
 								</div>
 							</div>
 						</div>
-						<div class="span4">
-							<div class="team-member row-fluid">
-								<img class="span6" src="/assets/img/team/tim.jpg">
-								<div class="span6">
-									<p class="name">Tim van Dalen</p>
-									<p class="title">Head of Development</p>
-								</div>
-							</div>
-						</div>
-						<div class="span4">
-							<div class="team-member row-fluid">
-								<img class="span6" src="/assets/img/team/reinout.jpg">
-								<div class="span6">
-									<p class="name">Reinout Woortman</p>
-									<p class="title">Creative Consultant</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row-fluid team-row">
-						<div class="span4">
-							<div class="team-member row-fluid">
-								<img class="span6" src="/assets/img/team/marleen.jpg">
-								<div class="span6">
-									<p class="name">Marleen Kers</p>
-									<p class="title">Project Manager</p>
-								</div>
-							</div>
-						</div>
-						<div class="span4">
-							<div class="team-member row-fluid">
-								<img class="span6" src="/assets/img/team/remco.jpg">
-								<div class="span6">
-									<p class="name">Remco Plasmeijer</p>
-									<p class="title">Systems Architecture Manager</p>
-								</div>
-							</div>
-						</div>
-						<div class="span4">
-							<div class="team-member row-fluid">
-								<img class="span6" src="/assets/img/team/nicky.jpg">
-								<div class="span6">
-									<p class="name">Nicky Advokaat</p>
-									<p class="title">Developer</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="row-fluid team-row">
+{% if modulo == '2' or forloop.last %}					</div>{% endif %}
+{% endfor %}
+
+{% for employee in site.content.team.team_nophotos %}{% capture modulo %}{{ forloop.index0 | mod:6 }}{% endcapture %}
+{% if modulo == '0' or forloop.first %}					<div class="row-fluid team-row">{% endif %}
 						<div class="span2 team-member">
-								<p class="name">Duco ter Steege</p>
-								<p class="title">Social Media Consultant</p>
+								<p class="name">{{ employee[1].name }}</p>
+								<p class="title">{{ employee[1].title }}</p>
 						</div>
-						<div class="span2 team-member">
-								<p class="name">Walid Said</p>
-								<p class="title">Senior Developer</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">George Pittas</p>
-								<p class="title">Developer</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">Maria Pouliou</p>
-								<p class="title">Junior Developer</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">Dirk Hoekstra</p>
-								<p class="title">Junior Developer</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">Floris Goldbach</p>
-								<p class="title">Junior Developer</p>
-						</div>
-				</div>
-				<div class="row-fluid team-row">
-						<div class="span2 team-member">
-								<p class="name">Stef van Schuylenburg</p>
-								<p class="title">Junior Developer</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">Robbert Jongeling</p>
-								<p class="title">Junior Developer</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">Ramon de Vaan</p>
-								<p class="title">Junior Developer</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">Jules Wulms</p>
-								<p class="title">Junior Developer</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">Hidde Burgmans</p>
-								<p class="title">Graphic Designer</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">Ricco Delfos</p>
-								<p class="title">Graphic Designer</p>
-						</div>
-				</div>
-				<div class="row-fluid team-row">
-						<div class="span2 team-member">
-								<p class="name">Niels Corsten</p>
-								<p class="title">Graphic Designer</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">Peter Bos</p>
-								<p class="title">Junior Graphic Designer</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">Eva Kuijer</p>
-								<p class="title">Community Manager</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">Hannah van der Linde</p>
-								<p class="title">Community Manager</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">David Mishahi</p>
-								<p class="title">Community Manager</p>
-						</div>
-						<div class="span2 team-member">
-								<p class="name">Jeffrey Kuin</p>
-								<p class="title">Online Marketeer</p>
-						</div>
-				</div>
+{% if modulo == '5' or forloop.last %}					</div>{% endif %}
+{% endfor %}
 				</section>
 			</section>
 			<section id="blog">

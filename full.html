@@ -141,25 +141,25 @@
 						<h1>Klanten</h1>
 						<hr>
 					</header>
-					<img class="company" src="/assets/img/companies/customers/dekamarkt.png"></img>
-					<img class="company" src="/assets/img/companies/customers/endemol.png"></img>
-					<img class="company" src="/assets/img/companies/customers/groenlinks.png"></img>
-					<img class="company" src="/assets/img/companies/customers/hallmark.png"></img>
-					<img class="company" src="/assets/img/companies/customers/happinez.png"></img>
-					<img class="company" src="/assets/img/companies/customers/houthoff.png" data-url="http://houthoff.com"></img>
-					<img class="company" src="/assets/img/companies/customers/kwiz.png"></img>
-					<img class="company" src="/assets/img/companies/customers/mediaxplain.png"></img>
-					<img class="company" src="/assets/img/companies/customers/ministerie_buiten.png" data-url="http://rijksoverheid.nl/ministeries/bz"></img>
-					<img class="company" src="/assets/img/companies/customers/ministerie_fin.png" data-url="http://rijksoverheid.nl/ministeries/fin"></img>
-					<img class="company" src="/assets/img/companies/customers/mvo.png" data-url="http://mvonederland.nl"></img>
-					<img class="company" src="/assets/img/companies/customers/postcodeloterij.png"></img>
-					<img class="company" src="/assets/img/companies/customers/sens.png" data-url="http://simmons-simmons.com"></img>
-					<img class="company" src="/assets/img/companies/customers/sezo.png"></img>
-					<img class="company" src="/assets/img/companies/customers/tedxamsterdam.png" data-url="http://tedxamsterdam.com"></img>
-					<img class="company" src="/assets/img/companies/customers/tedxgoodenough.png" data-url="http://http://tedxgoodenoughcollege.com"></img>
-					<img class="company" src="/assets/img/companies/customers/visualfabriq.png"></img>
-					<img class="company" src="/assets/img/companies/customers/whelpy.png"></img>
-					<img class="company" src="/assets/img/companies/customers/zapaday.png"></img>
+					<img class="company" src="/assets/img/companies/customers/dekamarkt.png">
+					<img class="company" src="/assets/img/companies/customers/endemol.png">
+					<img class="company" src="/assets/img/companies/customers/groenlinks.png">
+					<img class="company" src="/assets/img/companies/customers/hallmark.png">
+					<img class="company" src="/assets/img/companies/customers/happinez.png">
+					<img class="company" src="/assets/img/companies/customers/houthoff.png" data-url="http://houthoff.com">
+					<img class="company" src="/assets/img/companies/customers/kwiz.png">
+					<img class="company" src="/assets/img/companies/customers/mediaxplain.png">
+					<img class="company" src="/assets/img/companies/customers/ministerie_buiten.png" data-url="http://rijksoverheid.nl/ministeries/bz">
+					<img class="company" src="/assets/img/companies/customers/ministerie_fin.png" data-url="http://rijksoverheid.nl/ministeries/fin">
+					<img class="company" src="/assets/img/companies/customers/mvo.png" data-url="http://mvonederland.nl">
+					<img class="company" src="/assets/img/companies/customers/postcodeloterij.png">
+					<img class="company" src="/assets/img/companies/customers/sens.png" data-url="http://simmons-simmons.com">
+					<img class="company" src="/assets/img/companies/customers/sezo.png">
+					<img class="company" src="/assets/img/companies/customers/tedxamsterdam.png" data-url="http://tedxamsterdam.com">
+					<img class="company" src="/assets/img/companies/customers/tedxgoodenough.png" data-url="http://http://tedxgoodenoughcollege.com">
+					<img class="company" src="/assets/img/companies/customers/visualfabriq.png">
+					<img class="company" src="/assets/img/companies/customers/whelpy.png">
+					<img class="company" src="/assets/img/companies/customers/zapaday.png">
 				</section>
 				<section id="partners">
 					<header>
@@ -208,110 +208,19 @@
 					<h1>Team</h1>
 					<hr>
 				</header>
-				<section id="team-members">	
-					<div class="hexagon" data-photo="true" data-name="jelle">
-						<p class="name">Jelle Oskam</p>
-						<p class="title">managing director</p>
+				<section id="team-members">
+{% for employee in site.content.team.team_photos %}
+					<div class="hexagon" data-photo="true" data-name="{{ employee[0] }}">
+						<p class="name">{{ employee[1].name }}</p>
+						<p class="title">{{ employee[1].title | downcase }}</p>
 					</div>
-					<div class="hexagon" data-photo="true" data-name="tim">
-						<p class="name">Tim van Dalen</p>
-						<p class="title">head of development</p>
+{% endfor %}
+{% for employee in site.content.team.team_nophotos %}
+					<div class="hexagon" data-photo="false" data-name="{{ employee[0] }}">
+						<p class="name">{{ employee[1].name }}</p>
+						<p class="title">{{ employee[1].title | downcase }}</p>
 					</div>
-					<div class="hexagon" data-photo="true" data-name="reinout">
-						<p class="name">Reinout Woortman</p>
-						<p class="title">creative consultant</p>
-					</div>
-					<div class="hexagon" data-photo="true" data-name="marleen">
-						<p class="name">Marleen Kers</p>
-						<p class="title">project manager</p>
-					</div>
-					<div class="hexagon" data-photo="true" data-name="remco">
-						<p class="name">Remco Plasmeijer</p>
-						<p class="title">systems architecture manager</p>
-					</div>
-					<div class="hexagon" data-photo="true" data-name="nicky">
-						<p class="name">Nicky Advokaat</p>
-						<p class="title">developer</p>
-					</div>
-					
-					<div class="hexagon" data-photo="false" data-name="duco">
-						<p class="name">Duco ter Steege</p>
-						<p class="title">social media consultant</p>
-					</div>
-					
-					<!-- Developers -->
-					<div class="hexagon" data-photo="false" data-name="walid">
-						<p class="name">Walid Said</p>
-						<p class="title">senior developer</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="george">
-						<p class="name">George Pittas</p>
-						<p class="title">developer</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="maria">
-						<p class="name">Maria Pouliou</p>
-						<p class="title">junior developer</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="dirk">
-						<p class="name">Dirk Hoekstra</p>
-						<p class="title">junior developer</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="floris">
-						<p class="name">Floris Goldbach</p>
-						<p class="title">junior developer</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="stef">
-						<p class="name">Stef van Schuylenburg</p>
-						<p class="title">junior developer</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="robbert">
-						<p class="name">Robbert Jongeling</p>
-						<p class="title">junior developer</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="ramon">
-						<p class="name">Ramon de Vaan</p>
-						<p class="title">junior developer</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="jules">
-						<p class="name">Jules Wulms</p>
-						<p class="title">junior developer</p>
-					</div>
-					
-					<!-- Designers -->
-					<div class="hexagon" data-photo="false" data-name="hidde">
-						<p class="name">Hidde Burgmans</p>
-						<p class="title">graphic designer</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="ricco">
-						<p class="name">Ricco Delfos</p>
-						<p class="title">graphic designer</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="niels">
-						<p class="name">Niels Corsten</p>
-						<p class="title">graphic designer</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="peter">
-						<p class="name">Peter Bos</p>
-						<p class="title">junior graphic designer</p>
-					</div>
-					
-					<!-- Overig -->
-					<div class="hexagon" data-photo="false" data-name="eva">
-						<p class="name">Eva Kuijer</p>
-						<p class="title">community manager</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="hannah">
-						<p class="name">Hannah van der Linde</p>
-						<p class="title">community manager</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="david">
-						<p class="name">David Mirshahi</p>
-						<p class="title">community manager</p>
-					</div>
-					<div class="hexagon" data-photo="false" data-name="jeffrey">
-						<p class="name">Jeffrey Kuin</p>
-						<p class="title">online marketeer</p>
-					</div>
+{% endfor %}
 				</section>
 			</section>
 			<section id="blog">

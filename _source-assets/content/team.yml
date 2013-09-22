@@ -1,0 +1,75 @@
+team_photos:
+  jelle:
+    name: Jelle Oskam
+    title: Managing Director
+  tim:
+    name: Tim van Dalen
+    title: Head of Development
+  reinout:
+    name: Reinout Woortman
+    title: Creative Consultant
+  marleen:
+    name: Marleen Kers
+    title: Project Manager
+  remco:
+    name: Remco Plasmeijer
+    title: Systems Architecture Manager
+  nicky:
+    name: Nicky Advokaat
+    title: Developer
+
+team_nophotos:
+  duco:
+    name: Duco ter Steege
+    title: Social Media Consultant
+  walid:
+    name: Walid Said
+    title: Senior Developer
+  george:
+    name: George Pittas
+    title: Developer
+  maria:
+    name: Maria Pouliou
+    title: Junior Developer
+  dirk:
+    name: Dirk Hoekstra
+    title: Junior Developer
+  floris:
+    name: Floris Goldbach
+    title: Junior Developer
+  stef:
+    name: Stef van Schuylenburg
+    title: Junior Developer
+  robbert:
+    name: Robbert Jongeling
+    title: Junior Developer
+  ramon:
+    name: Ramon de Vaan
+    title: Junior Developer
+  jules:
+    name: Jules Wulms
+    title: Junior Developer
+  hidde:
+    name: Hidde Burgmans
+    title: Graphic Designer
+  ricco:
+    name: Ricco Delfos
+    title: Graphic Designer
+  niels:
+    name: Niels Corsten
+    title: Graphic Designer
+  peter:
+    name: Peter Bos
+    title: Junior Graphic Designer
+  eva:
+    name: Eva Kuijer
+    title: Community Manager
+  hannah:
+    name: Hannah van der Linde
+    title: Community Manager
+  david:
+    name: David Mishahi
+    title: Community Manager
+  jeffrey:
+    name: Jeffrey Kuin
+    title: Online Marketeer
