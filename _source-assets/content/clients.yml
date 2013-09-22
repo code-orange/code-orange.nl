@@ -1,0 +1,37 @@
+customers:
+  dekamarkt:
+  endemol:
+  groenlinks:
+  hallmark:
+  happinez:
+  houthoff:
+    url: houthoff.com
+  kwiz:
+  mediaxplain:
+  ministerie_buiten:
+    url: rijksoverheid.nl/ministeries/bz
+  ministerie_fin:
+    url: rijksoverheid.nl/ministeries/fin
+  mvo:
+    url: mvonederland.nl
+  postcodeloterij:
+  sens:
+    url: simmons-simmons.com
+  sezo:
+  tedxamsterdam:
+    url: tedxamsterdam.com
+  tedxgoodenough:
+    url: tedxgoodenoughcollege.com
+  visualfabriq:
+  whelpy:
+  zapaday:
+
+partners:
+  havas:
+    url: havasmedia.com
+  limelights:
+  mobext:
+    url: mobext.com
+  o2:
+    url: o2communicatie.nl
+  socialyse:

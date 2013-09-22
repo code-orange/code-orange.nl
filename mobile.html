@@ -136,36 +136,16 @@
 						<h1>Klanten</h1>
 						<hr>
 					</header>
-					<img class="company" src="/assets/img/companies/customers/dekamarkt.png"></img>
-					<img class="company" src="/assets/img/companies/customers/endemol.png"></img>
-					<img class="company" src="/assets/img/companies/customers/groenlinks.png"></img>
-					<img class="company" src="/assets/img/companies/customers/hallmark.png"></img>
-					<img class="company" src="/assets/img/companies/customers/happinez.png"></img>
-					<img class="company" src="/assets/img/companies/customers/houthoff.png" data-url="http://houthoff.com"></img>
-					<img class="company" src="/assets/img/companies/customers/kwiz.png"></img>
-					<img class="company" src="/assets/img/companies/customers/mediaxplain.png"></img>
-					<img class="company" src="/assets/img/companies/customers/ministerie_buiten.png" data-url="http://rijksoverheid.nl/ministeries/bz"></img>
-					<img class="company" src="/assets/img/companies/customers/ministerie_fin.png" data-url="http://rijksoverheid.nl/ministeries/fin"></img>
-					<img class="company" src="/assets/img/companies/customers/mvo.png" data-url="http://mvonederland.nl"></img>
-					<img class="company" src="/assets/img/companies/customers/postcodeloterij.png"></img>
-					<img class="company" src="/assets/img/companies/customers/sens.png" data-url="http://simmons-simmons.com"></img>
-					<img class="company" src="/assets/img/companies/customers/sezo.png"></img>
-					<img class="company" src="/assets/img/companies/customers/tedxamsterdam.png" data-url="http://tedxamsterdam.com"></img>
-					<img class="company" src="/assets/img/companies/customers/tedxgoodenough.png" data-url="http://http://tedxgoodenoughcollege.com"></img>
-					<img class="company" src="/assets/img/companies/customers/visualfabriq.png"></img>
-					<img class="company" src="/assets/img/companies/customers/whelpy.png"></img>
-					<img class="company" src="/assets/img/companies/customers/zapaday.png"></img>
+{% for company in site.content.clients.customers %}
+					<img class="company" src="/assets/img/companies/customers/{{ company[0] }}.png"{% if company[1].url %} data-url="http://{{ company[1].url }}"{% endif %}>{% endfor %}
 				</section>
 				<section id="partners">
 					<header>
 						<h1>Partners</h1>
 						<hr>
 					</header>
-					<img class="company" src="/assets/img/companies/partners/havas.png" data-url="http://havasmedia.com"></img>
-					<img class="company" src="/assets/img/companies/partners/limelights.png"></img>
-					<img class="company" src="/assets/img/companies/partners/mobext.png" data-url="http://mobext.com"></img>
-					<img class="company" src="/assets/img/companies/partners/o2.png" data-url="http://o2communicatie.nl"></img>
-					<img class="company" src="/assets/img/companies/partners/socialyse.png"></img>
+{% for company in site.content.clients.partners %}
+					<img class="company" src="/assets/img/companies/partners/{{ company[0] }}.png"{% if company[1].url %} data-url="http://{{ company[1].url }}"{% endif %}>{% endfor %}
 				</section>
 			</section>
 			<section id="about">
