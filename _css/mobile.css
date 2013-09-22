@@ -30,7 +30,7 @@ body{
 }
    
 #home{
-	background-image: url(/img/cover-solo.jpg);
+	background-image: url(/assets/img/cover-solo.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-attachment: fixed;
@@ -38,7 +38,7 @@ body{
 	
 	@media (max-width: 767px){
 		#home{
-			background-image: url(/img/cover-solo-mobile.jpg);
+			background-image: url(/assets/img/cover-solo-mobile.jpg);
 		}
 	}
 

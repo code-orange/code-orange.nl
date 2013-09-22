@@ -26,7 +26,7 @@ a{
 }
    
 #home{
-	background-image: url(/img/cover.jpg);
+	background-image: url(/assets/img/cover.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 200%;
@@ -537,7 +537,7 @@ a{
 		
 				#home > section#about #about-text > header{
 					width: 92%;
-					background-image: url(/img/about-nubis.png);
+					background-image: url(/assets/img/about-nubis.png);
 					background-size: 100%;
 					background-repeat: no-repeat;
 					padding: 4%;
