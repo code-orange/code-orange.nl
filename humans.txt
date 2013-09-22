@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Reinout Woortman -- Design Lead -- https://plus.google.com/117564675720509519723
+	Tim van Dalen -- Implementation Lead -- https://plus.google.com/100487696573936783003
+	Remco Plasmeijer -- Animation Implementation -- https://plus.google.com/102632274470030995679
 
 # THANKS
-
-    <name>
 
 # TECHNOLOGY COLOPHON
 
