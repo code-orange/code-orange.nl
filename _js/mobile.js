@@ -7,7 +7,7 @@ $(function(){
 		$("#home > section#cases .case-holder").each(function(){
 			var _case = cases[i];
 			
-			$(this).find("img").attr("src", "/img/cases/" + _case.cover);
+			$(this).find("img").attr("src", "/assets/img/cases/" + _case.cover);
 			$(this).find(".case-description h1").text(_case.name);
 			$(this).find(".case-description p").html(_case.description);
 			

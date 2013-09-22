@@ -268,7 +268,7 @@ function initMap(){
 	};
 	
 	map = new google.maps.Map($("#home > section#contact #map")[0], mapOptions);
-	var georssLayer = new google.maps.KmlLayer('http://nub.is/res/map.kml', { preserveViewport: true });
+	var georssLayer = new google.maps.KmlLayer('http://nub.is/assets/res/map.kml', { preserveViewport: true });
 	georssLayer.setMap(map);
 }
 
@@ -295,7 +295,7 @@ $(function(){
 	
 	$("#home > section#about .hexagon").each(function(){
 		if($(this).data('photo')){
-			$(this).css('background-image', 'url(/img/team/' + $(this).data('name') + '.jpg)');
+			$(this).css('background-image', 'url(/assets/img/team/' + $(this).data('name') + '.jpg)');
 		}else{
 			$(this).addClass('nophoto');
 		}
@@ -313,13 +313,13 @@ $(function(){
 		}
 	});
 	
-	$.getJSON("/res/quotes.json", function(quotes){
+	$.getJSON("/assets/res/quotes.json", function(quotes){
 		var i = 0;
 		
 		function setQuote(){
 			var quote = quotes[i];
 			
-			$("#home > section#about #quote img").attr("src", "/img/team/" + quote.photo + ".jpg");
+			$("#home > section#about #quote img").attr("src", "/assets/img/team/" + quote.photo + ".jpg");
 			$("#home > section#about #quote blockquote").html("&ldquo;" + quote.text + "&rdquo;");
 			$("#home > section#about #quote figcaption").text(quote.name);
 			
@@ -332,13 +332,13 @@ $(function(){
 		setQuote();
 	});
 	
-	$.getJSON("/res/cases.json", function(cases){
+	$.getJSON("/assets/res/cases.json", function(cases){
 		var i = 0;
 		
 		$("#home > section#cases #cases-thumbs .cases-thumb").each(function(){
 			var _case = cases[i];
 			
-			$(this).css("background-image", "url(/img/cases/" + _case.cover + ")");
+			$(this).css("background-image", "url(/assets/img/cases/" + _case.cover + ")");
 			$(this).find(".description h2").text(_case.name);
 			$(this).find(".description p").text(_case.type);
 			$(this).click(function(){
@@ -346,7 +346,7 @@ $(function(){
 				$("#home > section#cases #case-zoom #case-media").append(jQuery("<ul>"));
 				
 				for(var j = 0; j < _case.images.length; j++){
-					$("#home > section#cases #case-zoom #case-media ul").append(jQuery("<li>").css("background-image", "url(/img/cases/" + _case.images[j] + ")"));
+					$("#home > section#cases #case-zoom #case-media ul").append(jQuery("<li>").css("background-image", "url(/assets/img/cases/" + _case.images[j] + ")"));
 				}
 				
 				$("#home > section#cases #case-zoom #case-media").unslider({
@@ -360,7 +360,7 @@ $(function(){
 			});
 			
 			for(var j = 0; j < _case.images.length; j++){
-				$("#preload").append(jQuery("<img>").attr("src", "/img/cases/" + _case.images[j]));
+				$("#preload").append(jQuery("<img>").attr("src", "/assets/img/cases/" + _case.images[j]));
 			}
 			
 			i++;

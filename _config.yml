@@ -2,3 +2,4 @@ asset_bundler:
   compress:
     js: yui
     css: yui
+  base_path: /assets/bundles/
