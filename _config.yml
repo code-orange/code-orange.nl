@@ -1,5 +1,5 @@
 asset_bundler:
+  base_path: /assets/bundles/
   compress:
     js: yui
     css: yui
-  base_path: /assets/bundles/
