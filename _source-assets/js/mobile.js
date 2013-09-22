@@ -1,7 +1,7 @@
 $(function(){
 	$("#home > header").height($(window).height() - $("#home > nav").outerHeight(true) - parseFloat($("#home > header").css("padding-top")));
 	
-	$.getJSON("/res/cases.json", function(cases){
+	$.getJSON("/assets/res/cases.json", function(cases){
 		var i = 0;
 		
 		$("#home > section#cases .case-holder").each(function(){
