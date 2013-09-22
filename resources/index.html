@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <!--[if lt IE 7]>	  <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>		 <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -6,11 +8,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Nubis &raquo; Resources</title>
+		<title>{{ site.content.info.name }} &raquo; Resources</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
 
-		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+		{% bundle %} [/_source-assets/css/bootstrap.min.css] {% endbundle %}
 		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7847452/672622/css/fonts.css">
 		
 		<link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -109,13 +111,8 @@
 			ga('send', 'pageview');
 		</script>
 		
-		<script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		{% bundle %} [/_source-assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js] {% endbundle %}
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
-		<script src="/js/vendor/bootstrap.min.js"></script>
-		
-		<div id="preload"></div>
 	</body>
 </html>
