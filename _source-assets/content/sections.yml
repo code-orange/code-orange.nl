@@ -1,0 +1,16 @@
+services:
+  name: Diensten
+  intro: Bij Nubis hebben we verstand van social media, creatie en techniek. In de applicaties die we bouwen, komen deze drie expertises samen. Je kan ook bij ons aankloppen voor &eacute;&eacute;n ervan. Wat we bij Nubis ook voor je doen, we verwarren het middel nooit met het doel&#58; niet onze diensten, maar de doelstellingen van onze klanten staan centraal.
+  hexes:
+    social:
+      name: Social media
+      intro: Wij weten wat social media voor je kunnen doen en daarbij adviseren we je graag.
+      text: Social media draait om content. We maken daarom eerst altijd een 'contentspectrum' en een communicatiekalender die als basis dienen voor de social-mediastrategie van onze klanten. We doen dat voor Facebook, maar ook voor andere social media. We beheren de community en communiceren in de tone of voice van onze klanten om zo in contact te blijven met de fans. Dat laatste doen we ook buiten kantooruren, omdat consumenten juist in de avond en in het weekend online actief zijn.
+    creatie:
+      name: Creatie
+      intro: Creatie is waar social en development samen komen.
+      text: Wij zetten strategie&euml;n uit, bedenken concepten, maken designs en schrijven copy.  Dit doen we door zelf te cre&euml;ren, maar ook met bestaand materiaal kunnen we goed aan de slag. Zo realiseren wij succesvolle creaties,  zonder daarbij de specifieke kenmerken van social media uit het oog te verliezen&#58; interactief, uitdagend en doelgericht.
+    development:
+      name: Development
+      intro: Wij werken met jonge, talentvolle programmeurs die de technische mogelijkheden van social media volkomen doorgronden.
+      text: We kunnen daardoor alle soorten apps bouwen. Ook de digitale platforms waarmee social media steeds vaker worden ge&iuml;ntegreerd, hebben voor ons vrijwel geen geheimen meer&#58; we bouwen net zo makkelijk websites als mobiele applicaties of onlineadvertenties (banners). Wat we adviseren, kunnen we dus ook maken. Wel zo gemakkelijk.

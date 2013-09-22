@@ -7,6 +7,7 @@ module Jekyll
 		content = {}
 		
 		content['info'] = YAML::load(File.read('_source-assets/content/info.yml'))
+		content['sections'] = YAML::load(File.read('_source-assets/content/sections.yml'))
 		content['clients'] = YAML::load(File.read('_source-assets/content/clients.yml'))
 		content['team'] = YAML::load(File.read('_source-assets/content/team.yml'))
 		
