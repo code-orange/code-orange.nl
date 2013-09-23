@@ -268,7 +268,7 @@ function initMap(){
 	};
 	
 	map = new google.maps.Map($("#home > section#contact #map")[0], mapOptions);
-	var georssLayer = new google.maps.KmlLayer('http://nub.is/assets/res/map.kml', { preserveViewport: true });
+	var georssLayer = new google.maps.KmlLayer('http://nub.is/assets/res/map.kml?v1', { preserveViewport: true });
 	georssLayer.setMap(map);
 }
 

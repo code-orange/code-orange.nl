@@ -1,3 +1,7 @@
+analytics:
+  code: UA-43992716-1
+  domain: nub.is
+
 asset_bundler:
   base_path: /assets/bundles/
   compress:
