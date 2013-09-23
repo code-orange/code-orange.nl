@@ -21,11 +21,11 @@
 			<nav>
 				<img id="logo" src="/assets/img/logo.png" alt="Logo">
 				<ul>
-					<li id="nav_services"><a href="#services">{{ site.content.sections.services.name }}</a></li>
-					<li id="nav_cases"><a href="#cases">Werk</a></li>
-					<li id="nav_about"><a href="#about">Nubis</a></li>
-					<li id="nav_blog"><a href="#blog">Blog</a></li>
-					<li id="nav_contact"><a href="#contact">Contact</a></li>
+					<li id="nav_services"><a href="#services">{{ site.content.sections.services.nav }}</a></li>
+					<li id="nav_cases"><a href="#cases">{{ site.content.sections.cases.nav }}</a></li>
+					<li id="nav_about"><a href="#about">{{ site.content.sections.about.nav }}</a></li>
+					<li id="nav_blog"><a href="#blog">{{ site.content.sections.blog.nav }}</a></li>
+					<li id="nav_contact"><a href="#contact">{{ site.content.sections.contact.nav }}</a></li>
 				</ul>
 			</nav>
 			<header id="cover">
@@ -75,20 +75,20 @@
 			</section>
 			<section id="cases">
 				<header>
-					<h1>Cases</h1>
+					<h1>{{ site.content.sections.cases.name }}</h1>
 					<hr>
 				</header>
 				<div id="case-zoom" class="row-fluid">
 					<div id="case-media" class="span8">
-						<iframe src="//www.youtube.com/embed/ItMN4380Dn4" frameborder="0" allowfullscreen></iframe>
+						{{ site.content.sections.cases.showreel.iframe }}
 					</div>
 					<div id="case-description" class="span4">
 						<header>
-							<h1>Showreel</h1>
+							<h1>{{ site.content.sections.cases.showreel.title }}</h1>
 							<hr>
 						</header>
 						<p>
-							Bekijk hier onze showreel uit 2013.
+							{{ site.content.sections.cases.showreel.description }}
 						</p>
 					</div>
 				</div>
@@ -132,7 +132,7 @@
 			<section id="clients">
 				<section id="customers">
 					<header>
-						<h1>Klanten</h1>
+						<h1>{{ site.content.sections.clients.customers }}</h1>
 						<hr>
 					</header>
 {% for company in site.content.clients.customers %}
@@ -140,7 +140,7 @@
 				</section>
 				<section id="partners">
 					<header>
-						<h1>Partners</h1>
+						<h1>{{ site.content.sections.clients.partners }}</h1>
 						<hr>
 					</header>
 {% for company in site.content.clients.partners %}
@@ -149,7 +149,7 @@
 			</section>
 			<section id="about">
 				<header>
-					<h1>Over Nubis</h1>
+					<h1>{{ site.content.sections.about.name }}</h1>
 					<hr>
 				</header>
 				
@@ -159,19 +159,15 @@
 						<hr>
 						<p>{{ site.content.info.tagline }}</p>
 					</header>
-					<h3>Social media zijn altijd en overal, en bij Nubis kennen we de mogelijkheden als geen ander.</h2>
+					<h3>{{ site.content.sections.about.text.header }}</h2>
 					<div id="intro-text">
-						<p>Nubis (Latijn voor 'wolk') werd eind 2010 opgericht door Jelle Oskam en Gielke Burgmans. Sindsdien is Nubis uitgegroeid van een adviesbureau voor onlinemarketing tot 'digital agency' waar we werken op het snijvlak van marketing, design en techniek. Online laten die drie zich niet scheiden en dat doen wij dus ook niet.</p>
-						<p>In veel van onze opdrachten spelen social media een belangrijke rol. Het is de laatste jaren steeds waardevoller gebleken voortdurend en op grote schaal in contact te staan met consumenten, en social media maken dat mogelijk. Het vereist niet altijd enorme budgetten, maar wel intelligente campagnes, apps en constant beheer van de gebruikte platforms. Bij Nubis doen we dat allemaal.</p>
-						<p>We begonnen met een focus op Facebook, het meestgebruikte social media platform ter wereld. Bij Nubis plozen we als een van de eersten de technische werking van Facebook uit. Onze kennis daarvan is daardoor onderscheidend en zorgt voor beter marketingadvies en effectievere creaties. We zetten die expertise inmiddels ook in voor andere social media zoals Twitter, Pinterest, Instagram en Vine.</p>
-						<p>Innoveren staat daarbij voorop. De computer die zes jaar geleden op onze bureau's stond, zit nu als smartphone in onze broekzak. Ook online volgen de vernieuwingen zich razendsnel op; wie kan nu al voorspellen wat h&eacute;t digitale platform van het volgende decennium wordt? Wij zijn altijd op de hoogte van de laatste ontwikkelingen en proberen ze als het even kan voor te blijven.</p>
-						<p>Zoals onze naam al aangeeft, werken we bij Nubis 'in the cloud': we kunnen online altijd en overal bij ons werk. Het maakt Nubis flexibel en stelt ons in staat je snel te helpen. Bovendien hebben we een 'platte' organisatie, waardoor we snel kunnen reageren, essentieel bij online werken.</p>
+						{{ site.content.sections.about.text.intro | markdownify }}
 					</div>
 					<hr>
 				</section>
 				
 				<header>
-					<h1>Team</h1>
+					<h1>{{ site.content.sections.about.team.name }}</h1>
 					<hr>
 				</header>
 				<section id="team-members">
@@ -201,7 +197,7 @@
 			</section>
 			<section id="blog">
 				<header>
-					<h1>Blog</h1>
+					<h1>{{ site.content.sections.blog.name }}</h1>
 					<hr>
 				</header>
 				<article>
@@ -221,7 +217,7 @@
 			</section>
 			<section id="contact">
 				<hr>
-				<h1>Get<br>in touch!</h1>
+				<h1>{{ site.content.sections.contact.form.head }}</h1>
 				<form>
 					<input type="text" placeholder="naam" name="naam">
 					<input type="email" placeholder="e-mail" name="email">
@@ -232,21 +228,21 @@
 			</section>
 			<footer id="footer">
 				<aside>
-					<h1>Location</h1>
+					<h1>{{ site.content.sections.footer.location }}</h1>
 					<address>
 						<p>{{ site.content.info.address.street }} {{ site.content.info.address.number }}</p>
 						<p>{{ site.content.info.address.zip }} {{ site.content.info.address.city }}</p>
 					</address>
 				</aside>
 				<aside>
-					<h1>Contact</h1>
+					<h1>{{ site.content.sections.footer.contact }}</h1>
 					<address>
 						<p>T {{ site.content.info.contact.phone }}</p>
 						<p>{{ site.content.info.contact.email }}</p>
 					</address>
 				</aside>
 				<aside>
-					<h1>Follow us</h1>
+					<h1>{{ site.content.sections.footer.follow }}</h1>
 					<a href="https://plus.google.com/{{ site.content.info.social.gplus }}" rel="publisher"><img src="/assets/img/social-gplus.png"></img></a>
 					<a href="https://twitter.com/{{ site.content.info.social.twitter }}" target="_new"><img src="/assets/img/social-twitter.png"></img></a>
 					<a href="https://facebook.com/{{ site.content.info.social.facebook }}" target="_new"><img src="/assets/img/social-fb.png"></img></a>

@@ -1,4 +1,5 @@
 services:
+  nav: Diensten
   name: Diensten
   intro: Bij Nubis hebben we verstand van social media, creatie en techniek. In de applicaties die we bouwen, komen deze drie expertises samen. Je kan ook bij ons aankloppen voor &eacute;&eacute;n ervan. Wat we bij Nubis ook voor je doen, we verwarren het middel nooit met het doel&#58; niet onze diensten, maar de doelstellingen van onze klanten staan centraal.
   hexes:
@@ -14,3 +15,46 @@ services:
       name: Development
       intro: Wij werken met jonge, talentvolle programmeurs die de technische mogelijkheden van social media volkomen doorgronden.
       text: We kunnen daardoor alle soorten apps bouwen. Ook de digitale platforms waarmee social media steeds vaker worden ge&iuml;ntegreerd, hebben voor ons vrijwel geen geheimen meer&#58; we bouwen net zo makkelijk websites als mobiele applicaties of onlineadvertenties (banners). Wat we adviseren, kunnen we dus ook maken. Wel zo gemakkelijk.
+
+cases:
+  nav: Werk
+  name: Cases
+  showreel:
+    iframe: "<iframe style='width: 100%; height: 100%;' src='//www.youtube.com/embed/ItMN4380Dn4' frameborder='0' allowfullscreen></iframe>"
+    title: Showreel
+    description: Bekijk hier onze showreel uit 2013.
+
+clients:
+  customers: Klanten
+  partners: Partners
+
+about:
+  name: Over Nubis
+  nav: Nubis
+  text:
+    header: Social media zijn altijd en overal, en bij Nubis kennen we de mogelijkheden als geen ander.
+    intro: "Nubis (Latijn voor 'wolk') werd eind 2010 opgericht door Jelle Oskam en Gielke Burgmans. Sindsdien is Nubis uitgegroeid van een adviesbureau voor onlinemarketing tot 'digital agency' waar we werken op het snijvlak van marketing, design en techniek. Online laten die drie zich niet scheiden en dat doen wij dus ook niet.
+
+    In veel van onze opdrachten spelen social media een belangrijke rol. Het is de laatste jaren steeds waardevoller gebleken voortdurend en op grote schaal in contact te staan met consumenten, en social media maken dat mogelijk. Het vereist niet altijd enorme budgetten, maar wel intelligente campagnes, apps en constant beheer van de gebruikte platforms. Bij Nubis doen we dat allemaal.
+    
+    We begonnen met een focus op Facebook, het meestgebruikte social media platform ter wereld. Bij Nubis plozen we als een van de eersten de technische werking van Facebook uit. Onze kennis daarvan is daardoor onderscheidend en zorgt voor beter marketingadvies en effectievere creaties. We zetten die expertise inmiddels ook in voor andere social media zoals Twitter, Pinterest, Instagram en Vine.
+    
+    Innoveren staat daarbij voorop. De computer die zes jaar geleden op onze bureau's stond, zit nu als smartphone in onze broekzak. Ook online volgen de vernieuwingen zich razendsnel op; wie kan nu al voorspellen wat h&eacute;t digitale platform van het volgende decennium wordt? Wij zijn altijd op de hoogte van de laatste ontwikkelingen en proberen ze als het even kan voor te blijven.
+    
+    Zoals onze naam al aangeeft, werken we bij Nubis 'in the cloud': we kunnen online altijd en overal bij ons werk. Het maakt Nubis flexibel en stelt ons in staat je snel te helpen. Bovendien hebben we een 'platte' organisatie, waardoor we snel kunnen reageren, essentieel bij online werken."
+  team:
+    name: Team
+
+blog:
+  name: Blog
+  nav: Blog
+  
+contact:
+  nav: Contact
+  form:
+    head: "Get<br>in touch!"
+
+footer:
+  location: Location
+  contact: Contact
+  follow: Follow us

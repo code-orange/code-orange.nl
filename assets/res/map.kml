@@ -4,14 +4,14 @@
 		<Style id="highlightPlacemark">
 			<IconStyle>
 				<Icon>
-					<href>http://nub.is/img/pointer.png</href>
+					<href>http://nub.is/assets/img/pointer.png</href>
 				</Icon>
 			</IconStyle>
 		</Style>
 		<Style id="normalPlacemark">
 			<IconStyle>
 				<Icon>
-					<href>http://nub.is/img/pointer.png</href>
+					<href>http://nub.is/assets/img/pointer.png</href>
 				</Icon>
 			</IconStyle>
 		</Style>
