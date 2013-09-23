@@ -1,3 +1,5 @@
+permalink: /blog/:categories/:year/:month/:day/:title/
+
 analytics:
   code: UA-43992716-1
   domain: nub.is

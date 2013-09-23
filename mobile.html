@@ -200,20 +200,16 @@
 					<h1>{{ site.content.sections.blog.name }}</h1>
 					<hr>
 				</header>
+{% for post in site.posts %}
 				<article>
-					<img class="cover" alt="Cover photo" src="/assets/blog/img/cover-instagram.jpg">
-					<h2>Instagram Video</h2>
-					<p>Dankzij Instagram zijn we tegenwoordig allemaal al topfotograaf en nu worden we ook regisseur en cameraman! Instagram, wat eigendom is van Facebook,  heeft namelijk een nieuwe functie aan haar app toegevoegd: Video on Instagram.</p>
-					<p>De videofunctie werkt zoals je het zou verwachten bij Instagram. Je maakt een filmpje waar je een filter overheen plaatst om het een mooi effect te geven, zoals je dat ook bij Instagram foto's doet. Wanneer je de opnameknop aanraakt, begint de app met filmen en als je loslaat stopt de opname. Op deze manier kan je hele korte shots maken waarmee je bijvoorbeeld een stop-motion filmpje kan maken. Je filmpje, ook wel InstaVid, kan maximaal 15 seconden duren.</p>
+					<img class="cover" alt="Cover photo" src="/assets/blog/img/{{ post.cover }}">
+					<h2>{{ post.title }}</h2>
+					<p>{{ post.excerpt }}</p>
+					<p>{{ post.secondp }}</p>
 					<a>Wordt later vervolgd&hellip;</a>
+{% comment %}					<a href="{{ post.url }}">Lees verder &raquo;</a>{% endcomment %}
 				</article>
-				<article>
-					<img class="cover" alt="Cover photo" src="/assets/blog/img/cover-pebble.jpg">
-					<h2>Waarom Pebble absoluut de moeite waard is</h2>
-					<p>Afgelopen week heb ik na een jaar wachten eindelijk mijn Pebble in de post gevonden. Voor wie hem nog niet kent, de Pebble is &eacute;&eacute;n van de eerste smartwatches. Een horloge dus, maar met wat extra mogelijkheden.</p>
-					<p>Deze smartwatch is op Frankwatching eerder besproken, maar het ging altijd vooral over de manier waar op het project tot leven is gekomen. Crowdsourcing is een geweldig concept, maar vandaag wil ik het hebben over wat je nou echt kunt met een Pebble, als eindgebruiker, developer en marketeer.</p>
-					<a>Wordt later vervolgd&hellip;</a>
-				</article>
+{% endfor %}
 			</section>
 			<section id="contact">
 				<hr>
