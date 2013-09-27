@@ -92,42 +92,20 @@
 						</p>
 					</div>
 				</div>
+{% for case in site.content.cases %}
 				<div class="row-fluid case-holder">
-					<img class="case-thumb span4">
-					</img>
+					<img class="case-thumb span4" src="/assets/img/cases/{{ case.cover }}">
 					<div class="span8 case-description">
 						<header>
-							<h1></h1>
+							<h1>{{ case.name }}</h1>
 							<hr>
 						</header>
 						<p>
+							{{ case.description }}
 						</p>
 					</div>
 				</div>
-				<div class="row-fluid case-holder">
-					<img class="case-thumb span4">
-					</img>
-					<div class="span8 case-description">
-						<header>
-							<h1></h1>
-							<hr>
-						</header>
-						<p>
-						</p>
-					</div>
-				</div>
-				<div class="row-fluid case-holder">
-					<img class="case-thumb span4">
-					</img>
-					<div class="span8 case-description">
-						<header>
-							<h1></h1>
-							<hr>
-						</header>
-						<p>
-						</p>
-					</div>
-				</div>
+{% endfor %}
 			</section>
 			<section id="clients">
 				<section id="customers">

@@ -1,20 +1,6 @@
 $(function(){
 	$("#home > header").height($(window).height() - $("#home > nav").outerHeight(true) - parseFloat($("#home > header").css("padding-top")));
 	
-	$.getJSON("/assets/res/cases.json", function(cases){
-		var i = 0;
-		
-		$("#home > section#cases .case-holder").each(function(){
-			var _case = cases[i];
-			
-			$(this).find("img").attr("src", "/assets/img/cases/" + _case.cover);
-			$(this).find(".case-description h1").text(_case.name);
-			$(this).find(".case-description p").html(_case.description);
-			
-			i++;
-		});
-	});
-	
 	$(".company").click(function(){
 		var url;
 		if($(this).data("url") != undefined){

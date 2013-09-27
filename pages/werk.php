@@ -6,23 +6,29 @@ layout: searchbot
 <section id="cases">
 	<header>
 		<h1>{{ site.content.sections.cases.name }}</h1>
-		<hr>
 	</header>
-	<div id="case-zoom">
-		<div id="case-media">
-			{{ site.content.sections.cases.showreel.iframe }}
-		</div>
-		<div id="case-description">
-			<header>
-				<h1>{{ site.content.sections.cases.showreel.title }}</h1>
-				<hr>
-			</header>
-			<p>
-				{{ site.content.sections.cases.showreel.description }}
-			</p>
-		</div>
-	</div>
-	{% comment %} TODO: Move cases from JSON to YAML {% endcomment %}
+	<section>
+		<header>
+			<h1>{{ site.content.sections.cases.showreel.title }}</h1>
+		</header>
+		{{ site.content.sections.cases.showreel.iframe }}
+		<p>
+			{{ site.content.sections.cases.showreel.description }}
+		</p>
+	</section>
+{% for case in site.content.cases %}
+	<section>
+		<header>
+			<h1>{{ case.name | capitalize }}</h1>
+			<h2>{{ case.type | capitalize }}</h2>
+			<img alt="cover" src="/assets/img/cases/{{ case.cover }}">
+		</header>
+		<p>{{ case.description }}</p>
+{% for img in case.images %}
+		<img src="/assets/img/cases/{{ img }}">
+{% endfor %}
+	</section>
+{% endfor %}
 </section>
 <section id="clients">
 	<section id="customers">
