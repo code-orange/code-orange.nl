@@ -349,7 +349,7 @@ a{
 		
 			#home > section#cases #case-zoom #case-media{
 				height: 100% !important;
-				background-color: black;
+				background-color: transparent;
 				position: relative;
 			}
 			
