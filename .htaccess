@@ -6,6 +6,13 @@ RewriteRule (.*) http://nub.is/$1 [R=301,L]
 
 RewriteRule ^$ index.php
 
+# SEO URLs
+RewriteRule ^diensten/$ pages/diensten.php
+RewriteRule ^werk/$ pages/werk.php
+RewriteRule ^over/$ pages/over.php
+RewriteRule ^blog/$ pages/blog.php
+RewriteRule ^contact/$ pages/contact.php
+
 RewriteRule ^new$ shortener/new.php
 
 RewriteCond %{REQUEST_FILENAME} !-f
