@@ -413,7 +413,7 @@ a{
 					color: #1cdfff;
 					margin-bottom: 0;
 					
-					font-weight: 500;
+					font-weight: 600;
 					font-size: 1.357em;
 					line-height: 1.357em;
 					
@@ -421,8 +421,8 @@ a{
 				}
 				
 				#home > section#cases #case-zoom #case-description header > hr{
-					margin-top: 0;
-					margin-bottom: 0.5em;
+					margin-top: 0.5em;
+					margin-bottom: 1.5em;
 					width: 1.5em;
 					border-top-color: #c4f5ff;
 					border-bottom-color: #35e1ff;
@@ -510,7 +510,7 @@ a{
 			}
 			
 			#home > section#clients  header > hr{
-				margin-top: 0;
+				margin-top: 0.5em;
 				width: 1.5em;
 				border-top-color: #7d7d7d;
 				border-bottom-color: #686868;
@@ -853,13 +853,13 @@ a{
 		overflow: auto;
 		background-color: #fafafa;
 		
-		padding-left: 20%;
-		padding-right: 20%;
+		padding-left: 10%;
+		padding-right: 10%;
 	}
 	
 		#home > footer > aside{
 			float: left;
-			width: 23%;
+			width: 14%;
 			border-top: 1px solid #f0efef;
 			
 			margin-top: 15px;
@@ -879,10 +879,6 @@ a{
 				font-size: 0.929em;
 				border-bottom: 0.3em;
 			}
-			
-		#home > footer > aside > #___page_0{
-			margin-top: 50px !important;
-		}
 			
 #preload{
 	display: none;
