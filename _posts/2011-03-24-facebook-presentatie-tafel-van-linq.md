@@ -5,7 +5,8 @@ date: 2011-03-24 09:19
 comments: true
 categories: []
 ---
-<iframe src="http://prezi.com/embed/cwpg45uozag-/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0"></iframe>
+<iframe src="http://prezi.com/embed/cwpg45uozag-/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0">
+</iframe>
 
 Bijgaand vind je de sheets die Gielke Burgmans namens Nubis Online Marketing gebruikte tijdens de presentatie op het netwerkevent voor young professionals “De Tafel van LINQ”. Het doel van de presentatie was om de deelnemers te inspireren ten aanzien van de mogelijkheden voor bedrijven op Facebook. Hoe vertaal je een marketing strategie naar een goede Facebook strategie.
 
