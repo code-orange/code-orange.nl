@@ -7,7 +7,7 @@ categories: []
 ---
 De nieuwste hit op social media gebied. Wat is het, wat doet het en wat gaan we ermee doen?
 
-<img title="Pinterest-logo" src="http://netdna.copyblogger.com/images/pinterest2.jpg" alt="" width="175" height="176" align="left"/><strong>Wat is het? </strong>
+&#x20;<img title="Pinterest-logo" src="http://netdna.copyblogger.com/images/pinterest2.jpg" alt="" width="175" height="176" align="left"/><strong>Wat is het? </strong>
 
 De naam is een samentrekking van de woorden pin en interest en beschrijft ook goed wat Pinterest is; een prikbord waar je interessante plaatjes op deelt. Het plaatsen van een plaatje heet <em>pinnen</em>, het delen van andermans plaatje heet <em>repinnen</em>.
 Het afgelopen half jaar heeft het aantal gebruikers op Pinterest een enorme vlucht genomen. September 2011 stond de teller op 1,6 miljoen en een half jaar later waren er plotseling bijna 12 miljoen gebruikers. Van die 12 miljoen is naar schatting 80% vrouw.

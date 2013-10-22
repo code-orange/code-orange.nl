@@ -5,13 +5,10 @@ date: 2011-03-24 09:19
 comments: true
 categories: []
 ---
-<div class="prezi-player"><!-- .prezi-player { width: 550px; } .prezi-player-links { text-align: center; } --><object id="prezi_cwpg45uozag-" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="550" height="400" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="name" value="prezi_cwpg45uozag-" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="bgcolor" value="#ffffff" /><param name="flashvars" value="prezi_id=cwpg45uozag-&amp;lock_to_path=0&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0" /><param name="src" value="http://prezi.com/bin/preziloader.swf" /><embed id="prezi_cwpg45uozag-" type="application/x-shockwave-flash" width="550" height="400" src="http://prezi.com/bin/preziloader.swf" flashvars="prezi_id=cwpg45uozag-&amp;lock_to_path=0&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0" bgcolor="#ffffff" allowscriptaccess="always" allowfullscreen="true" name="prezi_cwpg45uozag-"></embed></object>
-<div class="prezi-player-links">
+<iframe src="http://prezi.com/embed/cwpg45uozag-/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0"></iframe>
 
 Bijgaand vind je de sheets die Gielke Burgmans namens Nubis Online Marketing gebruikte tijdens de presentatie op het netwerkevent voor young professionals “De Tafel van LINQ”. Het doel van de presentatie was om de deelnemers te inspireren ten aanzien van de mogelijkheden voor bedrijven op Facebook. Hoe vertaal je een marketing strategie naar een goede Facebook strategie.
 
-</div>
-</div>
 In de presentatie maakte wij onderscheid tussen een aantal zaken waarvoor bedrijven en organisaties Facebook in kunnen zetten. De basis voor bedrijven binnen Facebook is de fanpage, maar hoe deze fanpage het beste ingericht kan worden, hangt voornamelijk af van de doelstelling die men heeft voor de fanpage.
 
 Starbucks maakt bijvoorbeeld goed gebruik van een gecombineerde Global en Local benadering door naast de globale fanpage ook per land fanpages te hanteren en te onderhouden. Iets dichter bij huis zie je bij Citroën een vergelijkbare strategie. Wij lieten zien dat deze benadering ook voor LINQ en haar 3 vestigingen (Amsterdam, Rotterdam, Utrecht) een goede benadering kan zijn. Als student in Rotterdam ben je namelijk niet geïnteresseerd in de diensten van LINQ Amsterdam.

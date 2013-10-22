@@ -19,7 +19,8 @@ Voor een informatiemanager kun je je eigenlijk geen dynamischer werkterrein voor
 
 <em>Lees <a href="http://www.zorgwelzijn.nl/Home/Opinie/2012/12/De-barometer-van-Nieuw-West-1118475W/"><strong>hier </strong></a>de rest  van het artikel</em>
 
-[caption id="attachment_621" align="alignleft" width="953"]<a href="http://nubisonline.nl/wp-content/uploads/2012/12/heatmapp2.png"><img class="size-full wp-image-621" title="heatmapp2" src="http://nubisonline.nl/wp-content/uploads/2012/12/heatmapp2.png" alt="" width="580" height="494" /></a> Voorbeeld van het gebruik van Heatmapp, hier is een lijst met postcodes in Woerden gebruikt[/caption]
+<a href="http://nubisonline.nl/wp-content/uploads/2012/12/heatmapp2.png"><img class="size-full wp-image-621" title="heatmapp2" src="http://nubisonline.nl/wp-content/uploads/2012/12/heatmapp2.png" alt="" width="580" height="494" /></a>
+Voorbeeld van het gebruik van Heatmapp, hier is een lijst met postcodes in Woerden gebruikt
 
 <em>Remco Cornielje is informatiemanager bij SEZO, de maatschappelijke dienstverlener van Amsterdam Nieuw-West. SEZO heeft als activiteiten maatschappelijk werk, schulddienstverlening, sociaal juridisch advies en pedagogisch advies. De dienstverlener wordt ondersteund door KWIZ bij het beheer en de inrichting van de werkprocessen en managementinformatie. SEZO levert ook gegevens voor de monitor Schuldhulpverlening die KWIZ voor de gemeente Amsterdam heeft ontwikkeld.</em>
 

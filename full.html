@@ -212,6 +212,7 @@
 					<a>Wordt later vervolgd&hellip;</a>
 {% comment %}					<a href="{{ post.url }}">Lees verder &raquo;</a>{% endcomment %}
 				</article>
+{% if forloop.index == 2 %}{% break %}{% endif %}
 {% endfor %}
 			</section>
 			<section id="contact">
