@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Instagram Video
 author: Duco
 excerpt: "Dankzij Instagram zijn we tegenwoordig allemaal al topfotograaf en nu worden we ook regisseur en cameraman! Instagram, wat eigendom is van Facebook, heeft namelijk een nieuwe functie aan haar app toegevoegd: Video on Instagram."

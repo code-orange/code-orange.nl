@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Waarom Pebble absoluut de moeite waard is
 author: Tim
 excerpt: "Afgelopen week heb ik na een jaar wachten eindelijk mijn Pebble in de post gevonden. Voor wie hem nog niet kent, de Pebble is één van de eerste smartwatches. Een horloge dus, maar met wat extra mogelijkheden."
