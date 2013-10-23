@@ -2,8 +2,10 @@
 layout: post
 title: Heatmapp gebruikt bij schuldhulpverlening Amsterdam
 date: 2012-12-05 15:49
-comments: true
-categories: []
+author: Jelle
+excerpt: "Eind 2010 hebben wij de Heatmapp tool ontwikkeld, waarmee een lijst met postcodes kan worden omgezet in een heatmap, een kaart met voor elke postcode een punt."
+secondp: "Als bij de invoer veel postcodes bij elkaar liggen zal dat gebied donkerder worden weergegeven. De tool is gebaseerd op het populaire Google Maps platform en is ook te gebruiken in combinatie met Google Earth voor offline presentaties."
+cover: cover-heatmapp.png
 ---
 <em>Eind 2010 hebben wij de Heatmapp tool ontwikkeld, waarmee een lijst met postcodes kan worden omgezet in een heatmap, een kaart met voor elke postcode een punt. Als bij de invoer veel postcodes bij elkaar liggen zal dat gebied donkerder worden weergegeven. De tool is gebaseerd op het populaire Google Maps platform en is ook te gebruiken in combinatie met Google Earth voor offline presentaties. </em>
 <em>In 2011 hebben we in opdracht van Sezo de tool toegespitst op het geografisch inzichtelijk weergeven van aanmeldingen bij de schuldhulpverlening. Sezo maakt nog steeds veelvuldig gebruik van dit online hulpmiddel bij het voorspellen van trends in hun vakgebied. </em>

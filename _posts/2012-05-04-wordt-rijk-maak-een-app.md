@@ -2,8 +2,10 @@
 layout: post
 title: Wordt rijk, maak een app
 date: 2012-05-04 20:49
-comments: true
-categories: []
+author: Duco
+excerpt: "Het zal u niet ontgaan zijn dat Facebook onlangs Instagram voor $1.000.000.000 (1 miljard dollar, ja!) heeft overgenomen. Instagram is niet de enige appbouwer die in de afgelopen maanden door Facebook is overgenomen."
+secondp: "Zo werd in april ook het bedrijf Tagtile overgenomen door Facebook en slokte het eind vorig jaar de incheckdienst Gowalla op. In alle gevallen werden de eigenaren en medewerkers er absoluut niet slechter van."
+cover: cover-wordtrijk.png
 ---
 <p>Het zal u niet ontgaan zijn dat Facebook onlangs Instagram voor $1.000.000.000 (1 miljard dollar, ja!) heeft overgenomen. Instagram is niet de enige appbouwer die in de afgelopen maanden door Facebook is overgenomen. Zo werd in april ook het bedrijf Tagtile overgenomen door Facebook en slokte het eind vorig jaar de incheckdienst Gowalla op. In alle gevallen werden de eigenaren en medewerkers er absoluut niet slechter van. Naar verluidt werden de meeste (deels) in aandelen betaald en met de aanstaande beursgang van Facebook zouden er op die manier een hoop Facebookmiljonairs bijkomen.</p>
 <p><strong>Boze Vogels</strong></p>

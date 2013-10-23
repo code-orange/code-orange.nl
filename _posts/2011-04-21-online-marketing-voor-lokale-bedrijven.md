@@ -2,8 +2,10 @@
 layout: post
 title: Online marketing voor lokale bedrijven
 date: 2011-04-21 10:07
-comments: true
-categories: []
+author: Jelle
+excerpt: "Gestimuleerd door de opkomst van mobiel internet is online marketing bezig met een opmars in het MKB. Waar met name lokaal georiënteerde bedrijven enkele jaren geleden dachten dat internet iets “World Wide's” was, dringt nu langzaam maar zeker door dat het ook voor lokale bedrijven bijzonder nuttig kan zijn."
+secondp: ""De voorbeelden zijn legio. U loopt in een stad waar u wat minder bekend bent en zoekt een goed restaurant om een hapje te eten. Met uw mobiele telefoon surft u  naar Google Maps of Iens.nl en maakt u uw keuze. Lokale restaurants die online niet online vindbaar zijn, lopen zo dus steeds meer klanten mis."
+cover: cover-standaard.png
 ---
 Gestimuleerd door de opkomst van mobiel internet is online marketing bezig met een opmars in het MKB. Waar met name lokaal georiënteerde bedrijven enkele jaren geleden dachten dat internet iets “World Wide's” was, dringt nu langzaam maar zeker door dat het ook voor lokale bedrijven bijzonder nuttig kan zijn.
 

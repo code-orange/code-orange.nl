@@ -2,8 +2,11 @@
 layout: post
 title: "Google Adwords: De gevolgen van de verscherping van de reglementen"
 date: 2011-01-25 16:17
-comments: true
-categories: []
+author: Jelle
+excerpt: "Eind december werd er op verschillende blogs al over geschreven; begin 2011 zou Google het reglement dat opgesteld is voor Google Adwords strenger gaan handhaven. Tot eind vorig jaar liet Google de teugels aardig vieren en werden accounts van overtredende adverteerders pas gepauzeeerd na tips van derden."
+secondp: "Google heeft besloten de reglementen strenger te handhaven om de zoekresultaten zo relevant mogelijk te houden. Hiermee wil Google voorkomen dat websites met een 'slechte gebruiker ervaring' bovenin de zoekresultaten verschijnen."
+cover: cover-google-adwords.jpg
+
 ---
 &#x20;<a href="http://www.nubisonline.nl/wp-content/uploads/2011/02/google-adwords-logo.jpg"><img align="left" class="size-full wp-image-275" title="google-adwords" src="http://www.nubisonline.nl/wp-content/uploads/2011/02/google-adwords-logo.jpg" alt="" width="342" height="126" /></a>Bent u ook het volgende bericht tegen gekomen in uw Adwords account "Uw Google AdWords-account is permanent opgeschort omdat uw factuurgegevens in dit of een gerelateerd account niet kunnen worden geverifieerd." en bent u zich van geen kwaad bewust? Dan bent u zeker niet de enige! Daarom een uitleg van de verscherping van het Google Adwords reglement.
 

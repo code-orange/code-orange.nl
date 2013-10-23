@@ -2,8 +2,10 @@
 layout: post
 title: Pinterest
 date: 2012-04-06 13:13
-comments: true
-categories: []
+author: Duco
+excerpt: "De nieuwste hit op social media gebied. Wat is het, wat doet het en wat gaan we ermee doen?"
+secondp: "De naam is een samentrekking van de woorden pin en interest en beschrijft ook goed wat Pinterest is; een prikbord waar je interessante plaatjes op deelt."
+cover: cover-pinterest.jpg
 ---
 De nieuwste hit op social media gebied. Wat is het, wat doet het en wat gaan we ermee doen?
 

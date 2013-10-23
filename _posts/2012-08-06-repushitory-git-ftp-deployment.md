@@ -2,8 +2,10 @@
 layout: post
 title: Git, GitHub en nu Repushitory - Git FTP deployment, maar dan simpel
 date: 2012-08-06 08:21
-comments: true
-categories: []
+author: Tim
+excerpt: "Nubis zijn we altijd op zoek naar nieuwe en betere manieren om ons hele proces zo gestroomlijnd en stabiel te maken als het maar kan. Een belangrijk deel daar van is zorgen dat we altijd backups beschikbaar hebben om direct terug te plaatsen, mocht er iets kapot gaan.
+secondp: "Daarom gebruiken wij git in combinatie met GitHub. Kort door de bocht: git is een set programma's die er voor zorgen dat we nooit ook maar één regel code kwijt kunnen raken, en GitHub is een host die er voor zorgt dat die code ook nog ergens anders is opgeslagen."
+cover: cover-github.png
 ---
 Bij Nubis zijn we altijd op zoek naar nieuwe en betere manieren om ons hele proces zo gestroomlijnd en stabiel te maken als het maar kan. Een belangrijk deel daar van is zorgen dat we altijd backups beschikbaar hebben om direct terug te plaatsen, mocht er iets kapot gaan. Daarom gebruiken wij <a href="http://git-scm.org" target="_blank">git</a> in combinatie met <a href="http://github.com" target="_blank">GitHub</a>. Kort door de bocht: git is een set programma's die er voor zorgen dat we nooit ook maar één regel code kwijt kunnen raken, en GitHub is een host die er voor zorgt dat die code ook nog ergens anders is opgeslagen (bovendien heeft GitHub nog veel meer tools die het voor ons aantrekkelijk maakt, zoals bijvoorbeeld het versimpelen van code review).
 

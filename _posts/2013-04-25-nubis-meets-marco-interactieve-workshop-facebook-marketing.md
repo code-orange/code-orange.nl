@@ -2,8 +2,10 @@
 layout: post
 title: Interactieve workshop Facebook marketing
 date: 2013-04-25 13:56
-comments: true
-categories: []
+author: Duco
+excerpt: "Met het doel om met “getalenteerde marketing- en communicatie professionals in spe” in contact te komen, waren wij woensdag 17 april aanwezig op het MarCo Carriere Event om een interactieve workshop aan studenten te geven."
+secondp: "Naast Nubis waren onder andere NS, Yacht, ABN AMRO en Wehkamp.nl hier aanwezig om marketingtalent te spotten en te ontmoeten. Het geheel vond plaats in het prachtige nieuwe onderkomen van CREA op het Roeterseiland in Amsterdam."
+cover: cover-workshop.jpg
 ---
 <p><strong>Nubis meets MarCo</strong></p>
 <p>Met het doel om met “getalenteerde marketing- en communicatie professionals in spe” in contact te komen, waren wij woensdag 17 april aanwezig op het MarCo Carriere Event om een interactieve workshop aan studenten te geven. Naast Nubis waren onder andere NS, Yacht, ABN AMRO en Wehkamp.nl hier aanwezig om marketingtalent te spotten en te ontmoeten. Het geheel vond plaats in het prachtige nieuwe onderkomen van CREA op het Roeterseiland in Amsterdam.</p>

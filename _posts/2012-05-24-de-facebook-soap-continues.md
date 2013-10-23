@@ -2,8 +2,10 @@
 layout: post
 title: De Facebook-soap continues
 date: 2012-05-24 15:50
-comments: true
-categories: []
+author: Jelle
+excerpt: "Een hoop gedoe rond de IPO (<em>Initial Public Offering, </em>oftewel beursgang) van Facebook. Waar het aandeel Facebook met $38 naar de beurs ging schommelt het nu rond de $32."
+secondp: "Dit terwijl er op voorhand werd gedacht dat dit de grootste IPO ooit zou kunnen worden. Wat is er gebeurd? Wat ging er mis?"
+cover: cover-Facebook-soap.png
 ---
 Een hoop gedoe rond de IPO (<em>Initial Public Offering, </em>oftewel beursgang) van Facebook. Waar het aandeel Facebook met $38 naar de beurs ging schommelt het nu rond de $32. Dit terwijl er op voorhand werd gedacht dat dit de grootste IPO ooit zou kunnen worden. Wat is er gebeurd? Wat ging er mis?
 

@@ -2,8 +2,10 @@
 layout: post
 title: Facebook presentatie @ Tafel van LINQ
 date: 2011-03-24 09:19
-comments: true
-categories: []
+author: Jelle
+excerpt: "Bijgaand vind je de sheets die Gielke Burgmans namens Nubis Online Marketing gebruikte tijdens de presentatie op het netwerkevent voor young professionals “De Tafel van LINQ”. Het doel van de presentatie was om de deelnemers te inspireren ten aanzien van de mogelijkheden voor bedrijven op Facebook. Hoe vertaal je een marketing strategie naar een goede Facebook strategie."
+secondp: "In de presentatie maakte wij onderscheid tussen een aantal zaken waarvoor bedrijven en organisaties Facebook in kunnen zetten. De basis voor bedrijven binnen Facebook is de fanpage, maar hoe deze fanpage het beste ingericht kan worden, hangt voornamelijk af van de doelstelling die men heeft voor de fanpage."
+cover: cover-google-adwords.jpg
 ---
 <iframe src="http://prezi.com/embed/cwpg45uozag-/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0">
 </iframe>

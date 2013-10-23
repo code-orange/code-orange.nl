@@ -2,8 +2,10 @@
 layout: post
 title: Facebook haalt je onbeveiligde Apps en Tabs offline!
 date: 2011-09-29 15:18
-comments: true
-categories: []
+author: Duco
+excerpt: "Geen beveiligde http-verbinding? Dat betekent per 1 oktober geen toegang tot Apps en Tabs!"
+secondp: "Veel ophef in Facebookland. Met aankondiging van Timeline en de verbetering van de Open Graph op de F8 van afgelopen week, staan er een hoop veranderingen op stapel. Daarnaast ook een nieuwe interface en bijbehorende klaagzangen in je newsfeed . Iets wat veel mensen niet is opgevallen is dat per 1 oktober een beveiligde HTTPS-verbinding voor alle Apps en Tabs op (fan)pages verplicht is waardoor alle onbeveiligde Apps en Tabs niet meer werken!"
+cover: cover-standaard.png
 ---
 <strong>Facebook haalt je onbeveiligde Apps en Tabs offline!</strong>
 

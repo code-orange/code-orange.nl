@@ -2,8 +2,10 @@
 layout: post
 title: TEDxAmsterdam Livestream via Facebook
 date: 2011-11-22 16:00
-comments: true
-categories: []
+author: Jelle
+excerpt: "Vrijdag is het zover, TEDxAmsterdam, en je kunt meekijken via de Livestream op de website van TEDxAmsterdam en, dankzij onze designers en devolpers, ook op deFacebook livestreampagina van TEDxAmsterdam."
+secondp: "Donderdag kun je alvast van de voorpret genieten. Dan zal de Webcast voorafgaande aan het <em>main event</em> te zien zijn en kan je zelf nog een kaartje winnen!"
+cover: cover-standaard.png
 ---
 Vrijdag is het zover, TEDxAmsterdam, en je kunt meekijken via de Livestream op de website van <a href="http://www.tedxamsterdam.com/">TEDxAmsterdam</a> en, dankzij onze designers en devolpers, ook op de <a href="https://www.facebook.com/TEDxAmsterdam?sk=app_197669710311794">Facebook livestreampagina van TEDxAmsterdam</a>. Donderdag kun je alvast van de voorpret genieten. Dan zal de Webcast voorafgaande aan het <em>main event</em> te zien zijn en kan je zelf nog een kaartje winnen!
 

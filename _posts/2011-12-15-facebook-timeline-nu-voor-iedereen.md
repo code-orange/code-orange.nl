@@ -2,8 +2,10 @@
 layout: post
 title: Facebook Timeline nu voor iedereen!
 date: 2011-12-15 15:03
-comments: true
-categories: []
+author: Duco 
+excerpt: "Via een omweg was de beta al een tijd te gebruiken maar nu is het voor iedereen beschikbaar: Facebook Timeline! De aankondiging hiervan was vandaag te lezen op de Facebook Blog."
+secondp: "Naast de samenwerking met Spotify was de aankondiging van Timeline het grote nieuws van de laatste F8. Mark Zuckerberg beschreef Timeline als <em>a new way to express yourself</em> en een manier om je hele leven in een pagina te presenteren."
+cover: cover-timeline.jpg
 ---
 <p style="text-align: left;">Via een omweg was de beta al een tijd te gebruiken maar nu is het voor iedereen beschikbaar: <strong>Facebook Timeline!</strong> De aankondiging hiervan was vandaag te lezen op <a href="https://blog.facebook.com/blog.php?post=10150408488962131"> de Facebook Blog</a>.</p>
 <img class="alignleft" title="Zuckerberg presenteert Timeline" src="http://img.metro.co.uk/i/pix/2011/09/22/article-1316718100963-0E0A340500000578-386530_465x317.jpg" alt="Mark Zuckerberg tijdens de presentatie van Timeline" width="465" height="317" />

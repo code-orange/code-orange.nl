@@ -2,8 +2,10 @@
 layout: post
 title: Nubis goes to London
 date: 2012-04-19 13:28
-comments: true
-categories: []
+author: Dio
+excerpt: "After the success of the Facebook page TEDxAmsterdam, Nubis Online Marketing is proud to present Tedx GoodenoughCollege Timeline page."
+secondp: "TEDx GoodenoughCollege combines the unique format and beauty of TED with the ingenuity and reach of the post-graduate community of Goodenough College.The result is an inspiring, interactive conference designed to engage its participants and promote the exchange of ideas worth spreading focusing on the Future of Humanity, providing the ‘Big Picture’."
+cover: cover-standaard.png
 ---
 <p style="text-align: left;"><span style="font-size: medium;">After the success of the Facebook page TEDxAmsterdam, Nubis Online Marketing is proud to present Tedx GoodenoughCollege Timeline page.</span></p>
 <span style="font-size: medium;">TEDx GoodenoughCollege combines the unique format and beauty of TED with the ingenuity and reach of the post-graduate community of Goodenough College.The result is an inspiring, interactive conference designed to engage its participants and promote the exchange of ideas worth spreading focusing on the Future of Humanity, providing the ‘Big Picture’. The event will take place on the 5<sup>th</sup> of May 2012 in London.</span>
