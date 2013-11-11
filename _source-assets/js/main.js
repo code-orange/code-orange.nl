@@ -1,4 +1,5 @@
 var map;
+var scrollTracker = new ScrollTracker();
 
 function setNavbarHeight(){
 	var scrollTop = $(window).scrollTop();
@@ -30,29 +31,10 @@ function setNavbarHeight(){
 }
 
 function navbarSync(){
-	var scrollTop = $(window).scrollTop();
-
-	//Content activate
-	var services_top, cases_top, about_top, contact_top;
-	services_top = $("#services").offset().top - 1;
-	cases_top = $("#cases").offset().top - 1;
-	about_top = $("#about").offset().top - 1;
-	blog_top = $("#blog").offset().top - 1;
-	contact_top = $("#contact").offset().top - 1;
-	
-	$("#home > nav li").removeClass("active");
-	
-	if(scrollTop >= services_top && scrollTop < cases_top){
-		$("#home > nav li#nav_services").addClass("active");
-	}else if(scrollTop >= cases_top && scrollTop < about_top){
-		$("#home > nav li#nav_cases").addClass("active");
-	}else if(scrollTop >= about_top && scrollTop < blog_top){
-		$("#home > nav li#nav_about").addClass("active");
-	}else if(scrollTop >= blog_top && scrollTop < contact_top){
-		$("#home > nav li#nav_blog").addClass("active");
-	}else if(scrollTop >= contact_top){
-		$("#home > nav li#nav_contact").addClass("active");
-	}
+	scrollTracker.scroll(function(old, current){
+		$("#home > nav li").removeClass("active");
+		$("#home > nav li#nav_" + current).addClass("active");
+	});
 }
 
 function setupSizes(){
@@ -77,6 +59,8 @@ function setupSizes(){
 	setNavbarHeight();
 	
 	$("#home > section#about > section#about-text > header").height(0.369 * $("#home > section#about > section#about-text > header").width());
+	
+	scrollTracker.init(window);
 }
 
 function setupTeamHexagons(){
