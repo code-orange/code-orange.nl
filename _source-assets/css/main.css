@@ -734,7 +734,7 @@ a{
 			}
 			
 			#home.home-blog-index > section#blog > header > hr{
-				border-top-color: #838383;
+				border-top-color: black;
 				border-bottom: none;
 			}
 			
@@ -759,7 +759,7 @@ a{
 				#home.home-blog-index > section#blog > article hr{
 					margin-top: .5em;
 					width: 1.5em;
-					border-top-color: #838383;
+					border-top-color: black;
 				}
 			
 				#home > section#blog > article img.cover{
