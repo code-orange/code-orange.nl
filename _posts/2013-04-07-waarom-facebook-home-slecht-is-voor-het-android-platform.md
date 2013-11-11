@@ -5,7 +5,7 @@ date: 2013-04-07 17:25
 author: Tim
 excerpt: "Afgelopen week heeft Facebook een nieuw product voor Android gelanceerd, Facebook Home genaamd. Het is de eerste stap in het grote Facebook Phone offensief."
 secondp: "Maar wat is Facebook Home nu precies en wat betekent het voor Android gebruikers en ontwikkelaars?"
-cover: cover-Facebook-hom.png
+cover: cover-Facebook-home.png
 ---
 <p>Afgelopen week heeft Facebook een nieuw product voor Android gelanceerd, Facebook Home genaamd. Het is de eerste stap in het grote Facebook Phone offensief. Maar wat is Facebook Home nu precies en wat betekent het voor Android gebruikers en ontwikkelaars?</p>
 <p><!--more--></p>

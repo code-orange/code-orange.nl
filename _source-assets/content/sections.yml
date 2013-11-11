@@ -51,6 +51,7 @@ about:
 
 blog:
   name: Blog
+  index_name: Overzicht
   nav: Blog
   
 contact:

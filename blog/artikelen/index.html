@@ -1,0 +1,106 @@
+---
+---
+<!DOCTYPE html>
+<!--[if lt IE 7]>	  <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>		 <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>		 <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>{{ site.content.info.name }}</title>
+		<meta name="viewport" content="width=device-width">
+
+		{% bundle %} [/_source-assets/css/bootstrap.min.css ,/_source-assets/css/bootstrap-responsive.min.css ,/_source-assets/css/main.css] {% endbundle %}
+		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7847452/672622/css/fonts.css">
+		
+		<link rel="icon" type="image/x-icon" href="favicon.ico?v3">
+	</head>
+	<body>
+		<div id="home" class="container-fluid home-blog-index" data-posx="0" data-posy="0">
+			<nav>
+				<img id="logo" src="/assets/img/logo.png" alt="Logo">
+				<ul>
+					<li id="nav_services"><a href="/diensten/">{{ site.content.sections.services.nav }}</a></li>
+					<li id="nav_cases"><a href="/werk/">{{ site.content.sections.cases.nav }}</a></li>
+					<li id="nav_about"><a href="/over/">{{ site.content.sections.about.nav }}</a></li>
+					<li id="nav_blog"><a href="/blog/">{{ site.content.sections.blog.nav }}</a></li>
+					<li id="nav_contact"><a href="/contact/">{{ site.content.sections.contact.nav }}</a></li>
+				</ul>
+			</nav>
+			<section id="blog">
+				<header>
+					<h1>{{ site.content.sections.blog.index_name }}</h1>
+					<hr>
+				</header>
+{% for post in paginator.posts %}
+				<article>
+					<img class="cover" alt="Cover photo" src="/assets/blog/img/{{ post.cover }}">
+					<h2>{{ post.title }}</h2>
+					<hr>
+					<p>{{ post.excerpt }}</p>
+					<p>{{ post.secondp }}</p>
+					<a href="{{ post.url }}">Lees verder &raquo;</a>
+				</article>
+{% endfor %}
+				{% if paginator.total_pages > 1 %}
+				<div class="pagination">
+					{% if paginator.previous_page %}
+					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Vorige</a>
+					{% else %}
+					<span>&laquo; Vorige</span>
+					{% endif %}
+
+					{% for page in (1..paginator.total_pages) %}
+					{% if page == paginator.page %}
+					<em>{{ page }}</em>
+					{% elsif page == 1 %}
+					<a href="{{ '/blog/artikelen/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+					{% else %}
+					<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+					{% endif %}
+					{% endfor %}
+
+					{% if paginator.next_page %}
+					<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Volgende &raquo;</a>
+					{% else %}
+					<span>Volgende &raquo;</span>
+					{% endif %}
+				</div>
+				{% endif %}
+			</section>
+		</div> <!-- /container -->
+		
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', '{{ site.analytics.code }}', '{{ site.analytics.domain }}');
+			ga('send', 'pageview');
+		</script>
+		
+		{% bundle %} [/_source-assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js] {% endbundle %}
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+		{% bundle %} [/_source-assets/js/vendor/bootstrap.min.js, /_source-assets/js/vendor/jquery.scrollTo.min.js, /_source-assets/js/vendor/jquery.localScroll.min.js, /_source-assets/js/vendor/unslider.min.js] {% endbundle %}
+		
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		
+		<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+			{parsetags: 'explicit'}
+		</script>
+		
+		{% bundle %} [/_source-assets/js/scrolltrack.js, /_source-assets/js/main.js] {% endbundle %}
+		
+		<div id="preload">
+			<div id="services"></div>
+			<div id="cases"></div>
+			<div id="about"></div>
+			<div id="blog"></div>
+			<div id="contact"></div>
+		</div>
+	</body>
+</html>

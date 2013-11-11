@@ -9,3 +9,6 @@ asset_bundler:
   compress:
     js: yui
     css: yui
+
+paginate: 6
+paginate_path: "/blog/artikelen/page:num"

@@ -32,6 +32,12 @@ a{
 	background-size: 200%;
 	padding-top: 185px;
 }
+
+#home.home-blog-index{
+	background-image: none;
+	background-color: #464646;
+}
+
 	#home > nav{
 		background-color: white;
 		opacity: 0.95;
@@ -83,6 +89,11 @@ a{
 		#home > nav li.active{
 			color: #8a8b8b;
 			border-bottom: 1px solid #d5d4d4;
+		}
+		
+		#home.home-blog-index > nav li.active{
+			color: #c2c2c2;
+			border-bottom: none;
 		}
    
 	#home > header{
@@ -703,13 +714,28 @@ a{
 			background-color: #464646;
 		}
 		
+		#home.home-blog-index > section#blog{
+			padding: 50px;
+			margin: 50px 20%;
+			background-color: white;
+		}
+		
 			#home > section#blog > header > h1{
 				color: #c4c4c4;
+			}
+			
+			#home.home-blog-index > section#blog > header > h1{
+				color: #838383;
 			}
 			
 			#home > section#blog > header > hr{
 				border-top-color: #545454;
 				border-bottom-color: #888888;
+			}
+			
+			#home.home-blog-index > section#blog > header > hr{
+				border-top-color: #838383;
+				border-bottom: none;
 			}
 			
 			#home > section#blog > article{
@@ -721,6 +747,20 @@ a{
 				outline: 1px solid #393939;
 				padding: 20px;
 			}
+			
+			#home.home-blog-index > section#blog > article{
+				border: none;
+				outline: none;
+				
+				padding-left: 0;
+				padding-right: 0;
+			}
+			
+				#home.home-blog-index > section#blog > article hr{
+					margin-top: .5em;
+					width: 1.5em;
+					border-top-color: #838383;
+				}
 			
 				#home > section#blog > article img.cover{
 					float: left;
@@ -764,6 +804,9 @@ a{
 					line-height: 1.357em;
 				}
 				
+		#home > section#blog-index{
+			background-color: white;
+		}
 		
 		#home > section#contact{
 			background-color: white;
