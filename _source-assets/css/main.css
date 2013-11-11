@@ -896,13 +896,13 @@ a{
 		overflow: auto;
 		background-color: #fafafa;
 		
-		padding-left: 10%;
-		padding-right: 10%;
+		padding-left: 20%;
+		padding-right: 20%;
 	}
 	
 		#home > footer > aside{
 			float: left;
-			width: 14%;
+			width: 23%;
 			border-top: 1px solid #f0efef;
 			
 			margin-top: 15px;
