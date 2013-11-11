@@ -1,5 +1,5 @@
 var map;
-var scrollTracker = new ScrollTracker();
+var scrollTrack = new ScrollTracker();
 
 function setNavbarHeight(){
 	var scrollTop = $(window).scrollTop();
@@ -31,9 +31,16 @@ function setNavbarHeight(){
 }
 
 function navbarSync(){
-	scrollTracker.scroll(function(old, current){
+	scrollTrack.scroll(function(old, current){
 		$("#home > nav li").removeClass("active");
 		$("#home > nav li#nav_" + current).addClass("active");
+		
+		var ga_data = {
+			page: $("#" + current + "").data('scroll-url'),
+			title: $("#" + current + "").data('scroll-title')
+		};
+		
+		ga('send', 'pageview', ga_data);
 	});
 }
 
@@ -60,7 +67,7 @@ function setupSizes(){
 	
 	$("#home > section#about > section#about-text > header").height(0.369 * $("#home > section#about > section#about-text > header").width());
 	
-	scrollTracker.init(window);
+	scrollTrack.init(window);
 }
 
 function setupTeamHexagons(){

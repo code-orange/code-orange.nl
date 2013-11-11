@@ -1,3 +1,5 @@
+var scrollTrack = new ScrollTracker();
+
 $(function(){
 	$("#home > header").height($(window).height() - $("#home > nav").outerHeight(true) - parseFloat($("#home > header").css("padding-top")));
 	
@@ -33,5 +35,18 @@ $(function(){
 	
 	$("form img").click(function(){
 		$("form").submit();
+	});
+	
+	scrollTrack.init(window);
+	
+	$(window).scroll(function(){
+		scrollTrack.scroll(function(old, current){
+			var ga_data = {
+				page: $("#" + current + "").data('scroll-url'),
+				title: $("#" + current + "").data('scroll-title')
+			};
+			
+			ga('send', 'pageview', ga_data);
+		});
 	});
 });

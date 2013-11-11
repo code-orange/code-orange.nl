@@ -32,7 +32,7 @@
 				<h1>{{ site.content.info.intro }}</h1>
 				<h2>{{ site.content.info.tagline }}</h2>
 			</header>
-			<section id="services">
+			<section id="services" data-scroll-url="/diensten/" data-scroll-title="Diensten">
 				<div id="overlay-content">
 				
 				</div>
@@ -73,7 +73,7 @@
 					</section>
 				</section>
 			</section>
-			<section id="cases">
+			<section id="cases" data-scroll-url="/werk/" data-scroll-title="Werk">
 				<header>
 					<h1>{{ site.content.sections.cases.name }}</h1>
 					<hr>
@@ -125,7 +125,7 @@
 					<img class="company" src="/assets/img/companies/partners/{{ company[0] }}.png"{% if company[1].url %} data-url="http://{{ company[1].url }}"{% endif %}>{% endfor %}
 				</section>
 			</section>
-			<section id="about">
+			<section id="about" data-scroll-url="/over/" data-scroll-title="Over">
 				<header>
 					<h1>{{ site.content.sections.about.name }}</h1>
 					<hr>
@@ -173,7 +173,7 @@
 {% endfor %}
 				</section>
 			</section>
-			<section id="blog">
+			<section id="blog" data-scroll-url="/blog/" data-scroll-title="Blog">
 				<header>
 					<h1>{{ site.content.sections.blog.name }}</h1>
 					<hr>
@@ -190,7 +190,7 @@
 {% if forloop.index == 2 %}{% break %}{% endif %}
 {% endfor %}
 			</section>
-			<section id="contact">
+			<section id="contact" data-scroll-url="/contact/" data-scroll-title="Contact">
 				<hr>
 				<h1>{{ site.content.sections.contact.form.head }}</h1>
 				<form>
@@ -241,6 +241,6 @@
 		
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 		
-		{% bundle %} [/_source-assets/js/mobile.js] {% endbundle %}
+		{% bundle %} [/_source-assets/js/scrolltrack.js, /_source-assets/js/mobile.js] {% endbundle %}
 	</body>
 </html>
