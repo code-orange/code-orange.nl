@@ -5,7 +5,7 @@ date: 2012-06-29 14:19
 author: Duco
 excerpt: "Facebook wil meer geld verdienen. Sterker nog, Facebook moet meer geld verdienen, anders worden de aandeelhouders onrustig. Dit had Mark Zuckerberg natuurlijk al wel een beetje voorzien."
 secondp: "Vlak voor de beursgang werd aangekondigd dat de focus binnenkort geheel naar mobiel zou verplaatsen. De helft van alle facebookers gebruikt Facebook namelijk alleen via mobiel en tot voor kort werd daar geen reclame gemaakt."
-cover:cover-facebook-app.jpg 
+cover: cover-facebook-app.jpg 
 ---
 <a href="http://nubisonline.nl/wp-content/uploads/2012/06/facebook-mobile-app-600.jpg"><img class="alignnone size-full wp-image-567" title="facebook-mobile-app" src="http://nubisonline.nl/wp-content/uploads/2012/06/facebook-mobile-app-600.jpg" alt="" width="600" height="375" /></a>
 
