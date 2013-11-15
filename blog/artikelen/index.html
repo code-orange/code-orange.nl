@@ -8,17 +8,17 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>{{ site.content.info.name }}</title>
+		<title>{{ site.content.sections.blog.name }}</title>
 		<meta name="viewport" content="width=device-width">
 
 		{% bundle %} [/_source-assets/css/bootstrap.min.css ,/_source-assets/css/bootstrap-responsive.min.css ,/_source-assets/css/main.css] {% endbundle %}
 		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7847452/672622/css/fonts.css">
 		
-		<link rel="icon" type="image/x-icon" href="favicon.ico?v3">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
 	</head>
 	<body>
 		<div id="home" class="container-fluid home-blog-index" data-posx="0" data-posy="0">
-			<nav>
+			<nav data-tracking="false">
 				<img id="logo" src="/assets/img/logo.png" alt="Logo">
 				<ul>
 					<li id="nav_services"><a href="/diensten/">{{ site.content.sections.services.nav }}</a></li>
@@ -37,7 +37,6 @@
 				<article>
 					<img class="cover" alt="Cover photo" src="/assets/blog/img/{{ post.cover }}">
 					<h2>{{ post.title }}</h2>
-					<hr>
 					<p>{{ post.excerpt }}</p>
 					<p>{{ post.secondp }}</p>
 					<a href="{{ post.url }}">Lees verder &raquo;</a>
@@ -46,25 +45,27 @@
 				{% if paginator.total_pages > 1 %}
 				<div class="pagination">
 					{% if paginator.previous_page %}
-					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Vorige</a>
+					<a class="paginator_previous" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Vorige</a>
 					{% else %}
-					<span>&laquo; Vorige</span>
+					<span class="paginator_previous">&laquo; Vorige</span>
 					{% endif %}
 
-					{% for page in (1..paginator.total_pages) %}
-					{% if page == paginator.page %}
-					<em>{{ page }}</em>
-					{% elsif page == 1 %}
-					<a href="{{ '/blog/artikelen/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-					{% else %}
-					<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-					{% endif %}
-					{% endfor %}
+					<span class="paginator_pages">
+						{% for page in (1..paginator.total_pages) %}
+						{% if page == paginator.page %}
+						<em>{{ page }}</em>
+						{% elsif page == 1 %}
+						<a href="{{ '/blog/artikelen/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+						{% else %}
+						<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+						{% endif %}
+						{% endfor %}
+					</span>
 
 					{% if paginator.next_page %}
-					<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Volgende &raquo;</a>
+					<a class="paginator_next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Volgende &raquo;</a>
 					{% else %}
-					<span>Volgende &raquo;</span>
+					<span class="paginator_next">Volgende &raquo;</span>
 					{% endif %}
 				</div>
 				{% endif %}

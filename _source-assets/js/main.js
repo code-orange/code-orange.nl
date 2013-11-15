@@ -264,6 +264,8 @@ function initMap(){
 }
 
 $(function(){
+	var tracking = $("nav").data('tracking');
+
 	setupSizes();
 	
 	$(window).resize(function(){
@@ -273,7 +275,9 @@ $(function(){
 	$(window).scroll(function(){
 		setNavbarHeight();
 		
-		navbarSync();
+		if(tracking){
+			navbarSync();
+		}
 	});
 	
 	$("#logo").click(function(){
