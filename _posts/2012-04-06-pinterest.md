@@ -21,6 +21,7 @@ Pinterest is een manier om jezelf te uiten door middel van beelden. Laten zien w
 Een interessant aspect aan Pinterest is dat de site achter de pin altijd terug te vinden is. Als je doorklikt op een pin, kom je op de oorspronkelijke website terecht. Dit maakt Pinterest uitermate geschikt voor retailers. Daarnaast kan je in Pinterest ook heel makkelijk een prijskaartje aan je pin hangen. Het is dus ook absoluut niet verrassend dat veel webshops inmiddels actief gebruik maken van Pinterest.
 Pinterest is nog in ontwikkeling. Afgelopen maand werden de lay-out en algemene voorwaarden flink aangepast. Ook heeft Pinterest aangegeven dat er heel binnenkort een API komt. Dit betekend dat developers dan applicaties voor Pinterest kunnen maken. Maar ook zonder applicaties leent Pinterest zich voor leuke marketingacties. Zo maakte Peugeot <a href="http://pinterest.com/peugeotpanama/">een puzzel</a> en had ook Kotex een bijzonder geslaagde campagne zoals je in onderstaand filmpje kan zien.
 
-<iframe src="http://www.youtube.com/embed/UVCoM4ao2Tw" frameborder="0" width="560" height="315"></iframe>
+<iframe src="http://www.youtube.com/embed/UVCoM4ao2Tw" frameborder="0" width="560" height="315">
+</iframe>
 
 Meer weten over Pinterest en hoe je het eventueel voor je eigen merk in kan zetten? Neem contact met ons op via <a href="mailto:info@nubisonline.nl">info@nubisonline.nl</a>
