@@ -52,8 +52,9 @@ about:
 blog:
   name: Blog
   index_name: Overzicht
+  index_link: /blog/artikelen/
   nav: Blog
-  
+
 contact:
   nav: Contact
   form:

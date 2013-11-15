@@ -209,11 +209,11 @@
 					<h2>{{ post.title }}</h2>
 					<p>{{ post.excerpt }}</p>
 					<p>{{ post.secondp }}</p>
-					<a>Wordt later vervolgd&hellip;</a>
-{% comment %}					<a href="{{ post.url }}">Lees verder &raquo;</a>{% endcomment %}
+					<a href="{{ post.url }}">Lees verder &raquo;</a>
 				</article>
 {% if forloop.index == 2 %}{% break %}{% endif %}
 {% endfor %}
+				<a href="{{ site.content.sections.blog.index_link }}">Zie onze andere posts &raquo;</a>
 			</section>
 			<section id="contact" data-scroll-url="/contact/" data-scroll-title="Contact">
 				<div id="contactform">

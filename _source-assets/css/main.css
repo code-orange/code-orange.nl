@@ -787,6 +787,9 @@ a{
 			
 			padding: 50px;
 			margin: 50px 20%;
+			
+			border: 1px solid #bbb;
+			outline: 1px solid #393939;
 		}
 		
 		#home > article.blog-post-detail > header > h1{
@@ -801,12 +804,13 @@ a{
 			margin-top: .5em;
 			width: 1.5em;
 		
-			border-top-color: black;
-			border-bottom: none;
+			border-top-color: #b3b3b3;
+			border-bottom: #a7a7a7;
 		}
 		
 			#home > article.blog-post-detail > #post_body{
 				text-align: justify;
+				color: #999999;
 			}
 		
 			#home > article.blog-post-detail > #post_body p:first-of-type{
@@ -825,7 +829,33 @@ a{
 		
 			/* Post text styles */
 			#home > article.blog-post-detail > #post_body h1{
+				color: #727272;
+				font-size: 1.357em;
+			}
 			
+			#home > article.blog-post-detail > #post_body h2{
+				color: #727272;
+				font-size: 1.2em;
+			}
+			
+			#home > article.blog-post-detail > #post_body h3{
+				color: #727272;
+				font-size: 1.1em;
+			}
+			
+			#home > article.blog-post-detail > #post_body h4{
+				color: #727272;
+				font-size: 1em;
+			}
+			
+			#home > article.blog-post-detail > #post_body h5{
+				color: #727272;
+				font-size: .95em;
+			}
+			
+			#home > article.blog-post-detail > #post_body h6{
+				color: #727272;
+				font-size: .929em;
 			}
 		
 		#home > section#contact{
