@@ -36,7 +36,31 @@
 				<section id="post_body">
 					{{ content }}
 				</section>
+				<div class="blog-post-pagination">
+					{% if page.previous.url %}
+					<a class="previous_post" href="{{page.previous.url}}" title="{{page.previous.title}}">&lt; Vorige</a> 
+					{% endif %}
+					{% if page.next.url %}
+					<a class="next_post" href="{{page.next.url}}" title="{{page.next.title}}">Volgende &gt;</a> 
+					{% endif %}
+				</div>
 				
+				<div class="blog-post-social">
+					<iframe src="//www.facebook.com/plugins/like.php?href=http://nub.is{{ page.url }}&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px; width: 150px;" allowTransparency="true"></iframe>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="nl">Tweeten</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					
+					<div class="g-plusone" data-size="medium"></div>
+					<script type="text/javascript">
+						window.___gcfg = {lang: 'nl'};
+
+						(function() {
+							var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+							po.src = 'https://apis.google.com/js/plusone.js';
+							var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+						})();
+					</script>
+				</div>
 				<div id="disqus_thread"></div>
 				<script type="text/javascript">
 					/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
