@@ -35,7 +35,7 @@ team_nophotos:
     name: Dirk Hoekstra
     title: Junior Developer
   floris:
-    name: Floris Goldbach
+    name: Floris Golbach
     title: Junior Developer
   stef:
     name: Stef van Schuylenburg
@@ -61,15 +61,18 @@ team_nophotos:
   peter:
     name: Peter Bos
     title: Junior Graphic Designer
-  eva:
-    name: Eva Kuijer
-    title: Community Manager
-  hannah:
-    name: Hannah van der Linde
-    title: Community Manager
   david:
     name: David Mishahi
     title: Community Manager
+  Mathies:
+    name: Mathies Overtoom
+    title: Community Manager
+      eva:
+    name: Eva Kuijer
+    title: Community Manager buiten kantooruren
+ Jorrit:
+    name: Jorrit Leemans
+    title: Community Manager buiten kantooruren
   jeffrey:
     name: Jeffrey Kuin
     title: Online Marketeer
