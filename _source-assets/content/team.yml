@@ -8,23 +8,32 @@ team_photos:
   reinout:
     name: Reinout Woortman
     title: Creative Consultant
-  marleen:
-    name: Marleen Kers
-    title: Project Manager
-  remco:
-    name: Remco Plasmeijer
-    title: Systems Architecture Manager
-  nicky:
-    name: Nicky Advokaat
-    title: Developer
-
-team_nophotos:
   duco:
     name: Duco ter Steege
     title: Social Media Consultant
+  remco:
+    name: Remco Plasmeijer
+    title: Systems Architecture Manager
+  daviddekabouter:
+    name: David Mishahi
+    title: Community Manager
+  eva:
+    name: Eva Kuijer
+    title: Community Manager buiten kantooruren
+  mathies:
+    name: Mathies Overtoom
+    title: Community Manager
+  jorrit:
+    name: Jorrit Leemans
+    title: Community Manager buiten kantooruren
+
+team_nophotos:
   walid:
     name: Walid Said
     title: Senior Developer
+  nicky:
+    name: Nicky Advokaat
+    title: Developer
   george:
     name: George Pittas
     title: Developer
@@ -61,18 +70,6 @@ team_nophotos:
   peter:
     name: Peter Bos
     title: Junior Graphic Designer
-  david:
-    name: David Mishahi
-    title: Community Manager
-  mathies:
-    name: Mathies Overtoom
-    title: Community Manager
-  eva:
-    name: Eva Kuijer
-    title: Community Manager buiten kantooruren
-  jorrit:
-    name: Jorrit Leemans
-    title: Community Manager buiten kantooruren
   jeffrey:
     name: Jeffrey Kuin
     title: Online Marketeer
