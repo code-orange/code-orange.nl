@@ -1,5 +1,4 @@
 
-
 /* ==========================================================================
 	Author's custom styles
    ========================================================================== */
@@ -701,7 +700,7 @@ a{
 				margin-left: 4.05%;
 			}
 			
-				#home > section#about .hexagon.nophoto:nth-child(5n+2){
+				#home > section#about .hexagon.nophoto:nth-child(5n+10){
 					margin-left: 8.3%;
 				}
 			
