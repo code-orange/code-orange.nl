@@ -388,6 +388,13 @@ $(function(){
 			success: function(){
 				$("form").find("input").val("");
 				$("form").find("textarea").val("Je vraag is ingestuurd");
+				
+				var ga_data = {
+					page: "/contact-thanks/",
+					title: "Contact ingezonden"
+				};
+				
+				ga('send', 'pageview', ga_data);
 			}
 		});
 		
