@@ -12,27 +12,24 @@ cover: 2014-01-06-Community-management-tijdens-de-feestdagen.png
 
 Waar bedrijven tijdens de feestdagen met hun winkels steeds vaker open gaan, is dit online nog absoluut niet het geval. Slechts 23% van de grootste Nederlandse merken op Facebook heeft tijdens de afgelopen Kerstdagen en op Nieuwjaarsdag gereageerd op openbare vragen van fans. Dat blijkt uit onderzoek van <a href="https://nub.is" target="_blank\">Nubis</a>.
 
-&nbsp;
 
 Deze resultaten zijn in lijn met de onlangs gepubliceerde <a href"http://bit.ly/cmtop100" target="_blank"> Community Management Top100</a> waar uit bleek dat slechts een handjevol merken buiten kantooruren net zo actief is als tijdens kantooruren. Gedurende de feestdagen wordt hiervoor dus geen uitzondering gemaakt.
 
-&nbsp;
 
 ![Infograpic Community Management tijdens de feestdagen](/assets/blog/img/2014-01-06-Community-management-tijdens-de-feestdagen.png)
 
-<strong>Ook supermarkten sluiten hun digitale deuren</strong>
+
+#Ook supermarkten sluiten hun digitale deuren
 
 In het onderzoek is extra ingezoomd op supermarkten. Juist daar is het namelijk interessant om te zien of men naast de verruimde openingstijden van de winkels ook op social media actiever is geworden tijdens de feestdagen. Dit blijkt allerminst het geval. Van alle grote supermarkten zijn er slechts 2 actief op social media tijdens de feestdagen. Dat zijn Albert Heijn en Hoogvliet. De overige supermarkten reageren allemaal pas later.
 
-&nbsp;
 
-<strong>Grote verschillen tussen banken</strong>
+#Grote verschillen tussen banken
 
 Net als in de community Management Top100 is ook tijdens de feestdagen ABN AMRO het meest actief. Op alle 3 de dagen wordt er net als op alle andere dagen gewoon met klanten en fans in gesprek gegaan. De Rabobank was alleen op Nieuwjaarsdag actief en ING was tijdens de feestdagen “gesloten”.
 
-&nbsp;
 
-<strong>Conclusie</strong
+#Conclusie
 
 De afgelopen jaren zijn bedrijven als gevolg van de 24-uurs economie steeds langer en beter bereikbaar geworden. Mede dankzij de opkomst van social media zijn de verwachtingen van consumenten naar bedrijven toe ook behoorlijk toegenomen. Tegelijkertijd zijn social media een zeer effectief middel gebleken voor consumenten om bedrijven te wijzen op hun fouten.
 
@@ -41,7 +38,7 @@ Bovenstaande laat echter zien dat het gros van de bedrijven nog altijd moeite he
 Wij zijn benieuwd welke bedrijven hier in 2014 stappen in zullen gaan zetten. We zullen in ieder geval de resultaten blijven monitoren in onze Community Management Top100.
 
 
-<strong>Meer informatie & contact</strong>
+##Meer informatie & contact
 Nubis Digital Agency
 Jelle Oskam - Managing Director
 T: 020 893 2941
@@ -49,8 +46,7 @@ E: <a href="mailto:jelle@nub.is">jelle@nub.is</a>
 Infographic: CM-feestdagen.nub.is
 CM100: <a href="community-management.nub.is">community-management.nub.is</a>
 
-&nbsp;
 
-<strong>Verantwoording</strong>
+##Verantwoording
 
 Van de 100 grootste pagina’s van Nederland hebben we gekeken welke merken minimaal op 1 openbare vraag of opmerking op hun Facebook pagina heeft gereageerd op 25 en 26 december en 1 januari. Ook hebben we gekeken of er verschillen zijn tussen deze 3 dagen. Hieruit bleek dat nieuwjaarsdag iets drukker was dan de Kerstdagen.
