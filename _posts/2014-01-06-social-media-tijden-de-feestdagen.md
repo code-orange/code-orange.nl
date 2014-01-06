@@ -9,6 +9,7 @@ comments: true
 categories: []
 cover: 2014-01-06-Community-management-tijdens-de-feestdagen-v3-490x350.png
 ---
+#PERSBERICHT
 
 Waar bedrijven tijdens de feestdagen met hun winkels steeds vaker open gaan, is dit online nog absoluut niet het geval. Slechts 23% van de grootste Nederlandse merken op Facebook heeft tijdens de afgelopen Kerstdagen en op Nieuwjaarsdag gereageerd op openbare vragen van fans. Dat blijkt uit onderzoek van <a href="https://nub.is" target="_blank\">Nubis</a>.
 
@@ -39,11 +40,11 @@ Wij zijn benieuwd welke bedrijven hier in 2014 stappen in zullen gaan zetten. We
 
 
 ##Meer informatie & contact
-Nubis Digital Agency
-Jelle Oskam - Managing Director
-T: 020 893 2941
-E: <a href="mailto:jelle@nub.is">jelle@nub.is</a>
-Infographic: CM-feestdagen.nub.is
+Nubis Digital Agency<br>
+Jelle Oskam - Managing Director<br>
+T: 020 893 2941<br>
+E: <a href="mailto:jelle@nub.is">jelle@nub.is</a><br>
+Infographic: CM-feestdagen.nub.is<br>
 CM100: <a href="community-management.nub.is">community-management.nub.is</a>
 
 
