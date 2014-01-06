@@ -7,7 +7,7 @@ secondp: "Deze resultaten zijn in lijn met de onlangs gepubliceerde <a href='htt
 date: 2014-06-01 12:00
 comments: true
 categories: []
-cover: 2014-01-06-Community-management-tijdens-de-feestdagen-v3-490x350.png
+cover: cover-community-management-feestdagen.png
 ---
 
 Waar bedrijven tijdens de feestdagen met hun winkels steeds vaker open gaan, is dit online nog absoluut niet het geval. Slechts 23% van de grootste Nederlandse merken op Facebook heeft tijdens de afgelopen Kerstdagen en op Nieuwjaarsdag gereageerd op openbare vragen van fans. Dat blijkt uit onderzoek van <a href="https://nub.is" target="_blank\">Nubis</a>.
