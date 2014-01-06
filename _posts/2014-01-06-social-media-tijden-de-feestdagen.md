@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Social Media tijdens de feestdagen: 77% van de grote merken houdt digitale deuren gesloten
+title: "Social Media tijdens de feestdagen: 77% van de grote merken houdt digitale deuren gesloten"
 author: Jelle
-excerpt: "Waar bedrijven tijdens de feestdagen met hun winkels steeds vaker open gaan, is dit online nog absoluut niet het geval. Slechts 23% van de grootste Nederlandse merken op Facebook heeft tijdens de afgelopen Kerstdagen en op nieuwjaarsdag gereageerd op openbare vragen van fans. Dat blijkt uit onderzoek van <a href="https://nub.is" target="_blank\">Nubis</a>."
-secondp: "Deze resultaten zijn in lijn met de onlangs gepubliceerde <a href"http://bit.ly/cmtop100" target="_blank"> Community Management Top100</a> waar uit bleek dat slechts een handjevol merken buiten kantooruren net zo actief is als tijdens kantooruren. Gedurende de feestdagen wordt hiervoor dus geen uitzondering gemaakt.
+excerpt: "Waar bedrijven tijdens de feestdagen met hun winkels steeds vaker open gaan, is dit online nog absoluut niet het geval. Slechts 23% van de grootste Nederlandse merken op Facebook heeft tijdens de afgelopen Kerstdagen en op nieuwjaarsdag gereageerd op openbare vragen van fans. Dat blijkt uit onderzoek van <a href='https://nub.is' target='_blank'>Nubis</a>."
+secondp: "Deze resultaten zijn in lijn met de onlangs gepubliceerde <a href='http://bit.ly/cmtop100' target='_blank'> Community Management Top100</a> waar uit bleek dat slechts een handjevol merken buiten kantooruren net zo actief is als tijdens kantooruren. Gedurende de feestdagen wordt hiervoor dus geen uitzondering gemaakt."
 date: 2014-06-01 12:00
 comments: true
 categories: []
@@ -13,7 +13,7 @@ cover: 2014-01-06-Community-management-tijdens-de-feestdagen.png
 Waar bedrijven tijdens de feestdagen met hun winkels steeds vaker open gaan, is dit online nog absoluut niet het geval. Slechts 23% van de grootste Nederlandse merken op Facebook heeft tijdens de afgelopen Kerstdagen en op Nieuwjaarsdag gereageerd op openbare vragen van fans. Dat blijkt uit onderzoek van <a href="https://nub.is" target="_blank\">Nubis</a>.
 
 
-Deze resultaten zijn in lijn met de onlangs gepubliceerde <a href"http://bit.ly/cmtop100" target="_blank"> Community Management Top100</a> waar uit bleek dat slechts een handjevol merken buiten kantooruren net zo actief is als tijdens kantooruren. Gedurende de feestdagen wordt hiervoor dus geen uitzondering gemaakt.
+Deze resultaten zijn in lijn met de onlangs gepubliceerde <a href="http://bit.ly/cmtop100" target="_blank"> Community Management Top100</a> waar uit bleek dat slechts een handjevol merken buiten kantooruren net zo actief is als tijdens kantooruren. Gedurende de feestdagen wordt hiervoor dus geen uitzondering gemaakt.
 
 
 ![Infograpic Community Management tijdens de feestdagen](/assets/blog/img/2014-01-06-Community-management-tijdens-de-feestdagen.png)
