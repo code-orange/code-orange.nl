@@ -1,9 +1,9 @@
---
+---
 layout: post
 title: Community Management Top100
 author: Jelle
 excerpt: "Net als anderen houden ook ik en mijn collega's zich bezig met community management op Facebook. En logischerwijs wil je dan vergelijken hoe je het doet ten opzichte van de concurrentie. Community management is helaas lastig te kwantificeren. Eén onderdeel van community management kun je wel goed in kaart brengen, namelijk de snelheid waarmee merken op berichten vanuit hun community reageren."
-secondp: "De <a href="http://community-management.nub.is/login.php?demo=frankwatching" target="_blank">Community Management Top100 (CM100)</a> laat zien dat hierin grote verschillen zitten. Dat geldt uiteraard voor merken onderling, maar ook voor het tijdstip waarop iemand uit de community een bericht stuurt: slechts weinig merken zijn namelijk buiten kantooruren net zo actief op Facebook als daarbinnen."
+secondp: "De <a href='http://community-management.nub.is/login.php?demo=frankwatching' target='_blank'>Community Management Top100 (CM100)</a> laat zien dat hierin grote verschillen zitten. Dat geldt uiteraard voor merken onderling, maar ook voor het tijdstip waarop iemand uit de community een bericht stuurt: slechts weinig merken zijn namelijk buiten kantooruren net zo actief op Facebook als daarbinnen."
 date: 2014-01-05 12:00
 comments: true
 categories: []
@@ -12,17 +12,17 @@ cover: 2014-05-01-Cover-Community-Management-top100.png
 
 Net als anderen houden ook ik en mijn collega's zich bezig met community management op Facebook. En logischerwijs wil je dan vergelijken hoe je het doet ten opzichte van de concurrentie. Community management is helaas lastig te kwantificeren. Eén onderdeel van community management kun je wel goed in kaart brengen, namelijk de snelheid waarmee merken op berichten vanuit hun community reageren.
 
-De <a href="http://community-management.nub.is/login.php?demo=frankwatching"target="_blank">Community Management Top100(CM100)</a> laat zien dat hierin grote verschillen zitten. Dat geldt uiteraard voor merken onderling, maar ook voor het tijdstip waarop iemand uit de community een bericht stuurt: slechts weinig merken zijn namelijk buiten kantooruren net zo actief op Facebook als daarbinnen.
+De <a href="http://community-management.nub.is/login.php?demo=frankwatching" target="_blank">Community Management Top100(CM100)</a> laat zien dat hierin grote verschillen zitten. Dat geldt uiteraard voor merken onderling, maar ook voor het tijdstip waarop iemand uit de community een bericht stuurt: slechts weinig merken zijn namelijk buiten kantooruren net zo actief op Facebook als daarbinnen.
 
 #Wat is het?
-De CM100 kijkt naar de 100 grootste nederlandse Facebookpagina’s, gemeten naar het aantal Nederlandse fans volgens <a href="http://www.socialbakers.com/facebook-pages/brands/country/netherlands/"target="_blank">Social Bakers</a>. Van <a href="http://community-management.nub.is/about.php"target="_blank">deze 100 merken</a> hebben we gemeten hoe lang ze er over doen om te reageren op openbare berichten op hun timeline. Hierbij hebben we onderscheid gemaakt tussen berichten tijdens en buiten kantooruren. Daarnaast hebben we in kaart gebracht op hoeveel van deze openbare berichten merken überhaupt reageren.
+De CM100 kijkt naar de 100 grootste nederlandse Facebookpagina’s, gemeten naar het aantal Nederlandse fans volgens <a href="http://www.socialbakers.com/facebook-pages/brands/country/netherlands/" target="_blank">Social Bakers</a>. Van <a href="http://community-management.nub.is/about.php" target="_blank">deze 100 merken</a> hebben we gemeten hoe lang ze er over doen om te reageren op openbare berichten op hun timeline. Hierbij hebben we onderscheid gemaakt tussen berichten tijdens en buiten kantooruren. Daarnaast hebben we in kaart gebracht op hoeveel van deze openbare berichten merken überhaupt reageren.
 
 #Wat valt op?
 ABN AMRO was in de maand november gemiddeld het snelst. 31 minuten overdag en 13 minuten ‘s avonds en in het weekend. Hierbij is vooral de reactietijd buiten kantooruren opvallend. Concurrenten Rabobank en ING noteren hier respectievelijk 6u9 en 3u8, terwijl ze overdag binnen 1u44 en 48 minuten reageren. Sowieso vertonen veel merken grote verschillen in reactietijd binnen en buiten kantooruren. Daarnaast is er ook een aantal grote pagina’s dat simpelweg niet reageert of waar je überhaupt geen open berichten kunt plaatsen. Saturn en Media Markt zijn hier voorbeelden van en om die reden niet opgenomen in de CM100.
 
 Hieronder vind je de tien snelste merken van de maand november binnen en buiten kantooruren, waarbij we een minimum van 20 beantwoorde vragen als voorwaarde hebben gesteld.
 
-![top 10 merken binnen en buiten kantooruren november 2013](assets/blog/img/2014-01-05-Tabel top-10-artikel.png)
+![top 10 merken binnen en buiten kantooruren november 2013](/assets/blog/img/2014-01-05-Tabel-top-10-artikel.png)
 
 #Supermarkten en elektronica
 Wat verder opvalt is dat merken waarvan ik zelf het idee had dat ze goed zijn in community management, niet per se hoog staan in de CM100. Dat geldt bijvoorbeeld voor de meeste grote supermarkten. Albert Heijn, Jumbo en Lidl zijn gemiddeld gezien niet echt snel (1d:3h:55m, 1d:1h:0m en 0d:19h:11m in november) en reageren niet op vragen tijdens het weekend. Ook grote elektronicamerken als Samsung en HTC had ik hoger in de lijst verwacht: zeker omdat hun telefoons er mede voor zorgen dat consumenten tegenwoordig zoveel tijd op Facebook doorbrengen. Bovendien staan ze qua hoeveelheid vragen in de top 15.
