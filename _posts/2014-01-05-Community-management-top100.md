@@ -7,7 +7,7 @@ secondp: "De <a href='http://community-management.nub.is/login.php?demo=frankwat
 date: 2014-01-05 12:00
 comments: true
 categories: []
-cover: 2014-05-01-Cover-Community-Management-top100.png
+cover: cover-Community-Management-top100.png
 ---
 
 Net als anderen houden ook ik en mijn collega's zich bezig met community management op Facebook. En logischerwijs wil je dan vergelijken hoe je het doet ten opzichte van de concurrentie. Community management is helaas lastig te kwantificeren. Eén onderdeel van community management kun je wel goed in kaart brengen, namelijk de snelheid waarmee merken op berichten vanuit hun community reageren.
