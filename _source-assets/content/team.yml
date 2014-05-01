@@ -37,6 +37,9 @@ team_nophotos:
   george:
     name: George Pittas
     title: Developer
+  stef:
+    name: Stef van Schuylenburg
+    title: Developer
   maria:
     name: Maria Pouliou
     title: Junior Developer
@@ -45,9 +48,6 @@ team_nophotos:
     title: Junior Developer
   floris:
     name: Floris Golbach
-    title: Junior Developer
-  stef:
-    name: Stef van Schuylenburg
     title: Junior Developer
   robbert:
     name: Robbert Jongeling
