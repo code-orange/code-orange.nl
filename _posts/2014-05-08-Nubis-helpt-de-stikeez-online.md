@@ -7,12 +7,12 @@ secondp: "De komende weken veroveren de Stikeez heel Nederland nadat ze in versc
 date: 2014-05-08 17:00
 comments: true
 categories: []
-cover: cover-stikeez.jpg
+cover: cover-stikeez.png
 ---
 
 #Nubis helpt de Stikeez online!
 
-![Nubis helpt Dirk Stikeez online](/assets/blog/img/cover-stikeez.jpg)
+![Nubis helpt Dirk Stikeez online](/assets/blog/img/cover-stikeez.png)
 
 Sinds vorige week is er een nieuwe rage in Nederland, Stikeez! Dirk (voorheen Dirk van den Broek, Bas en Digros onderdeel van Detailresultgroep) is een spaaractie gestart ter afsluiting van hun naamswijziging de afgelopen weken. De komende weken veroveren de Stikeez heel Nederland nadat ze in verschillende Europese landen al een ware Megahit zijn geweest! Stikeez zijn 24 leuke vriendjes met zuignapjes. Je kunt ze overal opplakken. Je kunt er grappen mee uithalen. En je kunt er de gekste spelletjes mee doen.
 
