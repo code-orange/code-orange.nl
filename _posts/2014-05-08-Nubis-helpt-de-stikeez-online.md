@@ -7,7 +7,7 @@ secondp: "De komende weken veroveren de Stikeez heel Nederland nadat ze in versc
 date: 2014-05-08 17:00
 comments: true
 categories: []
-cover: cover-stikeez.jpg
+cover: cover-stikeez.png
 ---
 
 #Nubis helpt de Stikeez online!
