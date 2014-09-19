@@ -1,15 +1,16 @@
 customers:
   dekamarkt:
+    ulr: www.dirk.nl
   endemol:
-  groenlinks:
+  peugeot:
   hallmark:
   happinez:
   houthoff:
     url: houthoff.com
   kwiz:
   mediaxplain:
-  ministerie_buiten:
-    url: rijksoverheid.nl/ministeries/bz
+  dirk:
+    url: dirk.nl
   ministerie_fin:
     url: rijksoverheid.nl/ministeries/fin
   mvo:
@@ -20,11 +21,13 @@ customers:
   sezo:
   tedxamsterdam:
     url: tedxamsterdam.com
-  tedxgoodenough:
-    url: tedxgoodenoughcollege.com
+  frieslandcampina:
   visualfabriq:
-  whelpy:
+  corim:
   zapaday:
+  action:
+  boer@croon:
+  relatieplanet:
 
 partners:
   havas:
@@ -35,3 +38,6 @@ partners:
   o2:
     url: o2communicatie.nl
   socialyse:
+  codeorange:
+  m2media:
+  toc:
