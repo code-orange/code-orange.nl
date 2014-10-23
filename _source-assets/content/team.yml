@@ -1,75 +1,18 @@
-team_photos:
-  jelle:
-    name: Jelle Oskam
-    title: Managing Director
-  tim:
-    name: Tim van Dalen
-    title: Head of Development
-  reinout:
-    name: Reinout Woortman
-    title: Creative Consultant
-  duco:
-    name: Duco ter Steege
-    title: Social Media Consultant
-  remco:
-    name: Remco Plasmeijer
-    title: Systems Architecture Manager
-  david:
-    name: David Mirshahi
-    title: Community Manager
-  eva:
-    name: Eva Kuijer
-    title: Community Manager buiten kantooruren
-  mathies:
-    name: Mathies Overtoom
-    title: Community Manager
-  jorrit:
-    name: Jorrit Leemans
-    title: Community Manager buiten kantooruren
-
-team_nophotos:
-  walid:
-    name: Walid Said
-    title: Senior Developer
-  nicky:
-    name: Nicky Advokaat
-    title: Developer
-  george:
-    name: George Pittas
-    title: Developer
-  stef:
-    name: Stef van Schuylenburg
-    title: Developer
-  maria:
-    name: Maria Pouliou
-    title: Junior Developer
-  dirk:
-    name: Dirk Hoekstra
-    title: Junior Developer
-  floris:
-    name: Floris Golbach
-    title: Junior Developer
-  robbert:
-    name: Robbert Jongeling
-    title: Junior Developer
-  ramon:
-    name: Ramon de Vaan
-    title: Junior Developer
-  jules:
-    name: Jules Wulms
-    title: Junior Developer
-  hidde:
-    name: Hidde Burgmans
-    title: Graphic Designer
-  ricco:
-    name: Ricco Delfos
-    title: Graphic Designer
-  niels:
-    name: Niels Corsten
-    title: Graphic Designer
-  peter:
-    name: Peter Bos
-    title: Junior Graphic Designer
-  jeffrey:
-    name: Jeffrey Kuin
-    title: Online Marketeer
+melanie:
+  name: Melanie van Haren
+  title: Head of Community Management
+jorrit:
+  name: Jorrit Leemans
+  title: Cummunity Manager
+arthur:
+  name: Arthur Straathof
+  title: Community Manager
+frank:
+  name: Frank Brouwer
+  title: Community Manager
+ymke:
+  name: Ymke de Vries
+  title: Community Manager
+eva:
+  name: Eva Kuijer
+  title: Community Manager

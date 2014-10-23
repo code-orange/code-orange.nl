@@ -32,107 +32,35 @@
 				<h1>{{ site.content.info.intro }}</h1>
 				<h2>{{ site.content.info.tagline }}</h2>
 			</header>
-			<section id="services" data-scroll-url="/diensten/" data-scroll-title="Diensten">
-				<div id="overlay-content">
-				
-				</div>
-				<header>
-					<h1 class="services-content">{{ site.content.sections.services.name }}</h1>
-					<hr>
-				</header>
-				<p class="services-content">
-					{{ site.content.sections.services.intro }}
-				</p>
-				<div id="hexagons">
-					<div class="hexagon-holder hexagon-first" style="left:20%;">
-						<div class="service-hex" id="hex-social">
-							<div class="hexagon-upper"></div>
-							<div class="hexagon-mid"><p>{{ site.content.sections.services.hexes.social.name | downcase }}</p></div>
-							<div class="hexagon-lower"></div>
-							<div class="hexagon-content">
-								<h1>{{ site.content.sections.services.hexes.social.name }}</h1>
-								<hr>
-								<p class="intro">{{ site.content.sections.services.hexes.social.intro }}</p>
-								<div class="text">
-									<p>{{ site.content.sections.services.hexes.social.text }}</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="hexagon-holder hexagon-second" style="margin-left:-85px; left:50%;">
-						<div class="service-hex" id="hex-creatie">
-							<div class="hexagon-upper"></div>
-							<div class="hexagon-mid"><p>{{ site.content.sections.services.hexes.creatie.name | downcase }}</p></div>
-							<div class="hexagon-lower"></div>
-							<div class="hexagon-content">
-								<h1>{{ site.content.sections.services.hexes.creatie.name }}</h1>
-								<hr>
-								<p class="intro">{{ site.content.sections.services.hexes.creatie.intro }}</p>
-								<div class="text">
-									<p>{{ site.content.sections.services.hexes.creatie.text }}</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="hexagon-holder hexagon-third" style="left:80%; margin-left:-170px;">
-						<div class="service-hex" id="hex-development">
-							<div class="hexagon-upper"></div>
-							<div class="hexagon-mid"><p>{{ site.content.sections.services.hexes.development.name | downcase }}</p></div>
-							<div class="hexagon-lower"></div>
-							<div class="hexagon-content">
-								<h1>{{ site.content.sections.services.hexes.development.name }}</h1>
-								<hr>
-								<p class="intro">{{ site.content.sections.services.hexes.development.intro }}</p>
-								<div class="text">
-									<p>{{ site.content.sections.services.hexes.development.text }}</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			
+			<section id="community-managers">
+				<section id="intro">
+					<header>
+						<h1>{{ site.content.sections.community_managers.name }}</h1>
+						<hr>
+					</header>
+					<p class="community-managers-content">
+						{{ site.content.sections.prices.intro }}
+					</p>
+				</section>
+				<section id="community-managers">
+{% for  in site.content.sections.community_managers %}
+
+				</section>
 			</section>
-			<section id="cases" data-scroll-url="/werk/" data-scroll-title="Werk">
+
+			<section id="prices">
 				<header>
-					<h1>{{ site.content.sections.cases.name }}</h1>
+					<h1>{{ site.content.sections.prices.name }}</h1>
 					<hr>
 				</header>
-				<div id="case-zoom" class="row-fluid">
-					<div id="case-media" class="span8">
-						{{ site.content.sections.cases.showreel.iframe }}
-					</div>
-					<div id="case-description" class="span4">
-						<header>
-							<h1>{{ site.content.sections.cases.showreel.title }}</h1>
-							<hr>
-						</header>
-						<p>
-							{{ site.content.sections.cases.showreel.description }}
-						</p>
-					</div>
-				</div>
-				<div id="cases-thumbs" class="row-fluid">
-					<div class="cases-thumb span4">
-						<div class="description">
-							<h2></h2>
-							<p></p>
-							<hr>
-						</div>
-					</div>
-					<div class="cases-thumb span4">
-						<div class="description">
-							<h2></h2>
-							<p></p>
-							<hr>
-						</div>
-					</div>
-					<div class="cases-thumb span4">
-						<div class="description">
-							<h2></h2>
-							<p></p>
-							<hr>
-						</div>
-					</div>
-				</div>
+				<p class="prices-content">
+					{{ site.content.sections.prices.intro }}
+				</p>
+				<p class="prices-content">
+					{{ site.content.sections.prices.text }}
+				</p>
+
 			</section>
 			<section id="clients">
 				<section id="customers">
@@ -142,14 +70,6 @@
 					</header>
 {% for company in site.content.clients.customers %}
 					<img class="company" src="/assets/img/companies/customers/{{ company[0] }}.png"{% if company[1].url %} data-url="http://{{ company[1].url }}"{% endif %}>{% endfor %}
-				</section>
-				<section id="partners">
-					<header>
-						<h1>{{ site.content.sections.clients.partners }}</h1>
-						<hr>
-					</header>
-{% for company in site.content.clients.partners %}
-					<img class="company" src="/assets/img/companies/partners/{{ company[0] }}.png"{% if company[1].url %} data-url="http://{{ company[1].url }}"{% endif %}>{% endfor %}
 				</section>
 			</section>
 			<section id="about" data-scroll-url="/over/" data-scroll-title="Over">
@@ -198,23 +118,7 @@
 {% endfor %}
 				</section>
 			</section>
-			<section id="blog" data-scroll-url="/blog/" data-scroll-title="Blog">
-				<header>
-					<h1>{{ site.content.sections.blog.name }}</h1>
-					<hr>
-				</header>
-{% for post in site.posts %}
-				<article>
-					<img class="cover" alt="Cover photo" src="/assets/blog/img/{{ post.cover }}">
-					<h2>{{ post.title }}</h2>
-					<p>{{ post.excerpt }}</p>
-					<p>{{ post.secondp }}</p>
-					<a href="{{ post.url }}">Lees verder &raquo;</a>
-				</article>
-{% if forloop.index == 2 %}{% break %}{% endif %}
-{% endfor %}
-				<a href="{{ site.content.sections.blog.index_link }}">Zie onze andere posts &raquo;</a>
-			</section>
+			
 			<section id="contact" data-scroll-url="/contact/" data-scroll-title="Contact">
 				<div id="contactform">
 					<hr>
