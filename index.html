@@ -40,12 +40,8 @@
 						<hr>
 					</header>
 					<p class="community-managers-content">
-						{{ site.content.sections.prices.intro }}
+						{{ site.content.sections.community_managers.intro }}
 					</p>
-				</section>
-				<section id="community-managers">
-{% for  in site.content.sections.community_managers %}
-
 				</section>
 			</section>
 
@@ -72,52 +68,25 @@
 					<img class="company" src="/assets/img/companies/customers/{{ company[0] }}.png"{% if company[1].url %} data-url="http://{{ company[1].url }}"{% endif %}>{% endfor %}
 				</section>
 			</section>
-			<section id="about" data-scroll-url="/over/" data-scroll-title="Over">
+
+
+			<section id="hello">
 				<header>
-					<h1>{{ site.content.sections.about.name }}</h1>
+					<h1>{{ site.content.sections.hello.name }}</h1>
 					<hr>
 				</header>
-				
-				<section id="about-text">
-					<header>
-						<h2>{{ site.content.info.intro }}</h2>
-						<hr>
-						<p>{{ site.content.info.tagline }}</p>
-					</header>
-					<h3>{{ site.content.sections.about.text.header }}</h3>
-					<div id="intro-text">
-						{{ site.content.sections.about.text.intro | markdownify }}
-					</div>
-					<hr><hr><hr>
-				</section>
-				
-				<figure id="quote">
-					<img alt="Foto">
-					<div id="quote-text">
-						<blockquote>
-						</blockquote>
-						<figcaption></figcaption>
-					</div>
-				</figure>
-				<header>
-					<h1>{{ site.content.sections.about.team.name }}</h1>
-					<hr>
-				</header>
-				<section id="team-members">
-{% for employee in site.content.team.team_photos %}
-					<div class="hexagon" data-photo="true" data-name="{{ employee[0] }}">
-						<p class="name">{{ employee[1].name }}</p>
-						<p class="title">{{ employee[1].title | downcase }}</p>
-					</div>
-{% endfor %}
-{% for employee in site.content.team.team_nophotos %}
-					<div class="hexagon" data-photo="false" data-name="{{ employee[0] }}">
-						<p class="name">{{ employee[1].name }}</p>
-						<p class="title">{{ employee[1].title | downcase }}</p>
-					</div>
-{% endfor %}
-				</section>
+				<p class="contact-content">
+					{{ site.content.sections.hello.intro }}
+				</p>
+				<p class="contact-content">
+					{{ site.content.sections.hello.text }}
+				</p>
+				<p class="contact-content">
+					{{ site.content.sections.hello.info }}
+				</p>
+
 			</section>
+
 			
 			<section id="contact" data-scroll-url="/contact/" data-scroll-title="Contact">
 				<div id="contactform">
@@ -126,13 +95,14 @@
 					<form>
 						<input type="text" placeholder="naam" name="naam">
 						<input type="email" placeholder="e-mail" name="email">
-						<textarea placeholder="vraag" name="vraag"></textarea>
+						<textarea placeholder="vraag" name="bericht"></textarea>
 						<img src="/assets/img/send.png" alt="Versturen">
 					</form>
-					<hr>
 				</div>
-				<div id="map"></div>
+
 			</section>
+			
+
 			<footer id="footer">
 				<aside>
 					<h1>{{ site.content.sections.footer.location }}</h1>
