@@ -23,7 +23,7 @@
 				<ul>
 					<li id="nav_services"><a href="#services">{{ site.content.sections.services.nav }}</a></li>
 					<li id="nav_cases"><a href="#cases">{{ site.content.sections.cases.nav }}</a></li>
-					<li id="nav_about"><a href="#about">{{ site.content.sections.about.nav }}</a></li>
+
 					<li id="nav_blog"><a href="#blog">{{ site.content.sections.blog.nav }}</a></li>
 					<li id="nav_contact"><a href="#contact">{{ site.content.sections.contact.nav }}</a></li>
 				</ul>
@@ -32,6 +32,24 @@
 				<h1>{{ site.content.info.intro }}</h1>
 				<h2>{{ site.content.info.tagline }}</h2>
 			</header>
+
+			
+			<section id="community-management">
+				
+				<header>
+					<h1>{{ site.content.sections.community_management.name }}</h1>
+					<hr>
+				</header>
+				<p class="services-content">
+					{{ site.content.sections.community_management.intro }}
+				</p>
+				<p class="services-content">
+					{{ site.content.sections.community_management.text }}
+				</p>
+				<p class="services-content">
+					{{ site.content.sections.community_management.info }}
+				</p>
+			</section>
 			
 			<section id="community-managers">
 				<section id="intro">
@@ -43,6 +61,16 @@
 						{{ site.content.sections.community_managers.intro }}
 					</p>
 				</section>
+				<section id="team-members">
+{% for employee in site.content.team %}
+					<div class="hexagon" data-photo="true" data-name="{{ employee[0] }}">
+						<p class="name">{{ employee[1].name }}</p>
+						<hr>
+						<p class="title">{{ employee[1].title }}</p>
+						<br>
+					</div>
+{% endfor %}
+				</section>
 			</section>
 
 			<section id="prices">
@@ -50,10 +78,10 @@
 					<h1>{{ site.content.sections.prices.name }}</h1>
 					<hr>
 				</header>
-				<p class="prices-content">
+				<p class="prices-intro">
 					{{ site.content.sections.prices.intro }}
 				</p>
-				<p class="prices-content">
+				<p class="prices-text">
 					{{ site.content.sections.prices.text }}
 				</p>
 
@@ -70,19 +98,19 @@
 			</section>
 
 
-			<section id="hello">
+			<section id="contact-body">
 				<header>
-					<h1>{{ site.content.sections.hello.name }}</h1>
+					<h1>{{ site.content.sections.contact-body.name }}</h1>
 					<hr>
 				</header>
 				<p class="contact-content">
-					{{ site.content.sections.hello.intro }}
+					{{ site.content.sections.contact-body.intro }}
 				</p>
 				<p class="contact-content">
-					{{ site.content.sections.hello.text }}
+					{{ site.content.sections.contact-body.text }}
 				</p>
 				<p class="contact-content">
-					{{ site.content.sections.hello.info }}
+					{{ site.content.sections.contact-body.info }}
 				</p>
 
 			</section>
@@ -90,8 +118,6 @@
 			
 			<section id="contact" data-scroll-url="/contact/" data-scroll-title="Contact">
 				<div id="contactform">
-					<hr>
-					<h1>{{ site.content.sections.contact.form.head }}</h1>
 					<form>
 						<input type="text" placeholder="naam" name="naam">
 						<input type="email" placeholder="e-mail" name="email">
@@ -99,7 +125,6 @@
 						<img src="/assets/img/send.png" alt="Versturen">
 					</form>
 				</div>
-
 			</section>
 			
 

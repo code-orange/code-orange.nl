@@ -1,20 +1,9 @@
-services:
-  nav: Diensten
-  name: Diensten
-  intro: Bij Nubis hebben we verstand van social media, creatie en techniek. In de applicaties die we bouwen, komen deze drie expertises samen. Je kan ook bij ons aankloppen voor &eacute;&eacute;n ervan. Wat we bij Nubis ook voor je doen, we verwarren het middel nooit met het doel&#58; niet onze diensten, maar de doelstellingen van onze klanten staan centraal.
-  hexes:
-    social:
-      name: Social media
-      intro: Wij weten wat social media voor je kunnen doen en daarbij adviseren we je graag.
-      text: Social media draait om content. We maken daarom eerst altijd een 'contentspectrum' en een communicatiekalender die als basis dienen voor de social-mediastrategie van onze klanten. We doen dat voor Facebook, maar ook voor andere social media. We beheren de community en communiceren in de tone of voice van onze klanten om zo in contact te blijven met de fans. Dat laatste doen we ook buiten kantooruren, omdat consumenten juist in de avond en in het weekend online actief zijn.
-    creatie:
-      name: Creatie
-      intro: Creatie is waar social en development samen komen.
-      text: Wij zetten strategie&euml;n uit, bedenken concepten, maken designs en schrijven copy.  Dit doen we door zelf te cre&euml;ren, maar ook met bestaand materiaal kunnen we goed aan de slag. Zo realiseren wij succesvolle creaties,  zonder daarbij de specifieke kenmerken van social media uit het oog te verliezen&#58; interactief, uitdagend en doelgericht.
-    development:
-      name: Development
-      intro: Wij werken met jonge, talentvolle programmeurs die de technische mogelijkheden van social media volkomen doorgronden.
-      text: We kunnen daardoor alle soorten apps bouwen. Ook de digitale platforms waarmee social media steeds vaker worden ge&iuml;ntegreerd, hebben voor ons vrijwel geen geheimen meer&#58; we bouwen net zo makkelijk websites als mobiele applicaties of onlineadvertenties (banners). Wat we adviseren, kunnen we dus ook maken. Wel zo gemakkelijk.
+community_management:
+  nav: Community Management
+  name: Community Management
+  intro: Anno 2014 zijn negen van de tien brands actief op social media. Facebook, Twitter, Google+, Instagram, Pinterest, YouTube en zelfs LinkedIn puilen uit van communities waar fans hun faavoriete merk in de gaten kunnen houden, en natuurlijk vragen kunnen stellen. Deze groepen moeten gemanaged worden.<br>Het begrip 'community management' is daarmee geboren.
+  text: Een nauwe samenwerking tussen merk en bureau is h&eacute;t ingredi&euml;nt voor community management. Vergelijk het met een portie nacho's. Die zijn lekker als ze warm zijn, maar met gesmolten kaas is het onweerstaanbaar.<br>Daarnaast is betrokkenheid met de community een belangrijk punt om in gedachten te houden. Het liefst 24/7. Op die manier weet je als merk precies wat er op je pagina speelt, wat de behoeftes van je fans zijn en hoe je je marketingplannen daarop kunt afstellen.
+  info: Nubis adviseert en gaat het veld in door actief in gesprek te gaan met de community. Kortom&#58; wij nemen werk uit handen. Zowel tijdens, als buiten kantooruren.
 
 cases:
   nav: Werk
@@ -28,7 +17,7 @@ clients:
   customers: Klanten
   partners: Partners
 
-hello:
+contact-body:
   name: Contact
   intro: Nubis Digital Agency <br> Herengracht 104 <br> 1015 BS Amsterdam
   text: info@nub.is <br> 0208932941
@@ -40,43 +29,22 @@ community_managers:
   intro: Nubis beschikt over dedicated community managers met ruime ervaring. Enthousiast geworden? Neem gerust contact met ons op om te zien wat we voor je kunnen betekenen.
   names: Melanie van Haren
 
+footer:
+  location: Location
+  contact: Contact
+  follow: Follow us
+  circle: Circle us
+
 prices:
   nav: Tarieven
   name: Tarieven
   intro: Voor het beheren van een Facebook pagina, vergelijkbaar met die van onze huidige klanten rekenen wij ondersaande tarieven. Bij diensten zoals webcare, Twitter, Instagram, Pinterest zullen de tarieven hiermee in lijn zijn. 
   text: We maken onderscheid in het community management tijdens kantooruren (week overdag) en buiten kantooruren (week 's avonds & weekend). Afhankelijk van de activiteit van je community, is het mogelijk om ons op een of meerdere van deze timeslots in te zetten. 
 
-about:
-  name: Contact
-  nav: Nubis
-
-  text:
-    header: Social media zijn altijd en overal, en bij Nubis kennen we de mogelijkheden als geen ander.
-    intro: "Nubis (Latijn voor 'wolk') werd eind 2010 opgericht door Jelle Oskam en Gielke Burgmans. Sindsdien is Nubis uitgegroeid van een adviesbureau voor onlinemarketing tot 'digital agency' waar we werken op het snijvlak van marketing, design en techniek. Online laten die drie zich niet scheiden en dat doen wij dus ook niet.
-
-	
-    l media maken dat mogelijk. Het vereist niet altijd enorme budgetten, maar wel intelligente campagnes, apps en constant beheer van de gebruikte platforms. Bij Nubis doen we dat allemaal.
-    
-	
-    We begonnen met een focus op Facebook, het meestgebruikte social media platform ter wereld. Bij Nubis plozen we als een van de eersten de technische werking van Facebook uit. Onze kennis daarvan is daardoor onderscheidend en zorgt voor beter marketingadvies en effectievere creaties. We zetten die expertise inmiddels ook in voor andere social media zoals Twitter, Pinterest, Instagram en Vine.
-    
-	
-    Innoveren staat daarbij voorop. De computer die zes jaar geleden op onze bureau's stond, zit nu als smartphone in onze broekzak. Ook online volgen de vernieuwingen zich razendsnel op; wie kan nu al voorspellen wat h&eacute;t digitale platform van het volgende decennium wordt? Wij zijn altijd op de hoogte van de laatste ontwikkelingen en proberen ze als het even kan voor te blijven.
-    
-	
-    Zoals onze naam al aangeeft, werken we bij Nubis 'in the cloud': we kunnen online altijd en overal bij ons werk. Het maakt Nubis flexibel en stelt ons in staat je snel te helpen. Bovendien hebben we een 'platte' organisatie, waardoor we snel kunnen reageren, essentieel bij online werken."
-  team:
-    name: Team
-
 contact:
   nav: Contact
-  form:
-    head: "Get<br>in touch!"
 
-footer:
-  location: Location
-  contact: Contact
-  follow: Follow us
-  circle: Circle us
+
+
 
 
