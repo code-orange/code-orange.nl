@@ -25,10 +25,18 @@ a{
 }
    
 #home{
-	background-image: url(/assets/img/cover.jpg);
+	background-image: url(/assets/img/home.png);
+	background-size:100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: 200%;
+	padding-top: 185px;
+}
+
+#contact-body{
+	background-image: url(/assets/img/contact.png);
+	background-size:100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	padding-top: 185px;
 }
 
@@ -347,8 +355,10 @@ a{
 
 
 		#home > section#community-managers{
-			background-color: white;
+			background-image:url(/assets/img/team.png);
+			background-size: 100%;
 			overflow: auto;
+			min-height: 900px;
 
 		}
 
@@ -526,32 +536,34 @@ a{
 						color: #7b7b7b;
 					}
 		
-			#home > section#community-managers > #team-members{
+			#home > section#team-members{
 				overflow: auto;
+				backgroun-color:white;
 
 			}
 		
-			#home > section#community-managers .hexagon{
+			#home > section#team-members .hexagon{
 				
-				width: 16.5%;
+				width: 33%;
 				height: 130px;
 				
-				margin-right: 8.3%;
-				margin-left: 8.3%;
+
 				float: left;
 
 			}
 			
-				#home > section#community-managers .hexagon p{
+				#home > section#team-members .hexagon p{
 					color: black;
 					text-align: center;
 					font-size: 100%;
 					margin: 0;
 				}
 
-					#home > section#community-managers .hexagon hr{
+					#home > section#team-members .hexagon hr{
 						margin-top: 0.2em;
 						margin-bottom:0.6em;
+						margin-left:auto;
+						margin-right:auto;
 						width: 0.7em;
 						border-top-color: black;
 						border-bottom-color: black;
@@ -568,7 +580,7 @@ a{
 				}
 			*/
 				
-			#home > section#community-managers .hexagon.nophoto{
+			#home > section#team-members .hexagon.nophoto{
 				background-color: #13bdef;
 				
 				width: 10%;
@@ -579,7 +591,7 @@ a{
 				margin-left: 4.05%;
 			}
 			
-				#home > section#community-managers .hexagon.nophoto:nth-child(5n+10){
+				#home > section#team-members .hexagon.nophoto:nth-child(5n+10){
 					margin-left: 8.3%;
 				}
 			
@@ -765,24 +777,20 @@ a{
 			}
 		
 		#home > section#contact{
-			background-color: white;
 			
-			min-height: 200px;
+			min-height: 1000px;
 			
 			padding: 40px;
 		}
-				
+			#home >section#contact-body
 			
 			#home > section#contact > #contactform{
-				position: absolute;
 				left: 36%;
 				width: 20%;
 				height: 20%;
 				margin-left: 20%;
-
 				z-index: 2;
 				
-				color: white;
 				
 				min-height: 350px;
 				min-width: 350px;
@@ -813,8 +821,7 @@ a{
 				#home > section#contact > #contactform hr{
 					margin-top: 0.5em;
 					width: 3em;
-					border-top-color: white;
-					border-bottom-color: white;
+					
 					margin-left: auto;
 					margin-right: auto;
 				}
