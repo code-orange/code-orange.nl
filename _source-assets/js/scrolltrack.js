@@ -10,9 +10,9 @@ function ScrollTracker(){
 	this.init = function(_window){
 		services_top = 0;
 		cases_top = 0;
-		about_top = $("#about").offset().top - 1;
+		about_top = 0;
 		blog_top = 0;
-		contact_top = $("#contact").offset().top - 1;
+		contact_top = 0;
 		
 		current = "";
 		window = $(_window);

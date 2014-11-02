@@ -384,6 +384,16 @@ a{
 			overflow: auto;
 		}
 
+			#home > section#prices #prices-images #left-prices{
+				width:70%;
+				float:left;
+			}
+				#home > section#prices #prices-images #right-prices{
+					vertical-align: bottom;
+					width:20%;
+					float:right;
+				}
+
 		#home > section#clients{
 			background-color: #464646;
 			overflow: auto;
@@ -538,7 +548,7 @@ a{
 		
 			#home > section#team-members{
 				overflow: auto;
-				backgroun-color:white;
+				background-color:white;
 
 			}
 		
@@ -776,13 +786,21 @@ a{
 				margin: 30px 0;
 			}
 		
-		#home > section#contact{
-			
-			min-height: 1000px;
-			
-			padding: 40px;
+		#home > section#contact-body{
+			width:100%;
 		}
-			#home >section#contact-body
+
+		#home > section#contact{
+			float:right;
+			width:40%;
+			
+		}
+
+
+			#home >section#contact-text{
+				width:60%;
+				float:left;
+			}
 			
 			#home > section#contact > #contactform{
 				left: 36%;
