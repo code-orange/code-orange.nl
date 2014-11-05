@@ -1,3 +1,6 @@
+nav_bar:
+  name: COMMUNITY MANAGEMENT
+
 community_management:
   nav: Community Management
   name: Community Management
@@ -19,14 +22,13 @@ clients:
 
 contact-body:
   name: Contact
-  intro: Nubis Digital Agency <br> Herengracht 104 <br> 1015 BS Amsterdam
-  text: info@nub.is <br> 0208932941
-  info: Zie hier wat Nubis nog meer doet.
+  intro: Nubis Digital Agency <br> Herengracht 104 <br> 1015 BS Amsterdam<br><br>info@nub.is<br>0208932941
+ 
 
 community_managers:
   nav: Community Managers
   name: Community Managers
-  intro: Nubis beschikt over dedicated community managers met ruime ervaring. Enthousiast geworden? Neem gerust contact met ons op om te zien wat we voor je kunnen betekenen.
+  intro: Nubis beschikt over dedicated community managers met ruime ervaring.<br>Enthousiast geworden? Neem gerust contact met ons op om te zien wat we voor je kunnen betekenen.
   names: Melanie van Haren
 
 prices:

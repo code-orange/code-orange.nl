@@ -21,34 +21,25 @@
 			<nav data-tracking="true">
 				<img id="logo" src="/assets/img/logo.png" alt="Logo">
 				<ul>
-					<li id="nav_services"><a href="#services">{{ site.content.sections.services.nav }}</a></li>
-					<li id="nav_cases"><a href="#cases">{{ site.content.sections.cases.nav }}</a></li>
-
-					<li id="nav_blog"><a href="#blog">{{ site.content.sections.blog.nav }}</a></li>
-					<li id="nav_contact"><a href="#contact">{{ site.content.sections.contact.nav }}</a></li>
+					<li id="title">{{ site.content.sections.nav_bar.name }}</li>
+					<li id="drop-down"><a href="#contact"><img src="/assets/img/dropdown.png"></a></li>
 				</ul>
 			</nav>
 			<header id="cover">
-				
+				<h1>{{ site.content.sections.community_management.name }}</h1>
+				<hr>
+				<h2 class="services-content">
+					{{ site.content.sections.community_management.intro }}
+				</h2>
+				<h3 class="services-content">
+					{{ site.content.sections.community_management.text }}
+				</h3>
+				<h3 class="services-content">
+					{{ site.content.sections.community_management.info }}
+				</h3>
 			</header>
 
 			
-			<section id="community-management">
-				
-				<header>
-					<h1>{{ site.content.sections.community_management.name }}</h1>
-					<hr>
-				</header>
-				<p class="services-content">
-					{{ site.content.sections.community_management.intro }}
-				</p>
-				<p class="services-content">
-					{{ site.content.sections.community_management.text }}
-				</p>
-				<p class="services-content">
-					{{ site.content.sections.community_management.info }}
-				</p>
-			</section>
 			
 			<section id="community-managers">
 				<section id="intro">
@@ -65,14 +56,15 @@
 
 			<section id="team-members">
 {% for employee in site.content.team %}
-					<div class="hexagon" data-photo="true" data-name="{{ employee[0] }}">
-						<p class="name">{{ employee[1].name }}</p>
-						<hr>
-						<p class="title">{{ employee[1].title }}</p>
-						<br>
-					</div>
+				<div class="hexagon" data-photo="true" data-name="{{ employee[0] }}">
+					<p id="member-name">{{ employee[1].name }}</p>
+					<hr>
+					<p id="member-title">{{ employee[1].title }}</p>
+					<br>
+				</div>
 {% endfor %}
-				</section>
+			</section>
+
 
 			<section id="prices">
 				<header>
@@ -103,13 +95,20 @@
 				</section>
 			</section>
 
-
-			<section id="contact-body">
+			<section id="contact" data-scroll-url="/contact/" data-scroll-title="Contact">
 				<header>
 					<h1>{{ site.content.sections.contact-body.name }}</h1>
 					<hr>
 				</header>
-				<div id='contact-text'>
+				<div id="contactform">
+					<form>
+						<input type="text" placeholder="Naam" name="naam">
+						<input type="email" placeholder="E-mail" name="email">
+						<textarea placeholder="Bericht" name="bericht"></textarea><br>
+						<img src="/assets/img/send.png" alt="Versturen">
+					</form>
+				</div>
+				<div id="contact-text">
 					<p class="contact-content">
 						{{ site.content.sections.contact-body.intro }}
 					</p>
@@ -120,20 +119,9 @@
 						{{ site.content.sections.contact-body.info }}
 					</p>
 				</div>
-
-
-				<div id="contact" data-scroll-url="/contact/" data-scroll-title="Contact">
-					<div id="contactform">
-						<form>
-							<input type="text" placeholder="naam" name="naam">
-							<input type="email" placeholder="e-mail" name="email">
-							<textarea placeholder="vraag" name="bericht"></textarea>
-							<img src="/assets/img/send.png" alt="Versturen">
-						</form>
-					</div>
-				</div>
-
+			
 			</section>
+
 
 			
 
@@ -164,7 +152,7 @@
 			{parsetags: 'explicit'}
 		</script>
 		
-		{% bundle %} [/_source-assets/js/scrolltrack.js, /_source-assets/js/main.js] {% endbundle %}
+		<!--{% bundle %} [/_source-assets/js/scrolltrack.js, /_source-assets/js/main.js] {% endbundle %}-->
 		
 		<div id="preload"></div>
 	</body>
