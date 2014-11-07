@@ -22,9 +22,38 @@
 				<img id="logo" src="/assets/img/logo.png" alt="Logo">
 				<ul>
 					<li id="title"><a href="#">{{ site.content.sections.nav_bar.name }}</a></li>
-					<li id="drop-down"><a href="#contact"><img src="/assets/img/dropdown.png"></a></li>
+					<li id="drop-down"><a href="#"><img src="/assets/img/menu-icon.png"></a></li>
 				</ul>
+				
+
 			</nav>
+
+				<div id="mega-menu">  
+				    <div id="background">
+				    </div>
+				    <div id="forground">
+
+					    <ul> 
+					    	<li><img id="menuCloseButton" src="/assets/img/close.png" onclick:"hideMenu()"></li>
+					        <li><a href="#cover" title="Community Management">COMMUNITY MANAGEMENT</a></li>  
+					        <li><a href="#community-managers" title="Community Managers">COMMUNITY MANAGERS</a></li>  
+					        <li><a href="#prices" title="Prices">TARIEVEN</a></li>  
+					        <li><a href="#clients" title="Clients">KLANTEN</a></li>  
+					        <li><a href="#contact" title="Contact">CONTACT</a></li>  
+					        <li><a href="#" title="Nubis">NUB.IS</a></li> 
+					    </ul>  
+					</div>
+				</div>  
+
+				<script>
+					function hideMenu(){
+						console.log("geklikt");
+						document.getElementById("mega-menu").style.display= 'none';
+
+					}</script>
+
+
+			
 			<header id="cover">
 				<h1>{{ site.content.sections.community_management.name }}</h1>
 				<hr>

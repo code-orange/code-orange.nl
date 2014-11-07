@@ -66,6 +66,8 @@ a{
 		float: left;
 		cursor: pointer;
 	}
+
+	
 	
 	#home > nav > ul{
 		float: right;
@@ -102,6 +104,64 @@ a{
 			color: #8a8b8b;
 			border-bottom: 1px solid #d5d4d4;
 		}
+
+
+	#home > #mega-menu{
+		position: absolute;
+		
+		width: 100%;
+		height: 100%;
+		z-index: 1000;
+	}
+
+		#home > #mega-menu #background{
+			position: absolute;
+			
+			width: 100%;
+			height: 100%;
+			background-color: #8c8c8c;
+			filter: alpha(opacity=90);
+		    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+		    opacity:0.9;
+		    -moz-opacity: 0.90; 
+		    zoom: 1;
+		}
+
+		#home > #mega-menu #menuCloseButton{
+		display:inline-block;
+		vertical-align:middle;
+		
+		
+		z-index: 101;
+		cursor: pointer;
+	}
+
+		#home > #mega-menu ul{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			margin-top:10%;
+			margin-bottom: 10%;
+		}
+			#home > #mega-menu ul li{
+				width: 100%;
+				list-style: none;
+				height:90px;
+				text-align: center;
+
+			}
+				#home > #mega-menu ul li a{
+					width: 100%;
+					color:white;
+					font-size: 3.75em;
+				}
+
+						#home > #mega-menu ul li a:hover{
+							text-decoration: none;
+							background-color: #464646
+						}
+
+
    
 	#home > header{
 		min-height: 800px;
