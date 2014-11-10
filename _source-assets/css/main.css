@@ -143,23 +143,37 @@ a{
 			height: 100%;
 			margin-top:10%;
 			margin-bottom: 10%;
+			margin-left: 0;
 		}
+
+			#home > #mega-menu ul li#close{
+				position: absolute;
+				top: -185px;
+				left: 29%;
+			}
+
 			#home > #mega-menu ul li{
 				width: 100%;
 				list-style: none;
-				height:90px;
+				height: 48px;
 				text-align: center;
-
+				overflow: auto;
+				padding-top: 26px;
+				margin-bottom: 15px;
 			}
+
+				#home > #mega-menu ul li.menuitem:hover{
+					background-color: #464646
+				}
+
+
 				#home > #mega-menu ul li a{
 					width: 100%;
 					color:white;
 					font-size: 3.75em;
 				}
-
 						#home > #mega-menu ul li a:hover{
 							text-decoration: none;
-							background-color: #464646
 						}
 
 

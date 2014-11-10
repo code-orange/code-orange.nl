@@ -50,7 +50,9 @@ $(function(){
 	});
 	
 	$("#drop-down").on('click', function(){
-		$("#mega-menu").slideDown('fast');
+		$("#mega-menu").slideDown('fast', function(){
+			$("#close").css("top", (-1 * $(".menuitem").first().offset().top) + 5);
+		});
 	});
 	
 	$("#menuCloseButton").on('click', function(){
