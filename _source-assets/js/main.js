@@ -1,4 +1,13 @@
 $(function(){
+	//Move grey paragraph below cover photo
+	(function(){
+		var currentTop = $("#cover > h3").first().offset().top;
+		var shouldTop = (800/1440) * screen.width;
+		if(shouldTop > currentTop){
+			$("#cover > h3").first().css("margin-top", shouldTop - currentTop);
+		}
+	}());
+	
 	$(".company").click(function(){
 		var url;
 		if($(this).data("url") != undefined){
