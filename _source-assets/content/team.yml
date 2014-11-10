@@ -1,16 +1,25 @@
 melanie:
   name: Melanie van Haren
   title: Head of Community Management
+  top: 22%
+  left: 45.5%
 jorrit:
   name: Jorrit Leemans
   title: Cummunity Manager
+  top: 37%;
+  left: 74.5%;
 arthur:
   name: Arthur Straathof
   title: Community Manager
+  top: 15%;
+  left: 31.5%;
 frank:
   name: Frank Brouwer
   title: Community Manager
+  top: 26.5%;
+  left: 9.8%;
 david:
   name: David Mirshahi
   title: Community Manager
-
+  top: 15.5%;
+  left: 74.8%;

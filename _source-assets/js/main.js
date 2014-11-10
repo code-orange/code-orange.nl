@@ -67,4 +67,12 @@ $(function(){
 			return false;
 		}
 	});
+	
+	$(".hexagon").on('mouseenter', function(){
+		$("#circle_" + $(this).data('name')).fadeIn('fast');
+	});
+	
+	$(".hexagon").on('mouseleave', function(){
+		$("#circle_" + $(this).data('name')).fadeOut('fast');
+	});
 });

@@ -75,21 +75,25 @@
 						{{ site.content.sections.community_managers.intro }}
 					</p>
 				</section>
-				
+
+				<div class="circles">
+{% for employee in site.content.team %}
+					<svg id="circle_{{employee[0]}}" width="140" height="140" style="top: {{employee[1].top}}; left: {{employee[1].left}};">
+						<circle cx="70" cy="70" r="68" stroke="white" stroke-width="4" fill-opacity="0" />
+					</svg>
+{% endfor %}
+				</div>
 			</section>
 
 			<section id="team-members">
 {% for employee in site.content.team %}
-				<div class="hexagon" data-photo="true" data-name="{{ employee[0] }}">
+				<div class="hexagon" data-name="{{ employee[0] }}">
 					<p id="member-name">{{ employee[1].name }}</p>
 					<hr>
 					<p id="member-title">{{ employee[1].title }}</p>
 					<br>
 				</div>
 {% endfor %}
-<svg width="140" height="140">
-  <circle cx="70" cy="70" r="68" stroke="black" stroke-width="4" fill-opacity="0" />
-</svg>
 			</section>
 
 
@@ -122,7 +126,7 @@
 				</section>
 			</section>
 
-			<section id="contact" data-scroll-url="/contact/" data-scroll-title="Contact">
+			<section id="contact" data-scroll-url="/contact/" data-scroll-title="Contact" class="section">
 				<header>
 					<h1>{{ site.content.sections.contact-body.name }}</h1>
 					<hr>

@@ -287,6 +287,15 @@ a{
 				border-bottom-color: black;
 			}
 
+			#home > section#community-managers .circles{
+				height: 650px;
+			}
+
+				#home > section#community-managers .circles svg{
+					position: relative;
+					display: none;
+				}
+
 
 		#home > section#prices{
 			background-color: #959595;
