@@ -39,4 +39,21 @@ $(function(){
 	$("form img").click(function(){
 		$("form").submit();
 	});
+	
+	$("#drop-down").on('click', function(){
+		$("#mega-menu").slideDown('fast');
+	});
+	
+	$("#menuCloseButton").on('click', function(){
+		$("#mega-menu").slideUp('fast');
+	});
+	
+	$("#mega-menu li a").on('click', function(){
+		var href = $(this).attr('href');
+		if(href.charAt(0) == "#"){
+			$("#mega-menu").slideUp('fast');
+			$.scrollTo($(href), 800);
+			return false;
+		}
+	});
 });
