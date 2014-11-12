@@ -3,6 +3,13 @@
 	Author's custom styles
    ========================================================================== */
 
+@media (max-width: 767px){
+	body {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
 *{
 	font-family: 'Forza SSm A', 'Forza SSm B';
 	font-style: normal;
@@ -30,13 +37,20 @@ a{
    
 #home{
 	background-image: url(/assets/img/home.png);
-	background-size:100%;
+	background-position: center 0;
 	background-repeat: no-repeat;
 }
 
+	@media (min-width: 992px){
+		#home{
+			background-size:100%;
+			background-position: initial;
+		}
+	}
+
 #contact{
 	background-image: url(/assets/img/contact.png);
-	background-size:100%;
+	background-size:cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	padding-top: 185px;
@@ -71,8 +85,14 @@ a{
 	
 	#home > nav > ul{
 		float: right;
-
+		display: none;
 	}
+
+		@media (min-width: 992px){
+			#home > nav > ul{
+				display: block;	
+			}
+		}
 	
 		#home > nav li{
 			display:inline-block;
@@ -259,14 +279,22 @@ a{
 			background: linear-gradient(0deg, transparent 50%, rgb(255, 255, 255) 100%), url('/assets/img/team.jpg') no-repeat;
 
 
-			background-size: 100%;
+			background-size: cover;
+			background-position: center center;
 			overflow: auto;
-			min-height: 820px;
 
 		}
 
+			@media (min-width: 992px) {
+				#home > section#community-managers{
+					min-height: 820px;
+				}
+				background-size: 100%;
+			}
+
 			#home > section#community-managers  header > h1{
-				color: black;
+				color: #fafafa;
+				text-shadow: 2px 2px 5px #000;
 				margin: 0;
 				
 				font-weight: 700;
@@ -277,30 +305,62 @@ a{
 				font-size: 1.556em;
 				line-height: 1.8em;		
 
-				color:black;
+				
+				color: #fafafa;
+				text-shadow: 2px 2px 5px #000;
 			}
 
 			#home > section#community-managers  header > hr{
 				margin-top: 0.5em;
 				width: 1.5em;
-				border-top-color: black;
-				border-bottom-color: black;
+				border-top-color: #fafafa;
+				border-bottom-color: #fafafa;
 			}
+
+				@media (min-width: 992px) {
+					#home > section#community-managers  header > h1{
+						color: black;
+						text-shadow: none;
+					}
+					
+					#home > section#community-managers  header > hr{
+						border-top-color: black;
+						border-bottom-color: black;
+					}
+					
+					#home > section#community-managers p{
+						color: black;
+						text-shadow: none;
+					}
+				}
 
 			#home > section#community-managers .circles{
-				height: 650px;
+				display: none;
 			}
 
-				#home > section#community-managers .circles svg{
-					position: relative;
-					display: none;
+			@media (min-width: 992px) {
+				#home > section#community-managers .circles{
+					display: block;
+					height: 650px;
+					margin-top: -160px;
 				}
+
+					#home > section#community-managers .circles svg{
+						position: relative;
+						display: none;
+					}
+			}
 
 
 		#home > section#prices{
 			background-color: #959595;
 			overflow: auto;
-			min-height: 700px
+		}
+
+		@media (min-width: 992px) {
+			#home > section#prices{
+				min-height: 700px;
+			}
 		}
 
 		#home > section#prices p{
@@ -326,17 +386,22 @@ a{
 
 			}
 				#home > section#prices #prices-images #right-prices{
-					padding-top:30px;
-					height:90px;
-					width:80px;
-					float:right;
+					padding-top: 2%;
+					height: 90px;
+					width: 10%;
+					float: right;
 				}
 
 		#home > section#clients{
 			background-color: #464646;
 			overflow: auto;
-			min-height: 700px;
 		}
+		
+			@media (min-width: 992px) {
+				#home > section#clients{
+					min-height: 700px;
+				}
+			}
 		
 			#home > section#clients #customers{
 				overflow: auto;
@@ -367,14 +432,20 @@ a{
 			
 			#home > section#clients .company{
 				background-color: #e6e6e6;
-				width: 15%;
+				width: 30%;
 				float: left;
 				
-				margin-right: 1.6%;
+				margin-left: 1.6%;
 				margin-top: 8px;
 				margin-bottom: 8px;
 				
 				cursor: pointer;
+			}
+
+			@media (min-width: 992px) {
+				#home > section#clients .company{
+					width: 15%;
+				}
 			}
 	
 		
@@ -386,11 +457,18 @@ a{
 		
 			#home > section#team-members .hexagon{
 				
-				width: 33%;
+				width: 50%;
+				margin-bottom: 30px;
 				height: 80px;
 
 				float: left;
 
+			}
+
+			@media (min-width: 992px) {
+				#home > section#team-members .hexagon{
+					width: 33%;
+				}
 			}
 
 			#home > section#team-members .hexagon:hover p{
@@ -454,8 +532,14 @@ a{
 
 		#home > section#contact{
 					background-color: white;			
-					min-height: 700px;					
+					
 				}
+
+			@media (min-width: 992px) {
+				#home > section#contact{
+					min-height: 700px;
+				}
+			}
 
 			#home > section#contact h1{
 				padding-top:10%;
@@ -467,32 +551,17 @@ a{
 				font-size:1.5em;
 				line-height: 1.8em;		
 			}
-		
-			
-			#home > section#contact > #contactform{
-				position: absolute;
-				left: 36%;
-				width: 39%;
-				margin-left: 16%;
 				
-				z-index: 2;
-				
-				color: white;
-				
-				min-height: 350px;
-				min-width: 350px;
-			}
-				
-				#home > section#contact > #contactform form{
+				#home > section#contact #contactform form{
 					margin: 0;
 				}
 			
-				#home > section#contact > #contactform img{
+				#home > section#contact #contactform img{
 					cursor: pointer;
 					margin-top: 15px;
 				}
 			
-				#home > section#contact > #contactform input{
+				#home > section#contact #contactform input{
 					border-radius: 0;
 					width: 70%;
 					font-size: 1.125em;
@@ -501,7 +570,7 @@ a{
 					resize: none;
 				}
 
-				#home > section#contact > #contactform textarea{
+				#home > section#contact #contactform textarea{
 					border-radius: 0;
 					width: 70%;
 					height:90px;

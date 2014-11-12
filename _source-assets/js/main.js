@@ -22,7 +22,7 @@ $(function(){
 		var formdata = {
 			naam: $(this).find("[name=naam]").val(),
 			email: $(this).find("[name=email]").val(),
-			vraag: $(this).find("[name=vraag]").val()
+			vraag: $(this).find("[name=bericht]").val()
 		};
 		
 		$.ajax({
@@ -68,11 +68,14 @@ $(function(){
 		}
 	});
 	
-	$(".hexagon").on('mouseenter', function(){
-		$("#circle_" + $(this).data('name')).fadeIn('fast');
-	});
-	
-	$(".hexagon").on('mouseleave', function(){
-		$("#circle_" + $(this).data('name')).fadeOut('fast');
-	});
+	if(screen.width > 1900 && screen.width < 1940){
+		$(".hexagon").on('mouseenter', function(){
+			$(".employee_circle").hide();
+			$("#circle_" + $(this).data('name')).fadeIn('fast');
+		});
+
+		$(".hexagon").on('mouseleave', function(){
+			$("#circle_" + $(this).data('name')).fadeOut('fast');
+		});
+	}
 });

@@ -11,7 +11,7 @@
 		<title>{{ site.content.info.name }}</title>
 		<meta name="viewport" content="width=device-width">
 
-		{% bundle %} [/_source-assets/css/bootstrap.min.css ,/_source-assets/css/bootstrap-responsive.min.css ,/_source-assets/css/main.css] {% endbundle %}
+		{% bundle %} [/_source-assets/css/bootstrap.min.css, /_source-assets/css/bootstrap-responsive.min.css, /_source-assets/css/main.css] {% endbundle %}
 		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7847452/672622/css/fonts.css">
 		
 		<link rel="icon" type="image/x-icon" href="favicon.ico?v3">
@@ -78,7 +78,7 @@
 
 				<div class="circles">
 {% for employee in site.content.team %}
-					<svg id="circle_{{employee[0]}}" width="140" height="140" style="top: {{employee[1].top}}; left: {{employee[1].left}};">
+					<svg class="employee_circle" id="circle_{{employee[0]}}" width="140" height="140" style="top: {{employee[1].top}}; left: {{employee[1].left}};">
 						<circle cx="70" cy="70" r="68" stroke="white" stroke-width="4" fill-opacity="0" />
 					</svg>
 {% endfor %}
@@ -121,8 +121,10 @@
 						<h1>{{ site.content.sections.clients.customers }}</h1>
 						<hr>
 					</header>
+					<div class="row">
 {% for company in site.content.clients.customers %}
 					<img class="company" src="/assets/img/companies/customers/{{ company[0] }}.png"{% if company[1].url %} data-url="http://{{ company[1].url }}"{% endif %}>{% endfor %}
+					</div>
 				</section>
 			</section>
 
@@ -131,24 +133,26 @@
 					<h1>{{ site.content.sections.contact-body.name }}</h1>
 					<hr>
 				</header>
-				<div id="contactform">
-					<form>
-						<input type="text" placeholder="Naam" name="naam">
-						<input type="email" placeholder="E-mail" name="email">
-						<textarea placeholder="Bericht" name="bericht"></textarea><br>
-						<img src="/assets/img/send.png" alt="Versturen">
-					</form>
-				</div>
-				<div id="contact-text">
-					<p class="contact-content">
-						{{ site.content.sections.contact-body.intro }}
-					</p>
-					<p class="contact-content">
-						{{ site.content.sections.contact-body.text }}
-					</p>
-					<p class="contact-content">
-						{{ site.content.sections.contact-body.info }}
-					</p>
+				<div class="row">
+					<div id="contact-text" class="span5">
+						<p class="contact-content">
+							{{ site.content.sections.contact-body.intro }}
+						</p>
+						<p class="contact-content">
+							{{ site.content.sections.contact-body.text }}
+						</p>
+						<p class="contact-content">
+							{{ site.content.sections.contact-body.info }}
+						</p>
+					</div>
+					<div id="contactform" class="span6">
+						<form>
+							<input type="text" placeholder="Naam" name="naam">
+							<input type="email" placeholder="E-mail" name="email">
+							<textarea placeholder="Bericht" name="bericht"></textarea><br>
+							<img src="/assets/img/send.png" alt="Versturen">
+						</form>
+					</div>
 				</div>
 			
 			</section>
