@@ -1,8 +1,8 @@
 permalink: /blog/:categories/:year/:month/:day/:title/
 
 analytics:
-  code: UA-43992716-1
-  domain: nub.is
+  code: UA-43992716-3
+  domain: community-management.nub.is
 
 asset_bundler:
   base_path: /assets/bundles/
