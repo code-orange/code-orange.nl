@@ -278,7 +278,6 @@ a{
 			background: -ms-linear-gradient(270deg, transparent 50%, rgb(255, 255, 255) 100%), url('/assets/img/team.jpg') no-repeat;
 			background: linear-gradient(0deg, transparent 50%, rgb(255, 255, 255) 100%), url('/assets/img/team.jpg') no-repeat;
 
-
 			background-size: cover;
 			background-position: center center;
 			overflow: auto;
@@ -336,20 +335,22 @@ a{
 
 			#home > section#community-managers .circles{
 				display: none;
+				position:relative;
 			}
 
-			@media (min-width: 992px) {
+
+
 				#home > section#community-managers .circles{
 					display: block;
+					border: 2px solid;
 					height: 650px;
 					margin-top: -160px;
 				}
 
 					#home > section#community-managers .circles svg{
-						position: relative;
+						position: absolute;
 						display: none;
 					}
-			}
 
 
 		#home > section#prices{

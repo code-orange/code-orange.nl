@@ -12,3 +12,6 @@ asset_bundler:
 
 paginate: 6
 paginate_path: "/blog/artikelen/page:num"
+
+include:
+  - _source-assets
