@@ -341,7 +341,6 @@ a{
 			#home > section#community-managers .circles{
 				position:absolute;
 				top:0px;
-				border: 2px solid;
 			}
 
 			#home > section#community-managers .circles svg{

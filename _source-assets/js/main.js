@@ -94,17 +94,12 @@ $(function(){
 		//crop horizontal
 		var crop = {x: (scale * img.width - section.width), y:0};
 	}else{
-		console.log('scale horizontal')
 		//scale horizontal
 		var scale = section.width/img.width;
 		//crop vertical
 
-		console.log(section)
-		console.log(img)
-		console.log(scale)
-		console.log(scale * img.height)
 		var crop = {x:0, y: (scale * img.height - section.height) };
-		console.log(crop)
+
 	}
 
 	//convert crop in px to a marginal crop
@@ -152,10 +147,6 @@ $(function(){
 		FALLS WITHIN THE IMAGE OR NOT.
 		if circle.x or circle.y >1 the center of the circle will be outsite the image.
 		*/
-		//console.log(circle);
-		//console.log(1/crop.x)
-		//console.log(1/crop.y)
-		//console.log(section)
 
 		//convert coordinates from our scale of [100,-100] to actual pixels in x,y from the center
 		circle.x = circle.x/100 * section.width/2;

@@ -78,8 +78,8 @@
 
 				<div class="circles">
 {% for employee in site.content.team %}
-					<svg class="employee_circle" id="circle_{{employee[0]}}" width="20" height="20" data-posx="{{employee[1].posx}}" data-posy="{{employee[1].posy}}">
-						<circle cx="10" cy="10" r="4" stroke="red" stroke-width="4" fill-opacity="0" />
+					<svg class="employee_circle" id="circle_{{employee[0]}}" width="40" height="40" data-posx="{{employee[1].posx}}" data-posy="{{employee[1].posy}}">
+						<circle cx="20" cy="20" r="10" stroke="red" stroke-width="4" fill-opacity="0" />
 					</svg>
 {% endfor %}
 				</div>
