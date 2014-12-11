@@ -17,6 +17,8 @@
                         clearTimeout(timer);
                     } else {
                         evt.type = 'scrollstart';
+
+                        jQuery.event.isPropagationStopped = function() { return false };
                         jQuery.event.handle.apply(_self, _args);
                     }
                     
@@ -26,11 +28,11 @@
                     
                 };
             
-            jQuery(this).bind('scroll', handler).data(uid1, handler);
+            jQuery(this).on('scroll', handler).data(uid1, handler);
             
         },
         teardown: function(){
-            jQuery(this).unbind( 'scroll', jQuery(this).data(uid1) );
+            jQuery(this).off( 'scroll', jQuery(this).data(uid1) );
         }
     };
     
@@ -52,17 +54,19 @@
                         
                         timer = null;
                         evt.type = 'scrollstop';
+
+                        jQuery.event.isPropagationStopped = function() { return false };
                         jQuery.event.handle.apply(_self, _args);
                         
                     }, special.scrollstop.latency);
                     
                 };
             
-            jQuery(this).bind('scroll', handler).data(uid2, handler);
+            jQuery(this).on('scroll', handler).data(uid2, handler);
             
         },
         teardown: function() {
-            jQuery(this).unbind( 'scroll', jQuery(this).data(uid2) );
+            jQuery(this).off( 'scroll', jQuery(this).data(uid2) );
         }
     };
     

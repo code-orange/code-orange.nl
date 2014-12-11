@@ -220,21 +220,31 @@ $(function(){
 	//perform scroll
 	$('html, body').animate({
 		scrollTop: $("#community-managers").offset().top
-	}, 500);*/
+	}, 500);
 
-	jQuery(window).bind('scrollstart', function(){
-                $(document.body).css({
-                    color: '#F6FF96'
-                });
-            });
-            
-            jQuery(window).bind('scrollstop', function(e){
-                $(document.body).css({
-                    color: ''
-                });
-            });
+*/
+
+	//on scroll end
+	$(window).scroll(function() {
+    	clearTimeout($.data(this, 'scrollTimer'));
+	    $.data(this, 'scrollTimer', setTimeout(function() {
+        	// user has stopped scrolling, time to take over controll!
+
+        	console.log("Haven't scrolled in 250ms!");
+        	console.log($("body").scrollTop())
+
+        	var currentTop = $("body").scrollTop()
+
+        	if (currentTop != $("#community-managers").offset().top){
+        		$('html, body').animate({
+					scrollTop: $("#community-managers").offset().top
+				}, 500);
+
+        	}
 
 
+    	}, 250));
+	});
 
 });
 
