@@ -74,40 +74,42 @@ $(function(){
 
 	function redraw_managers_section(){
 
-	//Import the size of the image and the size of the section
-	var img = { width: $("section#community-managers").data('imgWidth'),
-				height: $("section#community-managers").data('imgHeight') };
+		//Import the size of the image and the size of the section
+		var img = { width: $("section#community-managers").data('imgWidth'),
+					height: $("section#community-managers").data('imgHeight') };
 
-	var section = {  inner_width: parseFloat($("section#community-managers").css('width')),
-					inner_height: parseFloat($("section#community-managers").css('height')),
-					       pad_x: parseFloat($("section#community-managers").css('padding-left')),					
-						   pad_y: parseFloat($("section#community-managers").css('padding-top')) };
+		var section = {  inner_width: parseFloat($("section#community-managers").css('width')),
+						inner_height: parseFloat($("section#community-managers").css('height')),
+						       pad_x: parseFloat($("section#community-managers").css('padding-left')),					
+							   pad_y: parseFloat($("section#community-managers").css('padding-top')) };
 
-	//compute and store the real width of the section
-	section.width  = section.inner_width  + 2 * section.pad_x;
-	section.height = section.inner_height + 2 * section.pad_y;
+		//compute and store the real width of the section
+		section.width  = section.inner_width  + 2 * section.pad_x;
+		section.height = section.inner_height + 2 * section.pad_y;
 
-	//calculate the behaviour of the background which is set to cover mode
-	if ( section.width/section.height < img.width/img.height ){
-		//scale vertical
-		var scale = section.height/img.height;
-		//crop horizontal
-		var crop = {x: (scale * img.width - section.width), y:0};
-	}else{
-		//scale horizontal
-		var scale = section.width/img.width;
-		//crop vertical
+		//calculate the behaviour of the background which is set to cover mode
+		if ( section.width/section.height < img.width/img.height ){
+			//scale vertical
+			var scale = section.height/img.height;
+			//crop horizontal
+			var crop = {x: (scale * img.width - section.width), y:0};
+		}else{
+			//scale horizontal
+			var scale = section.width/img.width;
+			//crop vertical
 
-		var crop = {x:0, y: (scale * img.height - section.height) };
+			var crop = {x:0, y: (scale * img.height - section.height) };
 
-	}
+		}
 
-	//convert crop in px to a marginal crop
-	crop.x = scale*img.width  / (scale*img.width -crop.x);
-	crop.y = scale*img.height / (scale*img.height-crop.y);
-	
-	//pass calculations to redraw circles
-	redraw_circles(section,crop,scale);
+		//convert crop in px to a marginal crop
+		crop.x = scale*img.width  / (scale*img.width -crop.x);
+		crop.y = scale*img.height / (scale*img.height-crop.y);
+		
+		//pass calculations to redraw circles
+		$(".employee_circle").each(function(index){
+				redraw_employee_circle('#' + $(this).attr('id'),section,crop,scale);
+		});
 
 	}
 
@@ -122,6 +124,8 @@ $(function(){
 		//store bg image size
 		$("section#community-managers").data('imgWidth',this.width);
 		$("section#community-managers").data('imgHeight',this.height);
+
+
 		redraw_managers_section();
 
 	};
@@ -129,7 +133,7 @@ $(function(){
 
 
 
-	function redraw_circle(circle_id,section,crop,scale){
+	function redraw_employee_circle(circle_id,section,crop,scale){
 
 
 		// Resize the circles with the rescaling of the image
@@ -138,8 +142,6 @@ $(function(){
 		var size = 2*r + border;
 		$(circle_id + " circle").attr({r:r,cx:size/2,cy:size/2});
 		$(circle_id).attr({width:size,height:size})
-
-		$(circle_id).show();
 
 		//import circle specs
 		var circle = { width : parseFloat($(circle_id).css('width')),
@@ -177,10 +179,6 @@ $(function(){
 			- Prijzen mobiel
 			- Contact: formulier links +wat nubis nog meer doet, adres gegevens rechts (niet bij mobile)
 
-
-
-
-
 		*/
 		
 	};
@@ -189,26 +187,13 @@ $(function(){
 
 	$( window ).resize(redraw_managers_section);
 
-	//$(".employee_circle").show();
+	
+	$(".hexagon").on('mouseenter', function(){
+		$(".employee_circle").hide();
+		$("#circle_" + $(this).data('name')).fadeIn('fast');
+	});
 
-	function redraw_circles(section,crop,scale){
-		$(".employee_circle").each(function(index){
-			redraw_circle('#' + $(this).attr('id'),section,crop,scale);
-		});
-	};
-
-	if(screen.width > 1900 && screen.width < 1940){
-
-		/*$(".employee_circle").show();
-
-		
-		$(".hexagon").on('mouseenter', function(){
-			$(".employee_circle").hide();
-			$("#circle_" + $(this).data('name')).fadeIn('fast');
-		});
-
-		$(".hexagon").on('mouseleave', function(){
-			$("#circle_" + $(this).data('name')).fadeOut('fast');
-		});*/
-	}
+	$(".hexagon").on('mouseleave', function(){
+		$("#circle_" + $(this).data('name')).fadeOut('fast');
+	});
 });
