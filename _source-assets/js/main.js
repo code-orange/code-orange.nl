@@ -87,8 +87,6 @@ $(function(){
 	section.width  = section.inner_width  + 2 * section.pad_x;
 	section.height = section.inner_height + 2 * section.pad_y;
 
-	console.log(section)
-
 	//calculate the behaviour of the background which is set to cover mode
 	if ( section.width/section.height < img.width/img.height ){
 		//scale vertical
@@ -100,12 +98,18 @@ $(function(){
 		//scale horizontal
 		var scale = section.width/img.width;
 		//crop vertical
+
+		console.log(section)
+		console.log(img)
+		console.log(scale)
+		console.log(scale * img.height)
 		var crop = {x:0, y: (scale * img.height - section.height) };
+		console.log(crop)
 	}
 
 	//convert crop in px to a marginal crop
-	crop.x = img.width / (img.width-crop.x);
-	crop.y = img.height / (img.height-crop.y);
+	crop.x = scale*img.width  / (scale*img.width -crop.x);
+	crop.y = scale*img.height / (scale*img.height-crop.y);
 	
 	//pass calculations to redraw circles
 	redraw_circles(section,crop);
@@ -134,8 +138,6 @@ $(function(){
 
 		$(circle_id).show();
 
-		console.log(crop)
-
 		//import circle specs
 		var circle = { width : parseFloat($(circle_id).css('width')),
 					   height: parseFloat($(circle_id).css('height')),  
@@ -150,7 +152,11 @@ $(function(){
 		FALLS WITHIN THE IMAGE OR NOT.
 		if circle.x or circle.y >1 the center of the circle will be outsite the image.
 		*/
-		console.log(circle);
+		//console.log(circle);
+		//console.log(1/crop.x)
+		//console.log(1/crop.y)
+		//console.log(section)
+
 		//convert coordinates from our scale of [100,-100] to actual pixels in x,y from the center
 		circle.x = circle.x/100 * section.width/2;
 		circle.y = circle.y/100 * section.height/2;
@@ -183,33 +189,6 @@ $(function(){
 
 
 
-
-		*/
-
-
-		//console.log($("section#community-managers").css('padding-left'));
-		/*
-		var c_width = parseFloat($(circle_id).css('width'));
-		var c_height = parseFloat($(circle_id).css('height'));
-
-		$(circle_id).show();
-
-		var c_x = parseFloat($(circle_id).data('posy'));
-		var c_y = parseFloat($(circle_id).data('posx'));
-
-		var im_center_x = (parseFloat($(".circles").css('width') ) - parseFloat($(circle_id).css('width' )) )/2 ;
-		var im_center_y = (parseFloat($(".circles").css('height')) - parseFloat($(circle_id).css('height')) )/2 ;
-
-		var im_width  = parseFloat($("section#community-managers").css('padding-left')) + parseFloat($(".circles").css('width') )/2;
-		var im_height = parseFloat($("section#community-managers").css('padding-top')) + parseFloat($(".circles").css('height') )/2;
-
-
-		var left = im_center_x + c_x/100 * im_width;
-		var top  = im_center_y + c_y/100 * im_height;
-
-
-
-		$(circle_id).css({'top': top,'left': left});
 
 		*/
 		
