@@ -96,7 +96,7 @@ $(function(){
 		//crop horizontal
 		var crop = {x: (scale * img.width - section.width), y:0};
 	}else{
-
+		console.log('scale horizontal')
 		//scale horizontal
 		var scale = section.width/img.width;
 		//crop vertical
@@ -134,6 +134,8 @@ $(function(){
 
 		$(circle_id).show();
 
+		console.log(crop)
+
 		//import circle specs
 		var circle = { width : parseFloat($(circle_id).css('width')),
 					   height: parseFloat($(circle_id).css('height')),  
@@ -148,7 +150,7 @@ $(function(){
 		FALLS WITHIN THE IMAGE OR NOT.
 		if circle.x or circle.y >1 the center of the circle will be outsite the image.
 		*/
-
+		console.log(circle);
 		//convert coordinates from our scale of [100,-100] to actual pixels in x,y from the center
 		circle.x = circle.x/100 * section.width/2;
 		circle.y = circle.y/100 * section.height/2;
@@ -168,7 +170,21 @@ $(function(){
 
 		$(circle_id).css({'top': circle.top,'left': circle.left});
 
-		console.log(circle);
+		
+
+
+
+		/*TODO:
+			- Scrollen
+			- Menu icon met animatie veranderen in kruisje
+			- Prijzen mobiel
+			- Contact: formulier links +wat nubis nog meer doet, adres gegevens rechts (niet bij mobile)
+
+
+
+
+
+		*/
 
 
 		//console.log($("section#community-managers").css('padding-left'));
