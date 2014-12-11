@@ -282,13 +282,14 @@ a{
 			background-position: center center;
 			overflow: auto;
 
+			position:relative;
+
 		}
 
 			@media (min-width: 992px) {
 				#home > section#community-managers{
 					min-height: 820px;
 				}
-				background-size: 100%;
 			}
 
 			#home > section#community-managers  header > h1{
@@ -307,6 +308,7 @@ a{
 				
 				color: #fafafa;
 				text-shadow: 2px 2px 5px #000;
+
 			}
 
 			#home > section#community-managers  header > hr{
@@ -333,15 +335,16 @@ a{
 					}
 				}
 
-			#home > section#community-managers .circles{
+			/*#home > section#community-managers .circles{
 				display: none;
-				position:relative;
-			}
+			}*/
 
 
 
 				#home > section#community-managers .circles{
-					display: block;
+					/*display: block;*/
+					position:absolute;
+					top:0px;
 					border: 2px solid;
 					height: 650px;
 					margin-top: -160px;

@@ -2,24 +2,24 @@ melanie:
   name: Melanie van Haren
   title: Head of Community Management
   posx: 2;
-  posy: -38;
+  posy: 12;
 jorrit:
   name: Jorrit Leemans
   title: Cummunity Manager
-  posx: -10;
-  posy: 10;
+  posx: 36;
+  posy: 28;
 arthur:
   name: Arthur Straathof
   title: Community Manager
-  posx: 20;
-  posy: -20;
+  posx: -15;
+  posy: 5;
 frank:
   name: Frank Brouwer
   title: Community Manager
-  posx: -30;
-  posy: -10;
+  posx: -41;
+  posy: 18;
 david:
   name: David Mirshahi
   title: Community Manager
-  posx: 54.3;
-  posy: 44.2;
+  posx: 37;
+  posy: 4;
