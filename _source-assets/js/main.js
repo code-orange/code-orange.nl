@@ -225,25 +225,46 @@ $(function(){
 */
 
 	//on scroll end
+	var scroll_delay = 225;
+	var scroll_speed = 300;
+
+
 	$(window).scroll(function() {
     	clearTimeout($.data(this, 'scrollTimer'));
 	    $.data(this, 'scrollTimer', setTimeout(function() {
         	// user has stopped scrolling, time to take over controll!
 
-        	console.log("Haven't scrolled in 250ms!");
-        	console.log($("body").scrollTop())
+        	//determine which element to scroll to
+        	var currentTop = $("body").scrollTop();
+        	//sections from top to bottom.
+        	var scrollSections = ['#cover','#community-managers','#team-members','#prices','#clients','#contact'];
 
-        	var currentTop = $("body").scrollTop()
+        	//default
+        	var scrollTo = "#contact";
 
-        	if (currentTop != $("#community-managers").offset().top){
-        		$('html, body').animate({
-					scrollTop: $("#community-managers").offset().top
-				}, 500);
+        	console.log('Okay:')
+        	//find highest positioned element which is in range
+        	for (var i = scrollSections.length -1; i >=0 ; i--) {
 
+        		if( i+2 < scrollSections.length ){
+        			var p1 = $(scrollSections[i]).offset().top;
+        			var p2 = $(scrollSections[i+1]).offset().top;
+
+        			if(currentTop < p1 + (p2-p1)/2){
+        				scrollTo = scrollSections[i];
+        				console.log(scrollTo)
+        			}
+        		}
         	}
 
+        		$('html, body').animate({
+					scrollTop: $(scrollTo).offset().top
+				}, scroll_speed);
 
-    	}, 250));
+        	
+
+
+    	}, scroll_delay));
 	});
 
 });
