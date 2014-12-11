@@ -335,25 +335,30 @@ a{
 					}
 				}
 
-			/*#home > section#community-managers .circles{
-				display: none;
-			}*/
 
 
+			/* Oud */
+			#home > section#community-managers .circles{
+				position:absolute;
+				top:0px;
+				border: 2px solid;
+			}
 
+			#home > section#community-managers .circles svg{
+				position:absolute;
+				display:none;
+			}
+
+
+			@media (min-width: 992px) {
 				#home > section#community-managers .circles{
-					/*display: block;*/
-					position:absolute;
-					top:0px;
-					border: 2px solid;
-					height: 650px;
-					margin-top: -160px;
+					height: 490px;
 				}
 
-					#home > section#community-managers .circles svg{
-						position: absolute;
-						display: none;
-					}
+					/*#home > section#community-managers .circles svg{
+						color:blue;
+					}*/
+			}
 
 
 		#home > section#prices{

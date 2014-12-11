@@ -158,7 +158,7 @@ $(function(){
 		circle.top  = circle.y + section.height/2;
 		
 		//correct for the position of the containing div (.circles)
-		circle.top  = circle.top  - section.pad_y;
+		//circle.top  = circle.top  - section.pad_y;
 		circle.left = circle.left - section.pad_x;
 
 
