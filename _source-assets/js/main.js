@@ -107,7 +107,7 @@ $(function(){
 	crop.y = scale*img.height / (scale*img.height-crop.y);
 	
 	//pass calculations to redraw circles
-	redraw_circles(section,crop);
+	redraw_circles(section,crop,scale);
 
 	}
 
@@ -129,7 +129,15 @@ $(function(){
 
 
 
-	function redraw_circle(circle_id,section,crop){
+	function redraw_circle(circle_id,section,crop,scale){
+
+
+		// Resize the circles with the rescaling of the image
+		var r=68*scale;
+		var border = parseFloat( $(circle_id + " circle").attr('stroke-width') );
+		var size = 2*r + border;
+		$(circle_id + " circle").attr({r:r,cx:size/2,cy:size/2});
+		$(circle_id).attr({width:size,height:size})
 
 		$(circle_id).show();
 
@@ -143,11 +151,6 @@ $(function(){
 		circle.x = circle.x * crop.x;
 		circle.y = circle.y * crop.y;
 
-		/*NOTE: AFTER THIS CALCULATION YOU CAN CHECK WHETER THE COORDINATE 
-		FALLS WITHIN THE IMAGE OR NOT.
-		if circle.x or circle.y >1 the center of the circle will be outsite the image.
-		*/
-
 		//convert coordinates from our scale of [100,-100] to actual pixels in x,y from the center
 		circle.x = circle.x/100 * section.width/2;
 		circle.y = circle.y/100 * section.height/2;
@@ -160,15 +163,12 @@ $(function(){
 		//circle.top  = circle.top  - section.pad_y;
 		circle.left = circle.left - section.pad_x;
 
-
 		//center the circle around its coordinates
 		circle.top  = circle.top  - circle.width/2;
 		circle.left = circle.left - circle.height/2;
 
-		$(circle_id).css({'top': circle.top,'left': circle.left});
-
-		
-
+		//export positions
+		$(circle_id).css({'top': circle.top,'left': circle.left});		
 
 
 		/*TODO:
@@ -191,9 +191,9 @@ $(function(){
 
 	//$(".employee_circle").show();
 
-	function redraw_circles(section,crop){
+	function redraw_circles(section,crop,scale){
 		$(".employee_circle").each(function(index){
-			redraw_circle('#' + $(this).attr('id'),section,crop);
+			redraw_circle('#' + $(this).attr('id'),section,crop,scale);
 		});
 	};
 
