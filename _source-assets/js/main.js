@@ -137,11 +137,13 @@ $(function(){
 
 
 		// Resize the circles with the rescaling of the image
-		var r=68*scale;
-		var border = parseFloat( $(circle_id + " circle").attr('stroke-width') );
-		var size = 2*r + border;
-		$(circle_id + " circle").attr({r:r,cx:size/2,cy:size/2});
-		$(circle_id).attr({width:size,height:size})
+		if (scale){
+			var r=68*scale;
+			var border = parseFloat( $(circle_id + " circle").attr('stroke-width') );
+			var size = 2*r + border;
+			$(circle_id + " circle").attr({r:r,cx:size/2,cy:size/2});
+			$(circle_id).attr({width:size,height:size})
+		};
 
 		//import circle specs
 		var circle = { width : parseFloat($(circle_id).css('width')),
@@ -196,4 +198,44 @@ $(function(){
 	$(".hexagon").on('mouseleave', function(){
 		$("#circle_" + $(this).data('name')).fadeOut('fast');
 	});
+
+
+
+	/*//detect scroll
+	$(window).scroll(function () {
+
+		if( $("html, body").is(':animated')  ){
+			console.log('Animation in progress. The battle of the user and the machine? Or just the animation?');
+		}else{;
+
+			//determine if we are above or below breakpoint and decide to scroll up/down
+
+			//all scroll sections:
+			$('#home>section')
+    		console.log($("body").scrollTop());
+    	}
+	});
+
+
+	//perform scroll
+	$('html, body').animate({
+		scrollTop: $("#community-managers").offset().top
+	}, 500);*/
+
+	jQuery(window).bind('scrollstart', function(){
+                $(document.body).css({
+                    color: '#F6FF96'
+                });
+            });
+            
+            jQuery(window).bind('scrollstop', function(e){
+                $(document.body).css({
+                    color: ''
+                });
+            });
+
+
+
 });
+
+
