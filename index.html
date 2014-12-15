@@ -78,7 +78,7 @@
 
 				<div class="circles">
 {% for employee in site.content.team %}
-					<svg class="employee_circle" id="circle_{{employee[0]}}" width="140" height="140" style="top: {{employee[1].top}}; left: {{employee[1].left}};">
+					<svg class="employee_circle" id="circle_{{employee[0]}}" width="140" height="140" data-posx="{{employee[1].posx}}" data-posy="{{employee[1].posy}}">
 						<circle cx="70" cy="70" r="68" stroke="white" stroke-width="4" fill-opacity="0" />
 					</svg>
 {% endfor %}
@@ -180,7 +180,7 @@
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
-		{% bundle %} [/_source-assets/js/vendor/bootstrap.min.js, /_source-assets/js/vendor/jquery.scrollTo.min.js, /_source-assets/js/vendor/jquery.localScroll.min.js, /_source-assets/js/vendor/unslider.min.js, /_source-assets/js/main.js] {% endbundle %}
+		{% bundle %} [/_source-assets/js/vendor/bootstrap.min.js, /_source-assets/js/vendor/jquery.scrollTo.min.js, /_source-assets/js/vendor/jquery.localScroll.min.js, /_source-assets/js/vendor/unslider.min.js, /_source-assets/js/main.js ] {% endbundle %}
 		
 		<div id="preload"></div>
 	</body>

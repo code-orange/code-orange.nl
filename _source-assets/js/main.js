@@ -1,4 +1,6 @@
 $(function(){
+	'use strict';
+
 	//Move grey paragraph below cover photo
 	(function(){
 		var currentTop = $("#cover > h3").first().offset().top;
@@ -68,14 +70,203 @@ $(function(){
 		}
 	});
 	
-	if(screen.width > 1900 && screen.width < 1940){
-		$(".hexagon").on('mouseenter', function(){
-			$(".employee_circle").hide();
-			$("#circle_" + $(this).data('name')).fadeIn('fast');
+
+
+	function redraw_managers_section(){
+
+		//Import the size of the image and the size of the section
+		var img = { width: $("section#community-managers").data('imgWidth'),
+					height: $("section#community-managers").data('imgHeight') };
+
+		var section = {  inner_width: parseFloat($("section#community-managers").css('width')),
+						inner_height: parseFloat($("section#community-managers").css('height')),
+						       pad_x: parseFloat($("section#community-managers").css('padding-left')),					
+							   pad_y: parseFloat($("section#community-managers").css('padding-top')) };
+
+		//compute and store the real width of the section
+		section.width  = section.inner_width  + 2 * section.pad_x;
+		section.height = section.inner_height + 2 * section.pad_y;
+
+		//calculate the behaviour of the background which is set to cover mode
+		if ( section.width/section.height < img.width/img.height ){
+			//scale vertical
+			var scale = section.height/img.height;
+			//crop horizontal
+			var crop = {x: (scale * img.width - section.width), y:0};
+		}else{
+			//scale horizontal
+			var scale = section.width/img.width;
+			//crop vertical
+
+			var crop = {x:0, y: (scale * img.height - section.height) };
+
+		}
+
+		//convert crop in px to a marginal crop
+		crop.x = scale*img.width  / (scale*img.width -crop.x);
+		crop.y = scale*img.height / (scale*img.height-crop.y);
+		
+		//pass calculations to redraw circles
+		$(".employee_circle").each(function(index){
+				redraw_employee_circle('#' + $(this).attr('id'),section,crop,scale);
 		});
 
-		$(".hexagon").on('mouseleave', function(){
-			$("#circle_" + $(this).data('name')).fadeOut('fast');
-		});
 	}
+
+
+
+	//initialise:
+
+	//get background image size and store
+	var img = new Image;
+	img.src = $("section#community-managers").css('background-image').match(/url\(([^)]+)\)/i)[1];
+	img.onload =function(){
+		//store bg image size
+		$("section#community-managers").data('imgWidth',this.width);
+		$("section#community-managers").data('imgHeight',this.height);
+
+
+		redraw_managers_section();
+
+	};
+	
+
+
+
+	function redraw_employee_circle(circle_id,section,crop,scale){
+
+
+		// Resize the circles with the rescaling of the image
+		if (scale){
+			var r=68*scale;
+			var border = parseFloat( $(circle_id + " circle").attr('stroke-width') );
+			var size = 2*r + border;
+			$(circle_id + " circle").attr({r:r,cx:size/2,cy:size/2});
+			$(circle_id).attr({width:size,height:size})
+		};
+
+		//import circle specs
+		var circle = { width : parseFloat($(circle_id).css('width')),
+					   height: parseFloat($(circle_id).css('height')),  
+					        x: parseFloat($(circle_id).data('posx')),
+					        y: parseFloat($(circle_id).data('posy')) };
+
+		//convert coordinates from the full image to cropped image (the section)
+		circle.x = circle.x * crop.x;
+		circle.y = circle.y * crop.y;
+
+		//convert coordinates from our scale of [100,-100] to actual pixels in x,y from the center
+		circle.x = circle.x/100 * section.width/2;
+		circle.y = circle.y/100 * section.height/2;
+
+		//correct for the image centre
+		circle.left = circle.x + section.width/2;
+		circle.top  = circle.y + section.height/2;
+		
+		//correct for the position of the containing div (.circles)
+		//circle.top  = circle.top  - section.pad_y;
+		circle.left = circle.left - section.pad_x;
+
+		//center the circle around its coordinates
+		circle.top  = circle.top  - circle.width/2;
+		circle.left = circle.left - circle.height/2;
+
+		//export positions
+		$(circle_id).css({'top': circle.top,'left': circle.left});		
+
+
+		/*TODO:
+			- Scrollen
+			- Menu icon met animatie veranderen in kruisje
+			- Prijzen mobiel
+			- Contact: formulier links +wat nubis nog meer doet, adres gegevens rechts (niet bij mobile)
+
+		*/
+		
+	};
+
+
+
+	$( window ).resize(redraw_managers_section);
+
+	
+	$(".hexagon").on('mouseenter', function(){
+		$(".employee_circle").hide();
+		$("#circle_" + $(this).data('name')).fadeIn('fast');
+	});
+
+	$(".hexagon").on('mouseleave', function(){
+		$("#circle_" + $(this).data('name')).fadeOut('fast');
+	});
+
+
+
+	/*//detect scroll
+	$(window).scroll(function () {
+
+		if( $("html, body").is(':animated')  ){
+			console.log('Animation in progress. The battle of the user and the machine? Or just the animation?');
+		}else{;
+
+			//determine if we are above or below breakpoint and decide to scroll up/down
+
+			//all scroll sections:
+			$('#home>section')
+    		console.log($("body").scrollTop());
+    	}
+	});
+
+
+	//perform scroll
+	$('html, body').animate({
+		scrollTop: $("#community-managers").offset().top
+	}, 500);
+
+*/
+
+	//on scroll end
+	var scroll_delay = 225;
+	var scroll_speed = 300;
+
+
+	$(window).scroll(function() {
+    	clearTimeout($.data(this, 'scrollTimer'));
+	    $.data(this, 'scrollTimer', setTimeout(function() {
+        	// user has stopped scrolling, time to take over controll!
+
+        	//determine which element to scroll to
+        	var currentTop = $("body").scrollTop();
+        	//sections from top to bottom.
+        	var scrollSections = ['#cover','#community-managers','#team-members','#prices','#clients','#contact'];
+
+        	//default
+        	var scrollTo = "#contact";
+
+        	console.log('Okay:')
+        	//find highest positioned element which is in range
+        	for (var i = scrollSections.length -1; i >=0 ; i--) {
+
+        		if( i+2 < scrollSections.length ){
+        			var p1 = $(scrollSections[i]).offset().top;
+        			var p2 = $(scrollSections[i+1]).offset().top;
+
+        			if(currentTop < p1 + (p2-p1)/2){
+        				scrollTo = scrollSections[i];
+        				console.log(scrollTo)
+        			}
+        		}
+        	}
+
+        		$('html, body').animate({
+					scrollTop: $(scrollTo).offset().top
+				}, scroll_speed);
+
+        	
+
+
+    	}, scroll_delay));
+	});
+
 });
+
+
