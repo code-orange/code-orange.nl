@@ -23,6 +23,8 @@ clients:
 contact-body:
   name: Contact
   intro: Nubis Digital Agency <br> Herengracht 104 <br> 1015 BS Amsterdam<br><br>info@nub.is<br>0208932941
+  text: Zie <a href='nub.is'>hier</a> wat Nubis nog meer doet.
+  info: Of vul het onderstaande contactformulier in.<br> We laten je niet langer dan 24 uur wachten.
  
 
 community_managers:

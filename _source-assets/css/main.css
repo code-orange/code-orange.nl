@@ -578,6 +578,15 @@ a{
 				font-size:1.5em;
 				line-height: 1.8em;		
 			}
+
+			#home > section#contact a{
+				color:white;
+				text-decoration: underline;
+			}
+
+			#home > section#contact a:hover{
+				text-decoration: none;
+			}
 				
 				#home > section#contact #contactform form{
 					margin: 0;
