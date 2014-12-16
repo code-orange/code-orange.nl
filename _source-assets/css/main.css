@@ -390,15 +390,34 @@ a{
 
 			#home > section#prices #prices-images #left-prices{
 				width:85%;
+				height:194px;
 				float:left;
+				background:url('/assets/img/price-table.png') no-repeat;
+				background-size: 100%;
 
 			}
-				#home > section#prices #prices-images #right-prices{
-					padding-top: 2%;
-					height: 90px;
-					width: 10%;
-					float: right;
+			#home > section#prices #prices-images #right-prices{
+				margin-top: 3%;
+				height: 90px;
+				width: 10%;
+				background:url('/assets/img/prices.png') no-repeat;
+				background-size: 100%;
+				height:194px;
+				float: right;
+			}
+
+			@media (max-width: 767px){
+				#home > section#prices #prices-images #left-prices{
+					background:url('/assets/img/price-table-mobile.png') no-repeat;
+					background-size: 100%;
+					width:80%;
 				}
+				#home > section#prices #prices-images #right-prices{
+					width:15%;
+					margin-top: 7%;
+				}
+			}
+				
 
 		#home > section#clients{
 			background-color: #464646;
