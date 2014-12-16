@@ -230,11 +230,12 @@ $(function(){
 	}
 
 	//on scroll end
-	var scroll_delay = 300;
-	var scroll_back_spreed = 300;
+	var scroll_delay 		 = 300;
+	var scroll_back_spreed   = 300;
 	var scroll_forward_speed = 600;
-	var scrollSections = ['#cover #white','#cover>h3','#community-managers','#team-members','#prices','#clients'];
-	var scrollBarrier = 50; // region in px, that user has to 'break trough'
+	var scrollSections 	     = ['#cover #white','#cover>h3','#community-managers','#team-members','#prices','#clients'];
+	var scrollToBottom		 = ['#team-members'];
+	var scrollBarrier 	     = 50; // region in px, that user has to 'break trough'
 
 	var previousScroll = 0;
 
@@ -286,15 +287,25 @@ if(debug == true){
         			//console.log(splitPoint+scrollBarrier,Math.min(currSectionScroll,nextSplitPoint))
 
         			if( currentScroll > splitPoint){
+        				
         				if( currentScroll <= splitPoint + scrollBarrier){
         					// Still in barrier zone, push back to bottom of previous div.
         					scrollTo = currSectionScroll - wHeight;
         					var scroll_speed = scroll_back_spreed;
         					console.log(scrollSections[key])
         				}else if(currentScroll < Math.min(currSectionScroll,nextSplitPoint) ){
-        					scrollTo = currSectionScroll;
+        					// Scrolled far enough to push to next div
+ 
+
+        					// Scroll to bottom or top (default) of div?
+        					if($.inArray(scrollSections[key], scrollToBottom)>-1){
+        						scrollTo = currSectionScroll + $(scrollSections[key]).height() - wHeight;
+        					}else{
+        						scrollTo = currSectionScroll;
+        					}
+
         					var scroll_speed = scroll_forward_speed;
-        					console.log(scrollSections[key])
+
         				}
         			}
 
