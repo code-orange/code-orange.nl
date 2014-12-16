@@ -247,7 +247,6 @@ var debug = true;
 	    $.data(this, 'scrollTimer', setTimeout(function() {
 	    	// user has stopped scrolling, time to take over controll!
 
-if(debug == true){
 			var currentScroll = $(this).scrollTop();
 
 	    	if (currentScroll > previousScroll){
@@ -261,14 +260,15 @@ if(debug == true){
 
 	        previousScroll = currentScroll;
 
-	        var scrollTo = [];
-			console.log('Scroll')
         	if (scrollDown){
-        		//START AT KEY 1 TO IGNORE THE FIRST ELEMENT WITH NEGATIVE VALUES
+        		//Currently only implemented for scrolling down
+
         		var wHeight = $(window).height();
     			var scrollTo = undefined;
 
+
         		for (var key=1; key<scrollSections.length; key++) {
+        			//loop trough all elements to calculate if current position is in scrolling animation zone
 
         			var currSectionScroll = getScrollTop(scrollSections[key]);
         			var splitPoint = currSectionScroll - wHeight;
@@ -287,15 +287,16 @@ if(debug == true){
         			//console.log(splitPoint+scrollBarrier,Math.min(currSectionScroll,nextSplitPoint))
 
         			if( currentScroll > splitPoint){
-        				
+
         				if( currentScroll <= splitPoint + scrollBarrier){
         					// Still in barrier zone, push back to bottom of previous div.
         					scrollTo = currSectionScroll - wHeight;
         					var scroll_speed = scroll_back_spreed;
-        					console.log(scrollSections[key])
+
         				}else if(currentScroll < Math.min(currSectionScroll,nextSplitPoint) ){
         					// Scrolled far enough to push to next div
- 
+
+							var scroll_speed = scroll_forward_speed; 
 
         					// Scroll to bottom or top (default) of div?
         					if($.inArray(scrollSections[key], scrollToBottom)>-1){
@@ -304,8 +305,6 @@ if(debug == true){
         						scrollTo = currSectionScroll;
         					}
 
-        					var scroll_speed = scroll_forward_speed;
-
         				}
         			}
 
@@ -313,7 +312,6 @@ if(debug == true){
 
         		console.log(scrollTo)
 
-        		
     			//only start animation if there is no animation going on yet, and if nesecary
     			if(scrollTo &&! $('html, body').is(':animated') ){
     				console.log('Asnimate')
@@ -323,38 +321,6 @@ if(debug == true){
     			}
 
         	}
-        	//determine which element to scroll to
-        	/*var currentTop = $("body").scrollTop();
-        	//sections from top to bottom.
-        	var scrollSections = ['#cover','#community-managers','#team-members','#prices','#clients','#contact'];
-
-        	//default
-        	var scrollTo = "#contact";
-
-        	console.log('Okay:')
-        	//find highest positioned element which is in range
-        	for (var i = scrollSections.length -1; i >=0 ; i--) {
-
-        		if( i+2 < scrollSections.length ){
-        			var p1 = $(scrollSections[i]).offset().top;
-        			var p2 = $(scrollSections[i+1]).offset().top;
-
-        			if(currentTop < p1 + (p2-p1)/2){
-        				scrollTo = scrollSections[i];
-        				console.log(scrollTo)
-        			}
-        		}
-        	}*/
-
-        	//	$('html, body').animate({
-        			/*
-					TO DO: Introduce a function here which checks whether the user is scolling and if so stops the animation
-
-        			*/
-			//		scrollTop: $(scrollTo).offset().top
-			//	}, scroll_speed);
- debug = true;
-}
 
     	}, scroll_delay));
 	});
