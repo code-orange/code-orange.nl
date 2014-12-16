@@ -230,8 +230,9 @@ $(function(){
 	}
 
 	//on scroll end
-	var scroll_delay = 500;
-	var scroll_speed = 600;
+	var scroll_delay = 300;
+	var scroll_back_spreed = 300;
+	var scroll_forward_speed = 600;
 	var scrollSections = ['#cover #white','#cover>h3','#community-managers','#team-members','#prices','#clients'];
 	var scrollBarrier = 50; // region in px, that user has to 'break trough'
 
@@ -288,9 +289,11 @@ if(debug == true){
         				if( currentScroll <= splitPoint + scrollBarrier){
         					// Still in barrier zone, push back to bottom of previous div.
         					scrollTo = currSectionScroll - wHeight;
+        					var scroll_speed = scroll_back_spreed;
         					console.log(scrollSections[key])
         				}else if(currentScroll < Math.min(currSectionScroll,nextSplitPoint) ){
         					scrollTo = currSectionScroll;
+        					var scroll_speed = scroll_forward_speed;
         					console.log(scrollSections[key])
         				}
         			}
