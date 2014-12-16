@@ -224,18 +224,93 @@ $(function(){
 
 */
 
+
+	function getScrollTop(identifier){
+		return $(identifier).offset().top - parseFloat($(identifier).css('margin-top'));
+	}
+
 	//on scroll end
-	var scroll_delay = 225;
-	var scroll_speed = 300;
+	var scroll_delay = 500;
+	var scroll_speed = 600;
+	var scrollSections = ['#cover #white','#cover>h3','#community-managers','#team-members','#prices','#clients'];
+	var scrollBarrier = 50; // region in px, that user has to 'break trough'
 
+	var previousScroll = 0;
 
+var debug = true;
 	$(window).scroll(function() {
+
+		//set timer to check if scrolling has stopped
     	clearTimeout($.data(this, 'scrollTimer'));
 	    $.data(this, 'scrollTimer', setTimeout(function() {
-        	// user has stopped scrolling, time to take over controll!
+	    	// user has stopped scrolling, time to take over controll!
 
+if(debug == true){
+			var currentScroll = $(this).scrollTop();
+
+	    	if (currentScroll > previousScroll){
+	           //Scrolling down
+	           var scrollDown = true;
+	       	}
+	       	else {
+	           //Scrolling up
+	           var scrollDown = false;
+	        }
+
+	        previousScroll = currentScroll;
+
+	        var scrollTo = [];
+			console.log('Scroll')
+        	if (scrollDown){
+        		//START AT KEY 1 TO IGNORE THE FIRST ELEMENT WITH NEGATIVE VALUES
+        		var wHeight = $(window).height();
+    			var scrollTo = undefined;
+
+        		for (var key=1; key<scrollSections.length; key++) {
+
+        			var currSectionScroll = getScrollTop(scrollSections[key]);
+        			var splitPoint = currSectionScroll - wHeight;
+        			
+
+        			if (key<scrollSections.length - 1 ){
+        				var nextScroll = getScrollTop(scrollSections[key+1]);
+        			}else{
+        				var nextScroll = $(document).height();
+        			}
+        			var nextSplitPoint  = nextScroll - wHeight;
+        				
+
+	    			//console.log(scrollSections[key])
+        			//console.log(splitPoint,splitPoint+scrollBarrier)
+        			//console.log(splitPoint+scrollBarrier,Math.min(currSectionScroll,nextSplitPoint))
+
+        			if( currentScroll > splitPoint){
+        				if( currentScroll <= splitPoint + scrollBarrier){
+        					// Still in barrier zone, push back to bottom of previous div.
+        					scrollTo = currSectionScroll - wHeight;
+        					console.log(scrollSections[key])
+        				}else if(currentScroll < Math.min(currSectionScroll,nextSplitPoint) ){
+        					scrollTo = currSectionScroll;
+        					console.log(scrollSections[key])
+        				}
+        			}
+
+        		}
+
+        		console.log(scrollTo)
+
+        		
+    			//only start animation if there is no animation going on yet, and if nesecary
+    			if(scrollTo &&! $('html, body').is(':animated') ){
+    				console.log('Asnimate')
+    				$('html, body').animate({
+						scrollTop: scrollTo
+					}, scroll_speed);
+    			}
+
+        	}
         	//determine which element to scroll to
-        	var currentTop = $("body").scrollTop();
+        	/*var currentTop = $("body").scrollTop();
         	//sections from top to bottom.
         	var scrollSections = ['#cover','#community-managers','#team-members','#prices','#clients','#contact'];
 
@@ -255,14 +330,17 @@ $(function(){
         				console.log(scrollTo)
         			}
         		}
-        	}
+        	}*/
 
-        		$('html, body').animate({
-					scrollTop: $(scrollTo).offset().top
-				}, scroll_speed);
+        	//	$('html, body').animate({
+        			/*
+					TO DO: Introduce a function here which checks whether the user is scolling and if so stops the animation
 
-        	
-
+        			*/
+			//		scrollTop: $(scrollTo).offset().top
+			//	}, scroll_speed);
+ debug = true;
+}
 
     	}, scroll_delay));
 	});
