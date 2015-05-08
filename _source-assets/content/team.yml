@@ -1,25 +1,79 @@
-melanie:
-  name: Melanie van Haren
-  title: Head of Community Management
+tim:
+  name: Tim van Dalen
+  title: Head of Development
   posx: 2;
   posy: -32;
-jorrit:
-  name: Jorrit Leemans
-  title: Cummunity Manager
+remco:
+  name: Remco Plasmeijer
+  title: Systems Architecture Manager
   posx: 36;
   posy: -16;
-arthur:
-  name: Arthur Straathof
-  title: Community Manager
+walid:
+  name: Walid Said
+  title: Senoir Developer
   posx: -15;
   posy: -39;
-frank:
-  name: Frank Brouwer
-  title: Community Manager
+nicky:
+  name: Nicky Advocaat
+  title: Senior Developer
   posx: -41;
   posy: -26;
-david:
-  name: David Mirshahi
-  title: Community Manager
+
+stef:
+  name: Stef van Schuylenburg
+  title: Senior Developer
   posx: 37;
   posy: -40;
+
+dirk:
+  name: Dirk Hoekstra
+  title: Medior Developer
+  posx: 37;
+  posy: -40;
+
+Ramon:
+  name: Ramon de Vaan
+  title: Medior Developer
+  posx: 37;
+  posy: -40;
+
+robbert:
+  name: Robbert Jongeling
+  title: Medior Developer
+  posx: 37;
+  posy: -40;
+
+jules:
+  name: Jules Wulms
+  title: Junior Developer
+  posx: 37;
+  posy: -40;
+
+bart:
+  name: Bart van der Vecht 
+  title: Junior Developer
+  posx: 37;
+  posy: -40; 
+
+diede:
+  name: Diede Rusticus 
+  title: Junior Developer
+  posx: 37;
+  posy: -40;
+
+luc:
+  name: Luc Veldhuis
+  title: Junior Developer
+  posx: 37;
+  posy: -40;
+  
+niels:
+  name: Niels Hoiting
+  title: Junior Developer
+  posx: 37;
+  posy: -40;  
+  
+  
+
+
+  

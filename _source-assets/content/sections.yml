@@ -1,12 +1,13 @@
 nav_bar:
-  name: COMMUNITY MANAGEMENT
+  name: ICT AGENCY
 
-community_management:
+about_us:
   nav: Community Management
-  name: Community Management
-  intro: Anno 2014 zijn negen van de tien brands actief op social media. Facebook, Twitter, Google+, Instagram, Pinterest, YouTube en zelfs LinkedIn puilen uit van communities waar fans hun favoriete merk in de gaten kunnen houden, en natuurlijk vragen kunnen stellen. Deze groepen moeten gemanaged worden.<br>Het begrip 'community management' is daarmee geboren.
-  text: Een nauwe samenwerking tussen merk en bureau is h&eacute;t ingredi&euml;nt voor community management. Vergelijk het met een portie nacho's. Die zijn lekker als ze warm zijn, maar met gesmolten kaas is het onweerstaanbaar.<br>Daarnaast is betrokkenheid met de community een belangrijk punt om in gedachten te houden. Het liefst 24/7. Op die manier weet je als merk precies wat er op je pagina speelt, wat de behoeftes van je fans zijn en hoe je je marketingplannen daarop kunt afstellen.
-  info: Nubis adviseert en gaat het veld in door actief in gesprek te gaan met de community. Kortom&#58; wij nemen werk uit handen. Zowel tijdens, als buiten kantooruren.
+  name: About Us
+  intro: Code Orange is a cutting-edge ICT agency with an office located on the Herengracht in Amsterdam. 
+  text: We speciallise in developing online campaings, as well as social media and mobile applications, for both large international client and small, innovative start-ups. Our dynamic team of developers is formed exclusively of studenets who have an average age of just 20 and work part-time, often from home or college. This is a conscious choice.
+  quote: We believe passionately in the innovativeness, flexibility and creativity of savvy, young developers.
+  info: Our customers are digital, advertising and soical media agencies, in addition to new technology start-ups. Our recent development projects have largely covered Facebook, iOS and Android applications
 
 cases:
   nav: Werk
@@ -17,19 +18,19 @@ cases:
     description: Bekijk hier onze showreel uit 2013.
 
 clients:
-  customers: Klanten
+  customers: Clients
   partners: Partners
 
 contact-body:
   name: Contact
-  intro: Nubis Digital Agency <br> Herengracht 104 <br> 1015 BS Amsterdam<br><br>info@nub.is<br>0208932941
-  text: Zie <a href='nub.is'>hier</a> wat Nubis nog meer doet.
-  info: Of vul het onderstaande contactformulier in.<br> We laten je niet langer dan 24 uur wachten.
+  intro: Code Orange BV <br> Herengracht 104 <br> 1015 BS Amsterdam
+  text: Tim van Dalen - Managing Director <br> T&#58; 06 388 975 57 <br> E&#58; tim@code-orange.nl
+  
  
 
-community_managers:
-  nav: Community Managers
-  name: Community Managers
+team:
+  nav: team
+  name: Team
   intro: Nubis beschikt over dedicated community managers met ruime ervaring.<br>Enthousiast geworden? Neem gerust contact met ons op om te zien wat we voor je kunnen betekenen.
   names: Melanie van Haren
 
@@ -41,8 +42,24 @@ prices:
 
 contact:
   nav: Contact
+  
 
+cases: 
+   nav: Cases 
+   name: Cases
+   
+four_pillars: 
+   nav: Four Pillars 
+   name: Four Pillars
+   intro: At Code Orange, the following four pillars enable us to stand out from other ICT services providers&#58;  
+   pillar1: Our team of ambitious, young developers with in-depth knowloadge of the very latest techniques
+   pillar2: Our shared </br> determination to exeed client expectations
+   pillar3: Our high degree of felexibility(27/7 development)
+   pillar4: Our unbeatable price - quality ratio
 
-
+expertise:
+ nav: Expertise & Methodology
+ name: Expertise <br>& Methodology
+ 
 
 
