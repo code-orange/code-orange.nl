@@ -11,7 +11,8 @@ module Jekyll
 		content['cases'] = YAML::load(File.read('_source-assets/content/cases.yml'))
 		content['clients'] = YAML::load(File.read('_source-assets/content/clients.yml'))
 		content['team'] = YAML::load(File.read('_source-assets/content/team.yml'))
-		
+		content['casescodeorange'] = YAML::load(File.read('_source-assets/content/casescodeorange.yml'))
+		content['clientscodeorange'] = YAML::load(File.read('_source-assets/content/clientscodeorange.yml'))
 		site.config['content'] = content
 	end
   end

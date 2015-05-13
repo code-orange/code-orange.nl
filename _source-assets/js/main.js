@@ -2,13 +2,13 @@ $(function(){
 	'use strict';
 
 	//Move grey paragraph below cover photo
-	(function(){
+	/*(function(){
 		var currentTop = $("#cover > h3").first().offset().top;
 		var shouldTop = (800/1440) * screen.width;
 		if(shouldTop > currentTop){
 			$("#cover > h3").first().css("margin-top", shouldTop - currentTop);
 		}
-	}());
+	}());*/
 	
 	$(".company").click(function(){
 		var url;
@@ -69,8 +69,29 @@ $(function(){
 			return false;
 		}
 	});
-	
-
+	// centers the last row of the team-member section
+        function redraw_team_row(){
+            if($( window ).width() >= 992){
+		var total_members = $('#team-members').children().length;
+		var members_left = total_members%5;
+		var section_width = $("#team-members").width();
+		var space_left = ((5-members_left)*0.2*section_width)/2;
+		var select_element = total_members-(members_left-1);
+		$("#team-members div:nth-child("+select_element+")").css("margin-left", space_left);  
+            }else{
+                    $('#team-members').children().css("margin-left","0");
+            }
+        }
+        redraw_team_row();
+        
+        $("#expertise-list li").on("click",function(){
+            $("#expertise-list li.current-item").removeClass("current-item") 
+            $(this).addClass("current-item");
+            var text_id = $(this).data("text");
+            $('.current-text').removeClass("current-text");
+            $("#"+text_id).addClass("current-text") 
+            
+        });
 
 	function redraw_managers_section(){
 
@@ -187,7 +208,7 @@ $(function(){
 
 
 
-	$( window ).resize(redraw_managers_section);
+	$( window ).resize(function(){redraw_managers_section; redraw_team_row();});
 
 	
 	$(".hexagon").on('mouseenter', function(){
@@ -233,7 +254,7 @@ $(function(){
 	var scroll_delay 		 = 300;
 	var scroll_back_spreed   = 300;
 	var scroll_forward_speed = 600;
-	var scrollSections 	     = ['#cover #white','#cover>h3','#community-managers','#team-members','#prices','#clients'];
+	var scrollSections 	     = ['#cover #four-pillars','#expertise','#cases','#team-members','#clients','#team-members'];
 	var scrollToBottom		 = ['#team-members'];
 	var scrollBarrier 	     = 50; // region in px, that user has to 'break trough'
 

@@ -35,14 +35,14 @@
 				    <div id="forground">
 
 					    <ul>
-							<li id="close"><img id="menuCloseButton" src="/assets/img/close.png"></li>
+						<li id="close"><img id="menuCloseButton" src="/assets/img/close.png"></li>
 					        <li class="menuitem"><a href="#cover" title="Community Management">About Us</a></li>
 					        <li class="menuitem"><a href="#four-pillars" title="Community Managers">Four Pillars</a></li>
 					        <li class="menuitem"><a href="#expertise" title="Prices">Expertise & Methodology</a></li>
 					        <li class="menuitem"><a href="#cases" title="Clients">Cases</a></li>
 					        <li class="menuitem"><a href="#clients" title="Contact">Clients</a></li>
-					        <li class="menuitem"><a href="team-members" title="Nubis">Team</a></li>
-                                                <li class="menuitem"><a href="contact" title="Nubis">Contact</a></li>
+					        <li class="menuitem"><a href="#team-members" title="Nubis">Team</a></li>
+                                                <li class="menuitem"><a href="#contact" title="Nubis">Contact</a></li>
 					    </ul>
 					</div>
 				</div>  
@@ -104,9 +104,9 @@
                             <div class="row-fluid">
                                 <div class="span6">
                                     <ul id="expertise-list">
-                                        <li>GIT</li>
-                                        <li>GITHUB</li>
-                                        <li>AGILE DEVELOPMENT</li>                                        
+                                        <li class="current-item" data-text="git">GIT</li>
+                                        <li data-text="github">GITHUB</li>
+                                        <li data-text="agile">AGILE DEVELOPMENT</li>                                        
                                         <li>TRIED & TESTED</li>
                                         <li>BACK-END</li>
                                         <li>FRONT-END</li>
@@ -115,7 +115,9 @@
                                     </ul>
                                 </div>
                                 <div class="span5">
-                                    <p>We utilise version management software on all of our projects and, although this tends to be git, we also have significant experience with older systems such as svn. And we don't use thesee merely as backup systems, but also to enable us to simultaneously develop multiple versions of a project </p>
+                                    <p class="current-text" id="git">We utilise version management software on all of our projects and, although this tends to be git, we also have significant experience with older systems such as svn. And we don't use thesee merely as backup systems, but also to enable us to simultaneously develop multiple versions of a project </p>
+                                    <p id="github">Github Text</p>
+                                    <p id="agile">Agile Development text</p>
                                 </div>
                             </div>
                         </section>
@@ -126,20 +128,15 @@
                             </header>
                             <div class="row-fluid" id="case-row">
                                     {% for case in site.content.casescodeorange %}
-                                        <div class="case span4" style="background-image:"url(/asset/img/companies/cases/{{ case[1]).url }};">
+                                        <div class="case span4" style="background-image:url(/assets/img/cases/cases_code_orange/{{ case[1].url }});">
                                             <p class="title">{{ case[1].title }}</p>
                                             <p>{{ case[1].description}}</p>
                                         </div>
                                     {% endfor %}
-                                <div class="case span4">
-                                    <p class="title">ABN AMBRO</p>
-                                    <p>Limelights commision</p>
-                                </div>
-                                <div class="case span4"></div>
                             </div>
                             <div id="case-info">
                                 <div id="case-photo">
-                                    <img alt="case-photo-abn" src="/assets/img/companies/cases/abn-ambro.png">
+                                    <img alt="case-photo-abn" src="assets/img/cases/cases_code_orange/abn-ambro.png">
                                 </div>
                                 <div id="case-text">
                                     <h4>ABN AMRO</h4>
