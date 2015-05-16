@@ -38,7 +38,7 @@
 						<li id="close"><img id="menuCloseButton" src="/assets/img/close.png"></li>
 					        <li class="menuitem"><a href="#cover" title="Community Management">About Us</a></li>
 					        <li class="menuitem"><a href="#four-pillars" title="Community Managers">Four Pillars</a></li>
-					        <li class="menuitem"><a href="#expertise" title="Prices">Expertise & Methodology</a></li>
+					        <li class="menuitem"><a href="#expertise" title="Prices">Expertise &amp; Methodology</a></li>
 					        <li class="menuitem"><a href="#cases" title="Clients">Cases</a></li>
 					        <li class="menuitem"><a href="#clients" title="Contact">Clients</a></li>
 					        <li class="menuitem"><a href="#team-members" title="Nubis">Team</a></li>
@@ -50,7 +50,7 @@
 				
 
 
-			
+                        <div id="background"></div>
 			<header id="cover">
 				<h1>{{ site.content.sections.about_us.name }}</h1>
 				<hr>
@@ -106,18 +106,19 @@
                                     <ul id="expertise-list">
                                         <li class="current-item" data-text="git">GIT</li>
                                         <li data-text="github">GITHUB</li>
-                                        <li data-text="agile">AGILE DEVELOPMENT</li>                                        
-                                        <li>TRIED & TESTED</li>
-                                        <li>BACK-END</li>
-                                        <li>FRONT-END</li>
-                                        <li>MOBILE</li>
-                                        <li>SERVER & DESKTOP</li>
+                                        <li data-text="agile-development">AGILE DEVELOPMENT</li>                                        
+                                        <li data-text="tried-tested">TRIED &amp; TESTED</li>
+                                        <li data-text="back-end">BACK-END</li>
+                                        <li data-text="front-end">FRONT-END</li>
+                                        <li data-text="mobile">MOBILE</li>
+                                        <li data-text="serve-desktop">SERVER &amp; DESKTOP</li>
                                     </ul>
                                 </div>
                                 <div class="span5">
-                                    <p class="current-text" id="git">We utilise version management software on all of our projects and, although this tends to be git, we also have significant experience with older systems such as svn. And we don't use thesee merely as backup systems, but also to enable us to simultaneously develop multiple versions of a project </p>
-                                    <p id="github">Github Text</p>
-                                    <p id="agile">Agile Development text</p>
+                                    {% for expertise in site.content.expertise %}
+                                        <p  id="{{ expertise[1].id }}" {% if expertise[1].first == true %}class="current-text"{% endif %}>{{ expertise[1].text }}</p>
+                                    {% endfor %}
+                                    
                                 </div>
                             </div>
                         </section>
@@ -127,21 +128,27 @@
 				<hr>
                             </header>
                             <div class="row-fluid" id="case-row">
-                                    {% for case in site.content.casescodeorange %}
-                                        <div class="case span4" style="background-image:url(/assets/img/cases/cases_code_orange/{{ case[1].url }});">
-                                            <p class="title">{{ case[1].title }}</p>
-                                            <p>{{ case[1].description}}</p>
+                                        <div class="case span4">
+                                            <p class="title"></p>
+                                            <p></p>
                                         </div>
-                                    {% endfor %}
+                                        <div class="case span4">
+                                            <p class="title"></p>
+                                            <p></p>
+                                        </div>
+                                        <div class="case span4">
+                                            <p class="title"></p>
+                                            <p></p>
+                                        </div>
                             </div>
                             <div id="case-info">
                                 <div id="case-photo">
                                     <img alt="case-photo-abn" src="assets/img/cases/cases_code_orange/abn-ambro.png">
                                 </div>
                                 <div id="case-text">
-                                    <h4>ABN AMRO</h4>
+                                    <h4>{{ site.content.casescodeorange[0].name}}</h4>
                                     <hr>
-                                    <p>Limelights commissioned us to develop a system that automatically coverted 10 generic videos into around 1,000 personalised videos for the prestigious Dutch bank, ABN AMRO</p>
+                                    <p></p>
                                     
                                 </div>
                             </div>    

@@ -52,17 +52,20 @@ $(function(){
 	});
 	
 	$("#drop-down").on('click', function(){
+                $('#drop-down img').css("visibility","hidden");
 		$("#mega-menu").slideDown('fast', function(){
 			$("#close").css("top", (-1 * $(".menuitem").first().offset().top) + 5);
 		});
 	});
 	
 	$("#menuCloseButton").on('click', function(){
+               $('#drop-down img').removeAttr("style");
 		$("#mega-menu").slideUp('fast');
 	});
 	
 	$("#mega-menu li a").on('click', function(){
-		var href = $(this).attr('href');
+		$('#drop-down img').removeAttr("style");
+                var href = $(this).attr('href');
 		if(href.charAt(0) == "#"){
 			$("#mega-menu").slideUp('fast');
 			$.scrollTo($(href), 800);
@@ -219,132 +222,31 @@ $(function(){
 	$(".hexagon").on('mouseleave', function(){
 		$("#circle_" + $(this).data('name')).fadeOut('fast');
 	});
-
-
-
-	/*//detect scroll
-	$(window).scroll(function () {
-
-		if( $("html, body").is(':animated')  ){
-			console.log('Animation in progress. The battle of the user and the machine? Or just the animation?');
-		}else{;
-
-			//determine if we are above or below breakpoint and decide to scroll up/down
-
-			//all scroll sections:
-			$('#home>section')
-    		console.log($("body").scrollTop());
-    	}
+        
+        
+        
+        
+        $.getJSON("/assets/res/casescodeorange.json", function(cases){
+		var i = 0;
+                $("#home >section#cases #case-info #case-photo img").attr("src","/assets/img/cases/cases_code_orange/"+ cases[i].cover+ "" );
+		$("#home >section#cases #case-info #case-text h4").text(cases[i].name);
+		$("#home >section#cases #case-info #case-text p").text(cases[i].description);
+		$("#home > section#cases #case-row .case").each(function(){
+			var _case = cases[i];
+			
+			$(this).css("background-image", "url(/assets/img/cases/cases_code_orange/" + _case.cover + ")");
+			$(this).find("p.title").text(_case.name);
+			$(this).find("p:nth-child(2)").text(_case.type);
+			$(this).click(function(){
+				$("#home >section#cases #case-info #case-photo img").attr("src","/assets/img/cases/cases_code_orange/"+ _case.cover+ "" );
+				$("#home >section#cases #case-info #case-text h4").text(_case.name);
+				$("#home >section#cases #case-info #case-text p").text(_case.description);
+			}); 
+			i++;
+		});
 	});
 
 
-	//perform scroll
-	$('html, body').animate({
-		scrollTop: $("#community-managers").offset().top
-	}, 500);
-
-*/
-
-
-	function getScrollTop(identifier){
-		return $(identifier).offset().top - parseFloat($(identifier).css('margin-top'));
-	}
-
-	//on scroll end
-	var scroll_delay 		 = 300;
-	var scroll_back_spreed   = 300;
-	var scroll_forward_speed = 600;
-	var scrollSections 	     = ['#cover #four-pillars','#expertise','#cases','#team-members','#clients','#team-members'];
-	var scrollToBottom		 = ['#team-members'];
-	var scrollBarrier 	     = 50; // region in px, that user has to 'break trough'
-
-	var previousScroll = 0;
-
-var debug = true;
-	$(window).scroll(function() {
-
-		//set timer to check if scrolling has stopped
-    	clearTimeout($.data(this, 'scrollTimer'));
-	    $.data(this, 'scrollTimer', setTimeout(function() {
-	    	// user has stopped scrolling, time to take over controll!
-
-			var currentScroll = $(this).scrollTop();
-
-	    	if (currentScroll > previousScroll){
-	           //Scrolling down
-	           var scrollDown = true;
-	       	}
-	       	else {
-	           //Scrolling up
-	           var scrollDown = false;
-	        }
-
-	        previousScroll = currentScroll;
-
-        	if (scrollDown){
-        		//Currently only implemented for scrolling down
-
-        		var wHeight = $(window).height();
-    			var scrollTo = undefined;
-
-
-        		for (var key=1; key<scrollSections.length; key++) {
-        			//loop trough all elements to calculate if current position is in scrolling animation zone
-
-        			var currSectionScroll = getScrollTop(scrollSections[key]);
-        			var splitPoint = currSectionScroll - wHeight;
-        			
-
-        			if (key<scrollSections.length - 1 ){
-        				var nextScroll = getScrollTop(scrollSections[key+1]);
-        			}else{
-        				var nextScroll = $(document).height();
-        			}
-        			var nextSplitPoint  = nextScroll - wHeight;
-        				
-
-	    			//console.log(scrollSections[key])
-        			//console.log(splitPoint,splitPoint+scrollBarrier)
-        			//console.log(splitPoint+scrollBarrier,Math.min(currSectionScroll,nextSplitPoint))
-
-        			if( currentScroll > splitPoint){
-
-        				if( currentScroll <= splitPoint + scrollBarrier){
-        					// Still in barrier zone, push back to bottom of previous div.
-        					scrollTo = currSectionScroll - wHeight;
-        					var scroll_speed = scroll_back_spreed;
-
-        				}else if(currentScroll < Math.min(currSectionScroll,nextSplitPoint) ){
-        					// Scrolled far enough to push to next div
-
-							var scroll_speed = scroll_forward_speed; 
-
-        					// Scroll to bottom or top (default) of div?
-        					if($.inArray(scrollSections[key], scrollToBottom)>-1){
-        						scrollTo = currSectionScroll + $(scrollSections[key]).height() - wHeight;
-        					}else{
-        						scrollTo = currSectionScroll;
-        					}
-
-        				}
-        			}
-
-        		}
-
-        		console.log(scrollTo)
-
-    			//only start animation if there is no animation going on yet, and if nesecary
-    			if(scrollTo &&! $('html, body').is(':animated') ){
-    				console.log('Asnimate')
-    				$('html, body').animate({
-						scrollTop: scrollTo
-					}, scroll_speed);
-    			}
-
-        	}
-
-    	}, scroll_delay));
-	});
 
 });
 

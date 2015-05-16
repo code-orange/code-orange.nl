@@ -1,14 +1,16 @@
-abn:
-  title: ABN AMBRO
-  description: Limelights commission
-  url: abn-ambro.png
-
-soldaat_van_oranje:
-  title: SOLDAAT VAN ORANJE 
-  description: Facebook application
-  url: soldaat-van-oranje.png
-
-website_x:
-  title: WEBSITE SUBJECT X
-  description: Mobile website
-  url: website-subject-x.png
+-
+  name: ABN AMRO
+  type: Limelights commission
+  cover: abn-ambro.png
+  description: Limelights commissioned us to develop a system that automatically coverted 10 generic videos into around 1,000 personalised videos for the prestigious Dutch bank, ABN AMRO
+-
+  name: SOLDAAT VAN ORANJE 
+  type: Facebook application
+  cover: soldaat-van-oranje.png
+  description: Description Soldaat van Oranje
+-
+  name: WEBSITE SUBJECT X
+  type: Mobile website
+  cover: website-subject-x.png
+  description: Description Mobile Website X
+  

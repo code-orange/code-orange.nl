@@ -1,0 +1,25 @@
+  git:
+    id: git
+    text: We utilise version management software on all of our projects and, although this tends to be git, we also have significant experience with older systems such as svn. And we don't use thesee merely as backup systems, but also to enable us to simultaneously develop multiple versions of a project 
+    first: true
+  github:
+    id: github
+    text: Text Github
+  agile_development:
+    id:  agile-development 
+    text: Text Agile Development 
+  tried_tested:
+    id: tried-tested
+    text: Text triend &amp; Tested 
+  back-end:
+    id: back-end
+    text: Text Back-End
+  frond-end:
+    id: front-end
+    text: Text Frond-End
+  mobile:
+    id: mobile
+    text: Text mobile	 
+  serve_desktop:
+    id: serve-desktop
+    text: Text Serve &amp; Desktop 
