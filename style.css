@@ -37,7 +37,7 @@ header {
 	}
 }
 
-header img {
+header img.container {
 	display: block;
 	margin-bottom: 3rem;
 }
