@@ -115,13 +115,14 @@ section.contact {
 }
 
 section.contact > h3 {
-	text-align: center;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media(min-width: 700px) {
-	section.contact > form {
+	section.contact > form, section.contact > h3 {
 		width: 700px;
 	}
 }
@@ -234,5 +235,13 @@ button[type=submit] {
 
 .tool > .tool-about a {
 	color: #ffffff;
+}
+
+.client-holder {
+	text-align: center;
+}
+
+.client-holder img {
+	margin: 1rem;
 }
 
