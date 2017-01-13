@@ -208,3 +208,31 @@ button[type=submit] {
 	padding: 0.5rem 1rem;
 }
 
+
+
+
+
+.tool {
+	margin-bottom: 1rem;
+}
+
+.tool > img {
+	display: inline-block;
+	width: 50px;
+	vertical-align: top;
+	margin-right: 1rem;
+}
+
+.tool > .tool-about {
+	display: inline-block;
+}
+
+.tool > .tool-about p, .tool > .tool-about h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.tool > .tool-about a {
+	color: #ffffff;
+}
+
