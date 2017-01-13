@@ -1,0 +1,210 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 2em;
+}
+
+header {
+	background-color: #ffffff;
+	padding-top: 19rem;
+	padding-bottom: 19rem;
+}
+
+.container {
+	width: calc(100% - 2rem);
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+@media (min-width: 970px) {
+	.container {
+		width: 970px;
+		margin: auto;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1200px;
+		margin: auto;
+	}
+}
+
+header img {
+	display: block;
+	margin-bottom: 3rem;
+}
+
+header h2 {
+	color: #5a5a5a;
+	font-weight: 300;
+}
+
+section.services {
+	overflow: auto;
+}
+
+section.services .consulting, section.services .tools {
+	padding: 1rem;
+}
+
+@media(min-width: 900px) {
+	section.services .consulting, section.services .tools {
+		padding: initial;
+		float: left;
+		width: 50%;
+		text-align: left;
+		min-height: 500px;
+	}
+
+	section.services .consulting > * {
+		width: calc(100% - 3rem);
+		margin: 1rem;
+		margin-right: 2rem;
+		margin-left: auto;
+	}
+
+	section.services .tools > * {
+		width: calc(100% - 3rem);
+		margin: 1rem;
+		margin-left: 2rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	section.services .consulting > * {
+		width: 600px;
+	}
+
+	section.services .tools > * {
+		width: 600px;
+	}
+}
+
+section.consulting {
+	background-color: #c6c2bd;
+	color: #ffffff;
+}
+
+section.tools {
+	background-color: #868178;
+	color: #ffffff;
+}
+
+section.team {
+	background-color: #635e55;
+	color: #ffffff;
+	padding-top: 5rem;
+	padding-bottom: 1rem;
+}
+
+section.team > * {
+	text-align: center;
+}
+
+section.contact {
+	background-color: #ffffff;
+	color: #5a5a5a;
+}
+
+section.contact > h3 {
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+@media(min-width: 700px) {
+	section.contact > form {
+		width: 700px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.team__item {
+	display: inline-block;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	margin-bottom: 4rem;
+}
+
+.team__item_photo {
+	height: 140px;
+	width: 140px;
+	margin: auto auto 25px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.team__item_name, .team__item_job {
+	display: block;
+}
+
+
+
+
+
+
+.form-group {
+	width: 100%;
+	overflow: auto;
+	margin-bottom: 1rem;
+}
+
+.form-group > input, .form-group > textarea {
+	width: 100%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+	border-bottom: 1px solid #464646;
+	padding: 0;
+}
+
+@media(min-width: 700px) {
+	.form-group > input.half {
+		width: 49%;
+		display: inline-block;
+	}
+
+	.form-group > input.half:first-child {
+		float: left;
+	}
+
+	.form-group > input.half:last-child {
+		float: right;
+	}
+}
+
+textarea.message {
+	height: 200px;
+}
+
+button[type=submit] {
+	background-color: #ffffff;
+	color: #464646;
+	border: 1px solid #464646;
+	padding: 0.5rem 1rem;
+}
+
