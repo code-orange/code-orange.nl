@@ -219,10 +219,16 @@ button[type=submit] {
 }
 
 .tool > img {
-	display: inline-block;
+	display: block;
 	width: 50px;
 	vertical-align: top;
 	margin-right: 1rem;
+}
+
+@media (min-width: 500px) {
+	.tool > img {
+		display: inline-block;
+	}
 }
 
 .tool > .tool-about {
