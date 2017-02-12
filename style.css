@@ -245,3 +245,7 @@ button[type=submit] {
 	margin: 1rem;
 }
 
+.team__item_name a {
+	color: white;
+}
+
