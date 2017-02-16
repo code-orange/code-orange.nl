@@ -1,7 +1,7 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
-		<title>Code Orange</title>
+		<title>Code Orange | clever solutions to complex problems</title>
 		<link href="/style.css" rel="stylesheet">
 		<link rel="icon" type="image/png" href="/favicon.ico">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -44,11 +44,11 @@
 					Below you'll find a selection of the companies that have used our premium consulting service.
 				</p>
 				<div class="client-holder">
-					<img src="/img/client-adidas.png" width="70">
-					<img src="/img/client-ca.svg" width="200">
-					<img src="/img/client-stylescript.png" width="176">
-					<img src="/img/client-lm.png" width="90">
-					<img src="/img/client-persgroep.png" width="200">
+					<img src="/img/client-adidas.png" width="70" alt="adidas group">
+					<img src="/img/client-ca.svg" width="200" alt="CODE D'AZUR">
+					<img src="/img/client-stylescript.png" width="176" alt="StyleScript">
+					<img src="/img/client-lm.png" width="90" alt="LegalMatters.com">
+					<img src="/img/client-persgroep.png" width="200" alt="De Persgroep">
 				</div>
 			</section>
 			<section class="tools">
@@ -57,7 +57,7 @@
 				<p>Many of these are free, check them out below.</p>
 				<div class="tool-list">
 					<div class="tool">
-						<img src="/img/followww.png">
+						<img src="/img/followww.png" alt="followww.">
 						<div class="tool-about">
 							<h4><a href="https://followww.co">followww.</a></h4>
 							<p>Track HTTP redirects and cookies from short URLs</p>
@@ -66,7 +66,7 @@
 						</div>
 					</div>
 					<div class="tool" hidden>
-						<img src="/img/orangoetang.png">
+						<img src="/img/orangoetang.png" alt="Orang Oetang">
 						<div class="tool-about">
 							<h4><a href="https://orangoetang.co">Orang Oetang</a></h4>
 							<p>A Wordpress site in 30 seconds</p>
@@ -74,7 +74,7 @@
 						</div>
 					</div>
 					<div class="tool">
-						<img src="/img/gmail-id.png">
+						<img src="/img/gmail-id.png" alt="Gmail message ID finder">
 						<div class="tool-about">
 							<h4><a href="https://gmail-message-id-finder.co">Gmail message ID finder</a></h4>
 							<p>Never not find an email again</p>
@@ -114,7 +114,7 @@
 					<input name="email" placeholder="Email" type="email" class="half">
 				</div>
 				<div class="form-group">
-					<input name="subject" placeholder="Subject" type="subject">
+					<input name="subject" placeholder="Subject" type="text">
 				</div>
 				<div class="form-group">
 					<textarea name="message" class="message" placeholder="Message"></textarea>
@@ -125,5 +125,26 @@
 			</form>
 		</section>
 		<script src="contact.js"></script>
+		<script type="application/ld+json">
+			{
+				"@context" : "http://schema.org",
+				"@type" : "Organization",
+				"name" : "Code Orange",
+				"url" : "https://code-orange.nl",
+				"sameAs" : [
+					"https://twitter.com/code__orange",
+					"https://plus.google.com/100068467247096914491",
+					"https://www.facebook.com/codeorangenl/",
+					"https://www.linkedin.com/company-beta/17948336/"
+				],
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Herengracht 104",
+					"addressRegion": "Amsterdam",
+					"postalCode": "1015BS",
+					"addressCountry": "NL"
+				}
+			}
+		</script>
 	</body>
 </html>
