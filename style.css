@@ -110,6 +110,7 @@ section.team > * {
 }
 
 section.contact {
+	padding-top: 5rem;
 	background-color: #ffffff;
 	color: #5a5a5a;
 }
@@ -127,6 +128,17 @@ section.contact > h3 {
 	}
 }
 
+section.links {
+	padding-top: 5rem;
+}
+
+section.links p {
+	text-align: center;
+}
+
+section.links p a {
+	color: #868178;
+}
 
 
 
