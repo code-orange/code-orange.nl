@@ -13,11 +13,83 @@ h3 {
 	font-size: 2em;
 }
 
+
 header {
 	background-color: #ffffff;
 	padding-top: 19rem;
 	padding-bottom: 19rem;
 }
+
+
+/*Start vacancy*/
+body.vacancy-page header {
+	padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+body.vacancy-page header h2 {
+/*    font-size: 1em*/
+}
+
+/*
+body.vacancy-page header img {
+    width: 30em;
+    padding-right: 46em;
+    margin-bottom: 1em
+}
+*/
+
+body.vacancy-page section.vacancy {
+    background-color: #868178;
+    color: #ffffff;
+    padding: 1em;
+}
+
+body.vacancy-page .vacancy a {
+    color: #F5843D
+}
+
+body.vacancy-page h3 {
+    text-align: left!important;
+}
+
+body.vacancy-page h2#slogan {
+    text-align: center!important;
+}
+
+body.vacancy-page .emphasize{
+    color: #F5843D
+}
+
+body.vacancy-page .italic{
+    font-style: italic
+}
+
+body.vacancy-page .text_body {
+    text-align: justify;
+}
+@media(min-width: 550px) {
+    body.vacancy-page section.vacancy {
+        padding: 4em;
+    }
+}
+
+@media (min-width: 972px) {
+    body.vacancy-page .text_body{
+        padding-right:15em;
+    }
+}
+
+@media (min-width: 1080px) {
+    body.vacancy-page .text_body{
+        padding-right:23em;
+    }
+}
+
+/*End vacancy*/
+
+
+
 
 .container {
 	width: calc(100% - 2rem);
@@ -97,6 +169,7 @@ section.tools {
 	background-color: #868178;
 	color: #ffffff;
 }
+
 
 section.team {
 	background-color: #635e55;
@@ -272,3 +345,4 @@ button[type=submit] {
 [hidden] {
     display: none;
 }
+
