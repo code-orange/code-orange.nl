@@ -49,8 +49,21 @@ body.vacancy-page .vacancy a {
     color: #F5843D
 }
 
+body.vacancy-page h1 {
+    font-weight: 100
+}
+
+body.vacancy-page h2 {
+    font-weight: 100
+}
+
 body.vacancy-page h3 {
     text-align: left!important;
+    font-weight: 100
+}
+
+body.vacancy-page h4 {
+    font-weight: 100
 }
 
 body.vacancy-page h2#slogan {
@@ -67,6 +80,7 @@ body.vacancy-page .italic{
 
 body.vacancy-page .text_body {
     text-align: justify;
+    font-weight: 100
 }
 @media(min-width: 550px) {
     body.vacancy-page section.vacancy {
