@@ -65,14 +65,6 @@ body.vacancy-page h2#slogan {
     font-size:1.3em
 }
 
-/*
-@media(min-width: 550px) {
-    body.vacancy-page h2#slogan {
-        font-size:1em
-    }
-}
-*/
-
 @media (min-width: 900px) {
     body.vacancy-page h2#slogan {
         font-size:1.82em
