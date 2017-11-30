@@ -57,6 +57,38 @@ body.vacancy-page h2 {
     font-weight: 100
 }
 
+body.vacancy-page h2#slogan {
+    text-align: center!important;
+}
+
+body.vacancy-page h2#slogan {
+    font-size:1.3em
+}
+
+/*
+@media(min-width: 550px) {
+    body.vacancy-page h2#slogan {
+        font-size:1em
+    }
+}
+*/
+
+@media (min-width: 900px) {
+    body.vacancy-page h2#slogan {
+        font-size:1.82em
+    }
+}
+@media (min-width: 1080px) {
+    body.vacancy-page h2#slogan {
+        font-size:1.522em
+    }
+}
+@media (min-width: 1200px) {
+    body.vacancy-page h2#slogan {
+        font-size:2.1em
+    }
+}
+
 body.vacancy-page h3 {
     text-align: left!important;
     font-weight: 100
@@ -66,8 +98,8 @@ body.vacancy-page h4 {
     font-weight: 100
 }
 
-body.vacancy-page h2#slogan {
-    text-align: center!important;
+body.vacancy-page #intro {
+    font-size: 1.3em
 }
 
 body.vacancy-page .emphasize{
