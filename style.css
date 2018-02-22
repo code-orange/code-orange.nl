@@ -27,17 +27,10 @@ body.vacancy-page header {
     padding-bottom: 4em;
 }
 
-body.vacancy-page header h2 {
-/*    font-size: 1em*/
-}
-
-/*
 body.vacancy-page header img {
     width: 30em;
-    padding-right: 46em;
-    margin-bottom: 1em
 }
-*/
+
 
 body.vacancy-page section.vacancy {
     background-color: #868178;
@@ -45,67 +38,132 @@ body.vacancy-page section.vacancy {
     padding: 1em;
 }
 
+/* text */
+
+
+
 body.vacancy-page .vacancy a {
     color: #F5843D
 }
 
-body.vacancy-page h1 {
-    font-weight: 100
+body.vacancy-page #vacancy-link{
+	color: white;
+	/*text-decoration: none;*/
 }
 
-body.vacancy-page h2 {
-    font-weight: 100
+/* h1 */
+
+body.vacancy-page h1 {
+	font-weight:100;
+}
+
+/* h2 */
+
+@media (min-width: 540px) {
+	body.vacancy-page h2{
+		padding-right:0em;
+	}
+}
+
+@media (min-width: 640px) {
+	body.vacancy-page h2{
+		padding-right:2em;
+	}
+}
+
+
+@media (min-width: 714px) {
+	body.vacancy-page h2{
+		padding-right:0em;
+	}
+}
+
+@media (min-width: 800px) {
+	body.vacancy-page h2{
+		padding-right:2em;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	body.vacancy-page h2{
+		padding-right:0em;
+	}
+}
+
+body.vacancy-page h2 .emphasize{
+    color: #F5843D;
 }
 
 body.vacancy-page h2#slogan {
     text-align: center!important;
-}
-
-body.vacancy-page h2#slogan {
-    font-size:1.3em
+    font-size:1.2em;
+    font-weight: 400;
+    font-style: italic;
 }
 
 @media (min-width: 900px) {
     body.vacancy-page h2#slogan {
-        font-size:1.82em
+        font-size:1.3em;
     }
 }
 @media (min-width: 1080px) {
     body.vacancy-page h2#slogan {
-        font-size:1.522em
+        font-size:1.4em;
     }
 }
 @media (min-width: 1200px) {
     body.vacancy-page h2#slogan {
-        font-size:2.1em
+        font-size:1.5em;
     }
 }
 
+/* h3 */
 body.vacancy-page h3 {
     text-align: left!important;
-    font-weight: 100
+    font-size: 1.4em;
+    /*padding-left: 2em;*/
+    font-weight: 200;
 }
 
+/* h4 */
 body.vacancy-page h4 {
-    font-weight: 100
+	font-size:1.0em;
+    font-weight: 500;
+    padding-left: 2em;
+    margin-bottom:0;
 }
 
-body.vacancy-page #intro {
-    font-size: 1.3em
+/* p */
+
+body.vacancy-page p#intro {
+	font-weight:400;
+	font-size:0.9em;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
 
-body.vacancy-page .emphasize{
-    color: #F5843D
+body.vacancy-page p .italic{
+    font-style: italic;
 }
 
-body.vacancy-page .italic{
-    font-style: italic
+body.vacancy-page {
+	font-size: 1.0em;
+	line-height:1.6;
+    font-weight: 100;
 }
 
-body.vacancy-page .text_body {
-    text-align: justify;
-    font-weight: 100
+body.vacancy-page p {
+	margin-top:0;
 }
+
+/* end text */
+
+body.vacancy-page ul{
+	margin-top: 0;
+	padding-left: 1.1em;
+}
+
 @media(min-width: 550px) {
     body.vacancy-page section.vacancy {
         padding: 4em;
@@ -114,14 +172,120 @@ body.vacancy-page .text_body {
 
 @media (min-width: 972px) {
     body.vacancy-page .text_body{
-        padding-right:15em;
+        /*padding-right:15em;*/
     }
 }
 
 @media (min-width: 1080px) {
     body.vacancy-page .text_body{
-        padding-right:23em;
+        /*padding-right:23em;*/
     }
+}
+
+body.vacancy-page .header-container {
+	width: calc(100% - 2rem);
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+@media (min-width: 970px) {
+	body.vacancy-page .header-container {
+		width: 970px;
+		margin: auto;
+	}
+}
+@media (min-width: 1200px) {
+	body.vacancy-page .header-container {
+		width: 1200px;
+		margin: auto;
+	}
+}
+
+body.vacancy-page header img.container {
+	display: block;
+	margin-bottom: 3rem;
+}
+
+
+body.vacancy-page .vacancies {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+
+body.vacancy-page .vacancies--vacancy {
+	min-height: 2em;
+	flex-grow: 1;
+	flex-basis: 100%;
+	padding-left: 0.6em;
+	padding-right:0.6em;
+	line-height: 2.0;
+	overflow:hidden;
+}
+
+@media (min-width: 500px) {
+	body.vacancy-page .vacancies--vacancy {
+		flex-basis: 30%;
+	}
+}
+
+body.vacancy-page .vacancies--vacancy #vacancy-link {
+	color: white;
+	text-decoration: none;
+}
+
+body.vacancy-page .vacancies--vacancy p#vac-text{
+	min-height: 0em;
+}
+
+@media (min-width:500px) {
+	body.vacancy-page .vacancies--vacancy p#vac-text{
+		min-height: 12em;
+	}
+}
+
+@media (min-width:550px) {
+	body.vacancy-page .vacancies--vacancy p#vac-text{
+		min-height: 14em;
+	}
+}
+
+@media (min-width:625px) {
+	body.vacancy-page .vacancies--vacancy p#vac-text{
+		min-height: 10em;
+	}
+}
+
+@media (min-width:749px) {
+	body.vacancy-page .vacancies--vacancy p#vac-text{
+		min-height: 14em;
+	}
+}
+
+
+@media (min-width:786px) {
+	body.vacancy-page .vacancies--vacancy p#vac-text{
+		min-height: 12em;
+	}
+}
+
+@media (min-width:853px) {
+	body.vacancy-page .vacancies--vacancy p#vac-text{
+		min-height: 10em;
+	}
+}
+
+@media (min-width:1200px) {
+	body.vacancy-page .vacancies--vacancy p#vac-text{
+		min-height: 6em;
+	}
+}
+
+body.vacancy-page .vacancies--vacancy p#vac-arrow{
+
+	text-align: right;
 }
 
 /*End vacancy*/
@@ -136,7 +300,7 @@ body.vacancy-page .text_body {
 }
 @media (min-width: 970px) {
 	.container {
-		width: 970px;
+		width: 800px;
 		margin: auto;
 	}
 }
@@ -383,4 +547,5 @@ button[type=submit] {
 [hidden] {
     display: none;
 }
+
 
