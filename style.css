@@ -302,7 +302,7 @@ body.vacancy-page .vacancies--vacancy p#vac-text{
 }
 
 body.vacancy-page .vacancies--vacancy p#vac-arrow{
-
+	margin-right:1em;
 	text-align: right;
 }
 
