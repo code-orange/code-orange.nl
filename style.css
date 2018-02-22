@@ -43,12 +43,22 @@ body.vacancy-page section.vacancy {
 
 
 body.vacancy-page .vacancy a {
-    color: #F5843D
+    text-decoration: none;
+}
+
+body.vacancy-page #job-title {
+	color: #F5843D;
+	font-weight:500;
+}
+
+body.vacancy-page #e-mail {
+	color: #F5843D;
 }
 
 body.vacancy-page #vacancy-link{
 	color: white;
-	/*text-decoration: none;*/
+	text-decoration: none;
+	font-weight: 400;
 }
 
 /* h1 */
@@ -170,16 +180,8 @@ body.vacancy-page ul{
     }
 }
 
-@media (min-width: 972px) {
-    body.vacancy-page .text_body{
-        /*padding-right:15em;*/
-    }
-}
-
-@media (min-width: 1080px) {
-    body.vacancy-page .text_body{
-        /*padding-right:23em;*/
-    }
+body.vacancy-page .job{
+	max-width: 50em;
 }
 
 body.vacancy-page .header-container {
@@ -206,28 +208,44 @@ body.vacancy-page header img.container {
 	margin-bottom: 3rem;
 }
 
+body.vacancy-page #titleline{
+	margin-right:1em;
+}
 
 body.vacancy-page .vacancies {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: stretch;
+	margin-top:2em;
 }
 
+body.vacancy-page a .vacancies--vacancy{
+	color: white
+}
 
 body.vacancy-page .vacancies--vacancy {
+	display:block;
 	min-height: 2em;
 	flex-grow: 1;
 	flex-basis: 100%;
 	padding-left: 0.6em;
 	padding-right:0.6em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	border: 1px solid white;
 	line-height: 2.0;
 	overflow:hidden;
+	color: white;
+}
+
+body.vacancy-page #empty_vacancy{
+	border: none;
 }
 
 @media (min-width: 500px) {
 	body.vacancy-page .vacancies--vacancy {
-		flex-basis: 30%;
+		flex-basis: 28%;
 	}
 }
 
