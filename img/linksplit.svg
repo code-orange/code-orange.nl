@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 52 52" height="200">
+	<style>
+		.green {fill:#4ca07e;stroke:none;}
+		.blue {fill:#4167a6;stroke:none;}
+		.text {stroke-miterlimit:10; fill:#ffffff; stroke:none; font-family: 'Arial', sans-serif; font-size: 26px; font-weight:bold;}
+		.path {fill:none; stroke-width:5; }
+		.lineBottom {stroke:url("#bottom");}
+		.lineTop {stroke:url("#top");}
+	</style>
+	<linearGradient id="bottom" gradientUnits="userSpaceOnUse" x1="185" y1="0" x2="217" y2="0">
+		<stop offset="0" stop-color="#4167A6"/>
+		<stop offset="1" stop-color="#4CA07E"/>
+	</linearGradient>
+	<linearGradient id="top" gradientUnits="userSpaceOnUse" x1="165" y1="0" x2="226" y2="0">
+		<stop offset="0" stop-color="#4CA07E"/>
+		<stop offset="1" stop-color="#4167A6"/>
+	</linearGradient>
+	<g transform="translate(0,8.5)">
+		<path xmlns="http://www.w3.org/2000/svg"  d="M 12 22 l 24 0" class="path lineBottom"/>
+		<path xmlns="http://www.w3.org/2000/svg"  d="M 12 22 l 6 0	c 6 0 6 -13 12 -13 l 6 0" class="path lineTop"/>
+		<circle cx="7" cy="22" r="5" stroke="#4ca07e" stroke-width="1.6" fill="white" />
+		<rect width="6" height ="5" x="38" y="19.5" class="green"/>
+		<rect width="6" height ="5" x="38" y="6.5" class="blue"/>
+		<polygon class="green" points="46,19.5 46,24.5 50,22"/>
+		<polygon points="46,6.5 46,11.5 50,9" class="blue"/>
+	</g>
+</svg>
