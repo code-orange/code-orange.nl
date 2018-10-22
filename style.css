@@ -353,7 +353,7 @@ section.services .consulting, section.services .tools {
 		float: left;
 		width: 50%;
 		text-align: left;
-		min-height: 625px;
+		min-height: 690px;
 	}
 
 	section.services .consulting > * {
