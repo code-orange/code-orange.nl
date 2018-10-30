@@ -13,9 +13,14 @@
 		request = new XMLHttpRequest();
 		request.open(form.method, form.action, true);
 		request.onreadystatechange = function () {
-			if (this.readyState === 4 && this.status === 200) {
-				form.reset();
-				sendbutton.innerText = 'Message sent, thank you!';
+			if (this.readyState === 4 && this.status === 200 ) {
+				if (JSON.parse(this.response).success) {
+					form.reset();
+					sendbutton.innerText = 'Message sent, thank you!';
+				} else {
+					sendbutton.innerText = 'Something went wrong. Try again!';
+				}
+
 			}
 		};
 		request.send(formData);
