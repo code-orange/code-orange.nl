@@ -350,13 +350,19 @@ header h2 {
 section.consulting {
 	background-color: #c6c2bd;
 	color: #ffffff;
-	padding-left: 10vw;
 }
 
 section.tools {
 	background-color: #868178;
 	color: #ffffff;
-	padding-right:10vw;
+}
+
+.wrapper {
+	max-width:600px;
+}
+
+.consulting .wrapper {
+	float:right;
 }
 
 .services {
@@ -370,12 +376,11 @@ section.tools {
 }
 
 @media (max-width:1199px) {
-	section.tools {
-		padding-right:30px;
+	.wrapper {
+		float:unset;
+		max-width:unset;
 	}
-	section.consulting {
-		padding-left: 30px;
-	}
+
 }
 
 @media (max-width:950px) {
