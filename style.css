@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
 }
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -341,16 +342,21 @@ header h2 {
 	color: #5a5a5a;
 	font-weight: 300;
 }
-
+.services section {
+	width:50%;
+	padding:30px;
+}
 
 section.consulting {
 	background-color: #c6c2bd;
 	color: #ffffff;
+	padding-left: 10vw;
 }
 
 section.tools {
 	background-color: #868178;
 	color: #ffffff;
+	padding-right:10vw;
 }
 
 .services {
@@ -358,13 +364,18 @@ section.tools {
 	flex-wrap:wrap;
 }
 
-.services section {
-	width:50%;
-	padding:30px;
-}
 
 .services h3 {
 	margin-top:0;
+}
+
+@media (max-width:1199px) {
+	section.tools {
+		padding-right:30px;
+	}
+	section.consulting {
+		padding-left: 30px;
+	}
 }
 
 @media (max-width:950px) {
