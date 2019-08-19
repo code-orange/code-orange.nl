@@ -6,13 +6,19 @@
 	<title>Code Orange | Software with attitude</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<meta name="description" content="">
+	<meta name="description" content="Software development studio with a strong focus on clever solutions to complex problems">
+
+	<meta property="og:url" content="https://code-orange.nl/">
+	<meta property="og:title" content="Code Orange">
+
+
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/x-icon" href="http://o06dmhmdlseoh7omnocq.projecten.co/favicon.ico">
 	<script src="https://kit.fontawesome.com/c9ab453505.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
 	<script src="smooth_scroll.js"></script>
 
 
@@ -264,21 +270,25 @@
 			<p>
 				<strong>Shoot us a message</strong> to talk about our tools, helping you out with a project or just to chat.
 			</p>
-			<form _lpchecked="1">
+			<form id="contact-form" method="post" action="https://nubisonline.nl/co-contact/" onsubmit="sendContact(event)">
 				<div class="fields">
-					<div class="field">
+					<div class="field half">
 						<input type="text" name="name" id="name" placeholder="Name">
 					</div>
-					<div class="field">
+					<div class="field half">
 						<input type="email" name="email" id="email" placeholder="Email">
+					</div>
+					<div class="field">
+						<input name="subject" placeholder="Subject" type="text">
 					</div>
 					<div class="field">
 						<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
 					</div>
+					<div class="g-recaptcha" data-sitekey="6Lf4NnYUAAAAAAL7SADnuaTdfcoWTYCg6g6_CTaF"></div>
 				</div>
-				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="button primary"></li>
-				</ul>
+				<div class="field">
+					<button type="submit" class="button primary" id="send-button">Send Message</button>
+				</div>
 			</form>
 		</div>
 		<footer>
@@ -327,6 +337,8 @@
 	<div class="copyright">© Code Orange.</div>
 </div>
 
+<script src="stars.js"></script>
+<script src="contact.js"></script>
 
 
 </body></html>
