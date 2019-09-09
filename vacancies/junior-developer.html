@@ -13,6 +13,7 @@
 		<meta name="description" content="Do you want to improve your programming skills together with other students and apply your new skills to tangible projects?">
 		<meta property="og:description" content="Do you want to improve your programming skills together with other students and apply your new skills to tangible projects?">
 
+		<script src="https://kit.fontawesome.com/c9ab453505.js"></script>
 		<script>
 			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -26,17 +27,17 @@
 			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5TFFZC" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		</noscript>
 
-        
-        <header>
-        	<div class="header-container">
-				<h1 hidden>Code Orange</h1>
-				<a href="/">
-					<img src="/img/logo.svg" alt="Code Orange">
-				</a>
-				<h2>Software development studio with a strong focus on <strong>clever</strong> solutions to <strong>complex</strong> problems</h2>
-			</div>
-		</header>
-            
+		<section class="page-header">
+			<header>
+				<div class="header-container">
+					<h1 hidden>Code Orange</h1>
+					<a href="/">
+						<img src="../img/logo.svg" alt="Code Orange">
+					</a>
+					<h2>Software development studio with a strong focus on clever solutions to complex problems</h2>
+				</div>
+			</header>
+		</section>
 
         <section class="vacancy">
             <div class="holder container">
@@ -84,16 +85,16 @@ Contact us at <a id="e-mail" href="mailto:barend@code-orange.nl">barend@code-ora
 		</section>
 
 		<section class="team">
-			<div class="holder container">
+			<div class="team__container">
 				<div class="team__item">
-					<div style="background-image:url(/img/tim.jpg)" class="team__item_photo"></div>
+					<img src="../img/tim.jpg" class="team__item_photo"/>
 					<span class="team__item_name">Tim van Dalen</span>
 					<span class="team__item_name">tim@code-orange.nl</span>
 					<span class="team__item_name"><a href="https://www.linkedin.com/in/timvdalen/">LinkedIn</a></span>
 					<span class="team__item_job">Managing Director</span>
 				</div>
 				<div class="team__item">
-					<div style="background-image:url(/img/jelle.jpg)" class="team__item_photo"></div>
+					<img src="../img/jelle.jpg" class="team__item_photo"/>
 					<span class="team__item_name">Jelle Oskam</span>
 					<span class="team__item_name">jelle@code-orange.nl</span>
 					<span class="team__item_name"><a href="https://www.linkedin.com/in/jelleoskam/">LinkedIn</a></span>
@@ -101,37 +102,79 @@ Contact us at <a id="e-mail" href="mailto:barend@code-orange.nl">barend@code-ora
 				</div>
 			</div>
 		</section>
+		<div id="wrapper">
+			<section id="contact">
+				<header>
+					<h2>Get in touch</h2>
+				</header>
+				<div class="content">
 
-		<section class="contact">
-			<h3>Contact</h3>
+					<form id="contact-form" method="post" action="https://nubisonline.nl/co-contact/" onsubmit="sendContact(event)">
+						<div class="fields">
+							<div class="field half">
+								<input type="text" name="name" id="name" placeholder="Name">
+							</div>
+							<div class="field half">
+								<input type="email" name="email" id="email" placeholder="Email">
+							</div>
+							<div class="field">
+								<input name="subject" placeholder="Subject" type="text">
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+							</div>
+							<div class="g-recaptcha" data-sitekey="6Lf4NnYUAAAAAAL7SADnuaTdfcoWTYCg6g6_CTaF"></div>
+						</div>
+						<div class="field">
+							<button type="submit" class="button primary" id="send-button">Send Message</button>
+						</div>
+					</form>
+				</div>
+				<footer>
+					<ul class="items">
+						<li>
+							<h3>Email</h3>
+							<p><a href="mailto:info@code-orange.nl">info@code-orange.nl</a></p>
+						</li>
+						<li>
+							<h3>Phone</h3>
+							<p><a href="tel:+31208932941">+31 20 8932941</a></p>
+						</li>
+						<li>
+							<h3>Address</h3>
+							<p><a target="_blank" href="https://goo.gl/maps/mpNZ69irbtb6DReFA">Gedempt Hamerkanaal 173, 1021KP, Amsterdam</a></p>
+						</li>
+						<li>
+							<h3>Blog</h3>
+							<p><a target="_blank" href="http://blog.code-orange.nl/">Code Orange Stories</a></p>
+						</li>
+						<li>
+							<h3>Elsewhere</h3>
+							<ul class="icons">
+								<li>
+									<a target="_blank" href="https://twitter.com/code__orange" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.facebook.com/codeorangenl/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
+								</li>
+								<li>
+									<a target="_blank" href="https://linkedin.com/company/code-orange-nl" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+								</li>
+								<li>
+									<a target="_blank" href="https://github.com/code-orange" class="icon brands fa-github"><span class="label">GitHub</span></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Boring stuff</h3>
+							<p><a target="_blank" href="https://code-orange.nl/terms.pdf">Terms</a></p>
+						</li>
+					</ul>
+				</footer>
+			</section>
+		</div>
 
-			<form class="container" id="contact-form" method="POST" action="https://nubisonline.nl/co-contact/" onsubmit="sendContact(event)">
-				<div class="form-group">
-					<input name="name" placeholder="Name" type="text" class="half">
-					<input name="email" placeholder="Email" type="email" class="half">
-				</div>
-				<div class="form-group">
-					<input name="subject" placeholder="Subject" type="text">
-				</div>
-				<div class="form-group">
-					<textarea name="message" class="message" placeholder="Message"></textarea>
-				</div>
-				<div class="form-group">
-					<button type="submit" id="send-button">Send</button>
-				</div>
-			</form>
-		</section>
-
-		<section class="links">
-			<p>
-				<a href="/terms.pdf" download>Terms</a>
-				<a href="https://blog.code-orange.nl/">Blog</a>
-				<a href="/vacancies/">Vacancies</a>
-				<a href="https://opensource.code-orange.nl/">Open source</a>
-			</p>
-		</section>
-
-		<script src="/contact.js"></script>
+		<script src="../contact.js"></script>
 		<script type="application/ld+json">
 			{
 				"@context" : "http://schema.org",
