@@ -1339,7 +1339,7 @@ body.vacancy-page .page-header img {
 	width: 30em;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
 
 	body.vacancy-page .page-header img {
 		width: 23em;
@@ -1462,13 +1462,13 @@ body.vacancy-page .header-container {
 
 @media (min-width: 970px) {
 	body.vacancy-page .header-container {
-		width: 970px;
+		width: 800px;
 		margin: auto;
 	}
 }
 @media (min-width: 1200px) {
 	body.vacancy-page .header-container {
-		width: 1200px;
+		width: 900px;
 		margin: auto;
 	}
 }
@@ -1508,6 +1508,10 @@ body.vacancy-page .vacancies--vacancy {
 	line-height: 2.0;
 	overflow:hidden;
 	color: white;
+}
+
+body.vacancy-page .vacancies--vacancy h2{
+	padding-top: 25px;
 }
 
 body.vacancy-page #empty_vacancy{
