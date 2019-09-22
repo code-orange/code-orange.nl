@@ -1432,8 +1432,13 @@ body.vacancy-page {
 	font-weight: 100;
 }
 
-body.vacancy-page p {
-	margin-top:0;
+body.vacancy-page .interested{
+	color: black;
+	font-size: 100%;
+}
+
+body.vacancy-page h4 {
+	margin: 1rem 0 1rem 0;
 }
 
 /* end text */
