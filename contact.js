@@ -10,6 +10,7 @@
 		sendbutton = document.getElementById('send-button');
 
 		formData = new FormData(form);
+		formData.append("url", location.href);
 		request = new XMLHttpRequest();
 		request.open(form.method, form.action, true);
 		request.onreadystatechange = function () {
