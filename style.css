@@ -1560,4 +1560,12 @@ body.vacancy-page #empty_vacancy{
 	height: 9rem;
 
 }
+
+.warning {
+	color: maroon;
+    font-weight: 400;
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
 /*End vacancy*
